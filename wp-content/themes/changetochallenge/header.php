@@ -26,13 +26,16 @@
   <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>assets/js/vendor/modernizr-2.8.3.min.js"></script>
 	<script>var siteURL = '<?php echo get_site_url(); ?>';</script>
 </head>
+<body class="is-preload">
 
-<body <?php body_class(); ?> >
-<?php wp_body_open(); ?>
+<!-- Wrapper -->
+	<div id="wrapper">
+
+<!--
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'changetochallenge' ); ?></a>
 
-	<header id="masthead" class="site-header" style="background-color: black;">
+	<header id="masthead" class="site-header" >
 		<div class="site-branding">
 			<?php
 			the_custom_logo();
@@ -50,7 +53,7 @@
 				?>
 				<p class="site-description"><?php echo $changetochallenge_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
 			<?php endif; ?>
-		</div><!-- .site-branding -->
+		</div><!- - .site-branding  - ->
 
 		<nav id="site-navigation" class="main-navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'changetochallenge' ); ?></button>
@@ -62,5 +65,47 @@
 				)
 			);
 			?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+		</nav><!- - #site-navigation - ->
+	</header><!-  - #masthead -->
+
+	
+		<!-- Header -->
+		<header id="header">
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo logo1"><img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/header/C2C-blanco-RGB 1.png" alt=""></a>
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo logo-mob"><img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/header/C2C-B-blanco-mob.png" alt=""></a>
+			<nav>
+				<ul class="links-max">
+					<li><a href="index.html" class="cont-ave">Tipos de<br>aventura<img src="images/right-arrow-icon.png" alt=""></a> </li>
+					<li><a href="landing.html">Tienda</a></li>
+					<li><a href="generic.html">Es/EN</a></li>
+				</ul>
+				<nav class="menu-min">
+					<a href="#menu"><img src="images/menu.png" alt="menu"></a>
+				</nav>
+			</nav>
+
+		</header>
+		<nav id="menu">
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo"><img src="images/C2C-blue-RGB.png" class="logo-mob" alt=""></a>
+			<ul class="links">
+				<li class="links-mob">Tipos de aventura</li>
+				<li>
+					<a href="#submenu" class="arrow no-cerrar-menu" data-toggle="submenu"><img src="images/right-arrow-icon-27 3.png" alt=""></a>
+						<ul id="submenu">
+							<li><a href="#">Grupo ambierto</a></li>
+							<li><a href="#">Grupo cerrado</a></li>
+							<li><a href="#">Building empresarial</a></li>
+						</ul>
+				</li>
+				<li><a class="links-mob" href="landing.html">Tienda</a></li>
+				</ul>
+				<ul class="contact">
+				<li>Escríbenos en:</li>
+				<li><img src="images/icon-whatsapp.svg" alt="" srcset=""><a href="http://"> 55 7358 6711</a></li>
+				<li><img src="images/icon-mail.svg" alt="" srcset=""><a href="mailto:info@chancetochallenge.com"> info@chancetochallenge.com</a></li>
+				<li>Síguenos en:</li>
+				<li>
+					<a href="http://"><img src="images/group_sm.svg" alt="" srcset=""></a>
+				</li>
+				</ul>
+			</nav>

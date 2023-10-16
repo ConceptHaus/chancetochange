@@ -11,6 +11,42 @@
 
 ?>
 
+
+
+
+<!-- Footer -->
+<footer id="footer">
+		<div class="inner">
+			<div class="foo-cont">
+				<div>
+					<ul class="contact-foo">
+						<li>Escríbenos en:</li>
+						<li><img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/icon_whatsapp.png" alt="" srcset=""><a href="http://"> 55 7358 6711</a></li>
+						<li><img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/icon_email.png" alt="" srcset=""><a href="mailto:info@chancetochallenge.com"> info@chancetochallenge.com</a></li>
+					</ul>
+				</div>
+				<div>
+					<img src="/wp-content/uploads/assets/logo_white_footer.png" alt="" srcset="">
+				</div>
+				<div>
+					<ul class="contact-foo">
+						<li>Síguenos en:</li>
+						<li>
+							<ul class="list-footer list-social d-flex">
+							<li><img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/icon_instagram.png"  /></li>
+							<li><img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/icon_facebook.png"  /></li>
+							<li><img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/icon_linkedin.png"  /></li>
+						</ul>
+						</li>
+						<li><a class="aviso" href="#">Aviso de Privacidad</a></li>
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+	</footer>
+
+<!--
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">
 			
@@ -20,8 +56,8 @@
 			<div class="col-sm">
 				<ul class="list-footer">
 				<li>Escribenos en:</li>
-				<li><img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/icon_whatsapp.png"  /> 7358 6711</li>
-				<li><img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/icon_email.png" /> info@chancetochallenge.com</li>
+				<li><img src=""  /> 7358 6711</li>
+				<li><img src="" /> info@chancetochallenge.com</li>
 				</ul>
 			</div>
 			<div class="col-sm">
@@ -44,9 +80,9 @@
       </div>
 </div>
 
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
+		</div><!- - .site-info - ->
+	</footer><!- - #colophon - ->
+</div><!- - #page -->
 
 <?php wp_footer(); ?>
 

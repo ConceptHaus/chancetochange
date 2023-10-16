@@ -10,170 +10,203 @@
  */
 
  get_header();
-?>  <main role="main">
+?>  
+	<!-- Main -->
+  <div id="main">
+<!-- Banner -->
+<section id="banner" class="major">
+		<div class="inner">
+			<header class="major">
+				<h1>Be a challenger</h1>
+			</header>
+			<div class="content">
+				<p>Descubre la nueva manera<br/>de conocer nuevos destinos <br/>y retos con causa</p>
+			</div>
+		</div>
+	</section>
 
-<div class="container-fluid ml-0 mr-0 bannerPrin" style="background-image:url(<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/slider/sliderprin.png); background-size: cover; min-width: 100%;  min-height: 100vh;  background-repeat: no-repeat;" >
-  <div class="container">
-    <div class="contentTextBanner text-rigth">
-      <h1>Be a challenger</h1>
-      <hr class="hr_custom" />
-      <p>Descubre la nueva manera de conocer nuevos destinos y retos con causa</p>
+
+<!-- One -->
+<section id="one" class="info">
+  <div class="cont-section">
+
+    <div class="cont-cent text-cont">
+      <p class="text-prim">¡Únete a nosotros en estas aventuras y juntos dejaremos <span class="text-sec">nuestro mundo como un lugar mejor!</span></p>
+      <p class="text-bold">¿Por qué viajar con <br/>Chance to Challenge?</p>
     </div>
-  </div>
-</div>
-
-
-<div class="container content-unete">
-    <div class="row">
-        <div class="col-lg-12">
-            <h2>¡Únete a nosotros en estas aventuras y juntos dejaremos <span>nuestro mundo como un lugar mejor!</span></h2>
-        </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-12">
-          <h1>¿Por qué viajar con Chance to Challenge?</h1>
+    <div class="icons-conts">
+      <div class="cards">
+        <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/icon-map.png" alt="" srcset="">
+        <p><span>250+ </span>Aventuras completadas</p>
+      </div>
+      <div class="cards">
+        <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/icon-bot.png" alt="" srcset="">
+        <p><span>3,000+ </span>Challengers</p>
+      </div>
+      <div class="cards">
+        <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/icon-plan.png" alt="" srcset="">
+        <p><span>20+ <br> </span>Destinos</p>
       </div>
     </div>
-</div>
-
-<!-- Marketing messaging and featurettes
-================================================== -->
-<!-- Wrap the rest of the page in another container to center all the content. -->
-
-
-
-<div class="container  mt-5 pt-5 text-center">
-  <div class="row">
-    <div class="col-lg-4">
-      <img class="rounded-circle" src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/home/icon_aventuras.png" alt="Generic placeholder image" width="140" height="140">
-      <p><span class="orange">250+</span> Aventuras completadas</p>
-    </div><!-- /.col-lg-4 -->
-
-    <div class="col-lg-4">
-      <img class="rounded-circle" src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/home/icon_challengers.png" alt="Generic placeholder image" width="140" height="140">
-      <p><span class="orange">3,000+</span> Challengers</p>
-    </div><!-- /.col-lg-4 -->
-    
-    <div class="col-lg-4">
-      <img class="rounded-circle" src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/home/icon_destinos.png" alt="Generic placeholder image" width="140" height="140"> 
-      <p><span class="orange">20+</span> Destinos</p>
-    </div><!-- /.col-lg-4 -->
-  </div><!-- /.row --> 
-</div>
-
-<div class="container-fluid contentPilares mt-5 text-center">
-  <div class="row">
-    <div class="col-lg-12">
-      <h1>Nuestros Pilares</h1>
-    </div>
   </div>
-  <!-- Three columns of text below the carousel -->
-  <div class="row content-card">
-    <div class="col-lg-3">
-      <img class="rounded-circle" src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/home/icon_empower.png" alt="Generic placeholder image" width="140" height="140">
-      <h4>Empower</h4>
-      <span>Desafía tus límites</span>
-      <p>Ofrecemos una variedad de destinos y aventuras organizadas para que disfrutes de actividades al aire libre y conozcas destinos increíbles.</p>
-    </div><!-- /.col-lg-4 -->
+</section>
+<section id="sub-one" class="info2 info">
+  <div class="cont-section2  py-3 back">
 
-    <div class="col-lg-3">
-      <img class="rounded-circle" src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/home/icon_transform.png" alt="Generic placeholder image" width="140" height="140">
-      <h4>Transform</h4>
-      <span>Viaja por una causa</span>
-      <p>Viajando colaboras con una causa específica destinada a la ecología o impacto social en la comunidad del destino que visitarás.</p>
-    </div><!-- /.col-lg-4 -->
-
-    <div class="col-lg-3">
-      <img class="rounded-circle" src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/home/icon_heal.png" alt="Generic placeholder image" width="140" height="140">
-      <h4>Heal</h4>
-      <span>Conecta contigo</span>
-      <p>Viaja a destinos increíbles y libera tu espíritu salvaje. En tu aventura conocerás amigos nuevos y estarás siempre acompañado por una guía.</p>
-    </div><!-- /.col-lg-4 -->
-    
-  </div><!-- /.row -->
-
-</div>
-
-<div class="container content-porqueviajar">
-    <div class="row">
-        <div class="col-lg-12">
-            <h2>Porque viajar sin sentido...<br/><span>No tiene sentido</span></h2>
-        </div>
+    <div class="cont-cent text-cont">
+      <p class="text-bold py-2 mb-5">Nuestros Pilares</p>
     </div>
-    <div class="row">
-      <div class="col-lg-12">
-          <h1>¿Qué tipo de aventura estás buscando?</h1>
+    <div class="icons-conts">
+      <div class="cards-sec">
+        <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/icon-pino.png" alt="" srcset="">
+        <p>Empower</p>
+        <span>Desafía tus límites</span>
+        <p class="desc">Ofrecemos una variedad de destinos y aventuras organizadas para que disfrutes de actividades al aire libre y conozcas destinos increíbles.</p>
+      </div>
+      <div class="cards-sec">
+        <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/icon-trans.png" alt="" srcset="">
+        <p>Transform</p>
+        <span>Viaja por una causa</span>
+        <p class="desc">Viajando colaboras con una causa específica destinada a la ecología o impacto social en la comunidad del destino que visitarás.</p>
+      </div>
+      <div class="cards-sec">
+        <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/icon-heal.png" alt="" srcset="">
+        <p>Heal</p>
+        <span>Conecta contigo</span>
+        <p class="desc">Viaja a destinos increíbles y libera tu espíritu salvaje. En tu aventura conocerás amigos nuevos y estarás siempre acompañado por una guía.</p>
       </div>
     </div>
+  </div>
+</section>
+<section id="two" class="info my-4">
+  <div class="cont-section ">
+    <div class="cont-cent">
+      <p class="text-bold py-3 my-3">Porque viajar sin sentido... <br><span class="text-sec">No tiene sentido </span></p>
+    </div>
+    <div class="icons-conts">
+      <div class="cards-thr">
+        <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/fot-1.png" alt="" srcset="">
+        <div class="text-thr">
+          <p>Aventura con Challengers como tú</p>
+          <p class="des">Elige una de nuestras próximas fechas y súmate a la aventura</p>
+        </div>
+        <a href="#">Conocer más</a>
+      </div>
+      <div class="cards-thr">
+        <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/fot-2.png" alt="" srcset="">
+        <div class="text-thr">
+          <p>Aventura organizada especialmente para tu grupo</p>
+          <p class="des">Personalizada e ideal para grupos a partir de 8 personas</p>
+        </div>
+        <a href="#">Conocer más</a>
+      </div>
+      <div class="cards-thr">
+        <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/fot-3.png" alt="" srcset="">
+        <div class="text-thr">
+          <p>Aventuras enfocadas en team building empresarial</p>
+          <p class="des"> Conecta con la naturaleza y crea lazos inquebrantables</p>
+        </div>
+        <a href="#">Conocer más</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="sub-two" class="info2 info">
+  <div class="cont-section2  py-3 back">
+    <div class="cont-cent">
+      <p class="text-bold py-3 my3">Nuestro impacto</p>
+    </div>
+    <div class="icons-conts row">
+      <div class="col-1 d-flex align-items-center"><img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/right-arrow.png"></div>
+      <div class="cards-fou col-5">
+        <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/imp1.png" alt="" srcset="">
+        <div class="text-fou">
+          <p>FERNANDA</p>
+          <span>Viaje privado a Caminata Nevado a Valle</span>
+          <p class="des-fou">“Éramos un grupo de 9 personas y TODOS volveríamos a hacerla. ¡La ruta está padrísima! Nos tocó ver la mariposa monarca lo cual estuvo increíble. Los guías siempre al pendiente de nuestra seguridad y la del ecosistema. Llevé a mi perro y fue quien más lo disfrutó. Las cabañas rústicas pero acogedoras y la comida muy rica. Sin duda valió la pena, ya estoy planeando mi próxima experiencia con ellos. ¡Superaron mis expectativas!"</p>
+        </div>
+      </div>
+      <div class="cards-fou col-5">
+        <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/imp2.png" alt="" srcset="">
+        <div class="text-fou">
+          <p>CLAUDIO</p>
+          <span>Team building Empresarial Dinamos</span>
+          <p class="des-fou">“Recomiendo enormemente trabajar con Chance to Challenge. Para nuestro equipo fue una experiencia única que definitivamente volveríamos a hacer con C to C. La organización fue impecable y tuvimos la oportunidad de tener sesiones guiadas de team building y también espacio para trabajar por 
+            nuestra cuenta como equipo.”</p>
+        </div>
+      </div>
+      <div class="col-1 d-flex align-items-center"><img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/left-arrow.png"></div>
+    </div>
+  </div>
+</section>
+<section id="tr" class="info my-4">
+  <div class="cont-section w-100">
+    <div class="cont-cent">
+      <p class="text-bold py-3 my-3">Estas son<span class="text-sec"> nuestras causas</span></p>
+    </div>
+    <div class="d-flex justify-content-between w-100">
+      <div class="cards-fiv fiv-one">
+        <div class="text-fiv fiv-one--nohover">
+          <p>Bosques sustentables</p>          
+        </div>
+        <p class="fiv-one__hovertext" style="display:none;">Un uso sostenible de los bosques implica utilizarlos y cuidarlos de manera que se puedan satisfacer las necesidades y al mismo tiempo protegerlos para el futuro. Los métodos sostenibles no son los mismos en todos los lugares. Cada comunidad debe averiguar el más adecuado para sí misma y para la preservación del bosque. Apoyamos organizaciones que trabajan bajo este principio.
+</p>
+      </div>
+      <div class="cards-fiv fiv-two">
+        <div class="text-fiv fiv-two--nohover">
+          <p>Desarrollo de<br>comunidades sustentables</p>
+        </div>
+        <p class="fiv-two__hovertext" style="display:none;">Consideramos que un desarrollo económico ambientalmente sostenible es garantía de que, esforzándose por satisfacer la demanda actual, se dejará en patrimonio un ambiente sano y recursos naturales suficientes para hacer frente a las necesidades de generaciones futuras.
+</p>
+      </div>
+      <div class="cards-fiv fiv-tr">
+        <div class="text-fiv fiv-tr--nohover">
+          <p>Proyectos<br>hidrológicos</p>
+        </div>
+        <p class="fiv-tr__hovertext" style="display:none;">La protección de las reservas acuíferas disponibles en el planeta es entonces una acción que todos los países, gobiernos y comunidades deben procurar a fin de asegurar que esos cursos naturales de agua permitan la subsistencia no sólo del ser humano si no de cualquier forma de vida conocida.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="sub-one" class="info2 info">
+  <div class="cont-section2  py-3 back">
 
-    <div class="row content-card">
-    <div class="col-lg-3">
-      <img class="" src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/home/aventura_con_chaallengers.png" alt="Generic placeholder image" width="140" height="140">
-      <h4>Empower</h4>
-      <span>Desafía tus límites</span>
-      <p>Ofrecemos una variedad de destinos y aventuras organizadas para que disfrutes de actividades al aire libre y conozcas destinos increíbles.</p>
-    </div><!-- /.col-lg-4 -->
+    <div class="d-flex justify-content-between w-100">
+      <div class="w-40">
+        <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/contact.png" alt="" class="w-800 h-auto rounded-5">
+      </div>
+      <div class="w-50 px-3 d-flex flex-column form-cont">
+        <h3 class="text-bold py-2 mb-1">Nuestros Pilares</h3>
+        <p> Si tienes alguna duda o comentario, <br>
+        <span>escríbenos y pronto nos pondremos en contacto contigo.</span></p>
+        <form action="" method="post">
+          <!-- Campo para Nombre Completo -->
+          <div class="mb-3 sty-form">
+            <input type="text" class="form-control" id="name" placeholder="Nombre Completo*:">
+          </div>
 
-    <div class="col-lg-3">
-      <img class="" src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/home/aventura_organizada.png" alt="Generic placeholder image" width="140" height="140">
-      <h4>Transform</h4>
-      <span>Viaja por una causa</span>
-      <p>Viajando colaboras con una causa específica destinada a la ecología o impacto social en la comunidad del destino que visitarás.</p>
-    </div><!-- /.col-lg-4 -->
+          <!-- Campo para Correo Electrónico -->
+          <div class="mb-3 sty-form">
+            <input type="email" class="form-control" id="email" placeholder="Correo*:">
+          </div>
 
-    <div class="col-lg-3">
-      <img class="" src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/home/aventura_enfocada.png" alt="Generic placeholder image" width="140" height="140">
-      <h4>Heal</h4>
-      <span>Conecta contigo</span>
-      <p>Viaja a destinos increíbles y libera tu espíritu salvaje. En tu aventura conocerás amigos nuevos y estarás siempre acompañado por una guía.</p>
-    </div><!-- /.col-lg-4 -->
-    
-  </div><!-- /.row -->
+          <!-- Campo para Teléfono -->
+          <div class="mb-3 sty-form">
+            <input type="tel" class="form-control" id="phone" placeholder="Tel*:">
+          </div>
+
+          <!-- Campo para Mensaje -->
+          <div class="mb-3 sty-form">
+            <textarea class="form-control" id="message" placeholder="Dejar un mensaje:"></textarea>
+          </div>
+          <input type="submit" class="btn-env" value="Enviar">
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
 </div>
 
-  <!-- START THE FEATURETTES -->
-
-  <hr class="featurette-divider">
-
-  <div class="row featurette">
-    <div class="col-md-7">
-      <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-      <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-    </div>
-    <div class="col-md-5">
-      <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-    </div>
-  </div>
-
-  <hr class="featurette-divider">
-
-  <div class="row featurette">
-    <div class="col-md-7 order-md-2">
-      <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-      <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-    </div>
-    <div class="col-md-5 order-md-1">
-      <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-    </div>
-  </div>
-
-  <hr class="featurette-divider">
-
-  <div class="row featurette">
-    <div class="col-md-7">
-      <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-      <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-    </div>
-    <div class="col-md-5">
-      <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-    </div>
-  </div>
-
-  <hr class="featurette-divider">
-
-  <!-- /END THE FEATURETTES -->
-
-</div><!-- /.container -->
 
 <?php
 get_footer();

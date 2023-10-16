@@ -22,3 +22,37 @@
     }
   }
 }
+
+
+
+/* Footer */
+#footer{
+  background-color: var(--orange-c2c);
+}
+.foo-cont{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.contact-foo, .contact-foo a{
+  color: white;
+  font-size: 1rem;
+  font-family: 'Akzidenz-Grotesk BQ', sans-serif; 
+  font-weight: 500;
+  line-height: 2;
+  word-wrap: break-word;
+  list-style: none;
+  padding: 2rem 1.5rem;
+  text-decoration: none;
+}
+
+.contact-foo img{ height: 1.2rem; width: auto;}
+.aviso{
+  color: white;
+    font-size: .8rem;
+    font-family: 'Akzidenz-Grotesk BQ', sans-serif; 
+    font-weight: 500;
+    text-decoration: underline;
+    word-wrap: break-word
+}
+

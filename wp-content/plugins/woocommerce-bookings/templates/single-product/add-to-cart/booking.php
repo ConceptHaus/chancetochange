@@ -26,6 +26,7 @@ if ( ! $product->is_purchasable() ) {
 	return;
 }
 
+
 $nonce = wp_create_nonce( 'find-booked-day-blocks' );
 
 do_action( 'woocommerce_before_add_to_cart_form' ); ?>
@@ -58,3 +59,16 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 </form>
 
 <?php do_action( 'woocommerce_after_add_to_cart_form' ); ?>
+<?php
+/**
+ * Template name: Home
+ 
+ * Template part for displaying posts
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ *
+ * @package Change_to_challenge
+ */
+
+ get_header();
+?>  
