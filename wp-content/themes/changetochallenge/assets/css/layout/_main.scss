@@ -1,0 +1,125 @@
+/* ==|====================
+   Layout/Main
+   ======================= */
+
+main {
+  width: 100%; height: auto; position: relative; padding: 0; margin: 0; z-index: 3;
+  &.PageContainer {
+    min-height: 100vh; @include display(flex); @include flex-direction(column); @include flex-wrap(wrap);
+  }
+}
+article {
+  width: 100%; height: auto; padding: 0; margin: 0; position: relative;
+}
+
+/*==========================
+sección home
+============================*/
+.content-unete{
+  h2{ color: $blueC2C; 
+    span{ color: $orangeC2C;}
+  }
+}
+
+.bannerPrin{
+  text-align: right;
+  display: flex;
+  justify-content: end;
+  
+  .contentTextBanner{   
+    position: absolute; 
+    right: 0%;
+    top: 15%;
+    hr.hr_custom{
+      color: white;
+      height: 5px !important;
+      opacity: 1;
+    }
+    h1{
+      color: white;
+    }
+    p{
+      color: white;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.contentPilares{
+  padding-top: 4%;
+  background-color: $grayBgsC2C;
+  h1{
+    color: $blueC2C;
+  }
+  .content-card{
+    display: flex;
+    justify-content: center;
+    .col-lg-3{
+      -webkit-box-shadow: 5px 6px 5px 0px rgba(194,188,194,1);
+      -moz-box-shadow: 5px 6px 5px 0px rgba(194,188,194,1);
+      box-shadow: 5px 6px 5px 0px rgba(194,188,194,1);
+      width: 20%;
+      max-width: 20%;
+      margin: 2% 3%;
+      img{
+        width: 100px;
+      }
+      border-radius: 20px;
+      padding: 2%;
+      min-height: 400px;
+      height: 400px;
+      max-height: 400px;
+      background: white;
+
+      h4{
+        color: $blueC2C;
+      }
+      span{
+        color: $orangeC2C;
+      }
+      p{ 
+        margin-top: 5%;
+        color: $grayC2C;
+      }
+    }
+  }
+}
+
+.content-porqueviajar{
+  background-color: white;
+  padding-top: 4%;
+  .content-card{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    .col-lg-3{
+      -webkit-box-shadow: 5px 6px 5px 0px rgba(194,188,194,1);
+      -moz-box-shadow: 5px 6px 5px 0px rgba(194,188,194,1);
+      box-shadow: 5px 6px 5px 0px rgba(194,188,194,1);
+      width: 25%;
+      max-width: 25%;
+      margin: 2% 3%;
+      img{
+        width: 100%;
+        border-radius: 5px;
+      }
+      border-radius: 20px;
+      padding: 2%;
+      min-height: 400px;
+      height: 400px;
+      max-height: 400px;
+      background: white;
+
+      h4{
+        color: $blueC2C;
+      }
+      span{
+        color: $orangeC2C;
+      }
+      p{ 
+        margin-top: 5%;
+        color: $grayC2C;
+      }
+    }
+  }
+}
