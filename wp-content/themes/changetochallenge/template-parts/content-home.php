@@ -202,19 +202,26 @@
 
   </div>
 </section>
-<section id="tr" class="info my-4">
-  <div class="cont-section w-100">
-    <div class="cont-cent">
-      <p class="text-bold py-3 my-3">Estas son<span class="text-sec"> nuestras causas</span></p>
-    </div>
-    <div class="d-flex justify-content-between w-100">
-      <div class="cards-fiv fiv-one">
-        <div class="text-fiv fiv-one--nohover">
-          <p>Bosques sustentables</p>          
-        </div>
-        <p class="fiv-one__hovertext" style="display:none;">Un uso sostenible de los bosques implica utilizarlos y cuidarlos de manera que se puedan satisfacer las necesidades y al mismo tiempo protegerlos para el futuro. Los métodos sostenibles no son los mismos en todos los lugares. Cada comunidad debe averiguar el más adecuado para sí misma y para la preservación del bosque. Apoyamos organizaciones que trabajan bajo este principio.
-</p>
+
+
+<div class="container-fluid section-unete  causas pt-5 pb-5">    
+    <div class="row text-center">
+      <div class="col-sm-12" >
+        <p class="question"><strong>Estas son <span class="text-orange">nuestras causas</span></strong></p>
       </div>
+    </div>
+    
+    <div class="row d-flex justify-content-center text-center content-icon3">
+      <div class="col-sm-3" >
+      <div class="cards-fiv fiv-one">
+          <div class="text-fiv fiv-one--nohover">
+            <p>Bosques sustentables</p>          
+          </div>
+          <p class="fiv-one__hovertext" style="display:none;">Un uso sostenible de los bosques implica utilizarlos y cuidarlos de manera que se puedan satisfacer las necesidades y al mismo tiempo protegerlos para el futuro. 
+          Los métodos sostenibles no son los mismos en todos los lugares. Cada comunidad debe averiguar el más adecuado para sí misma y para la preservación del bosque. Apoyamos organizaciones que trabajan bajo este principio. </p>
+        </div>
+      </div>
+      <div class="col-sm-3" >
       <div class="cards-fiv fiv-two">
         <div class="text-fiv fiv-two--nohover">
           <p>Desarrollo de<br>comunidades sustentables</p>
@@ -222,15 +229,19 @@
         <p class="fiv-two__hovertext" style="display:none;">Consideramos que un desarrollo económico ambientalmente sostenible es garantía de que, esforzándose por satisfacer la demanda actual, se dejará en patrimonio un ambiente sano y recursos naturales suficientes para hacer frente a las necesidades de generaciones futuras.
 </p>
       </div>
+      </div>
+      <div class="col-sm-3" >
       <div class="cards-fiv fiv-tr">
         <div class="text-fiv fiv-tr--nohover">
           <p>Proyectos<br>hidrológicos</p>
         </div>
         <p class="fiv-tr__hovertext" style="display:none;">La protección de las reservas acuíferas disponibles en el planeta es entonces una acción que todos los países, gobiernos y comunidades deben procurar a fin de asegurar que esos cursos naturales de agua permitan la subsistencia no sólo del ser humano si no de cualquier forma de vida conocida.</p>
       </div>
+      </div>
     </div>
-  </div>
-</section>
+    <br>
+</div>
+
 <section id="sub-one" class="info2 info">
   <div class="cont-section2  py-3 back">
 
