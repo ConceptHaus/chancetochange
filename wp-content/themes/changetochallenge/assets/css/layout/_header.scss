@@ -322,3 +322,20 @@ body.is-menu-visible #menu .inner {
   opacity: 1;
   visibility: visible;
 }
+
+#submenu a{
+  color: #4E4E4E;
+  font-size: 1rem;
+  font-family: 'Akzidenz-Grotesk BQ', sans-serif; 
+  font-weight: 500;
+  word-wrap: break-word;
+  text-decoration: none;
+}
+
+nav a{
+  color: var(--Blue-C2C);
+  text-decoration: none;
+}
+.links-max a{
+  color: white;
+}

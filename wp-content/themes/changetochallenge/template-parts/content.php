@@ -10,6 +10,13 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
+
+<?php
+if(is_archive()){ 
+	el contenido del archivo o categoria 
+}
+else { ?>
 	<header class="entry-header">
 		<?php
 		if ( is_singular() ) :
@@ -35,4 +42,12 @@
 	<footer class="entry-footer">
 		<?php changetochallenge_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
+	<?php
+}
+?>
+
+
+
+
 </article><!-- #post-<?php the_ID(); ?> -->
+
