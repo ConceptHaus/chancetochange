@@ -437,7 +437,7 @@ input, select, textarea {
 		align-items: center;
 	}
 	.text-cont{
-		width: 50%;
+		width: 53%;
 		margin-top: 2.5rem;
 		
 	}
@@ -447,26 +447,18 @@ input, select, textarea {
 		flex-direction: column;
 	}
 	.text-prim{
-		font-size: 1.5rem;
+		font-size: 48px;
 		font-family: 'Akzidenz-Grotesk BQ', sans-serif; 
-		font-weight: 500;
+		font-weight: bold !important;
 		word-wrap: break-word;
 		color:var(--Blue-C2C);
 		text-align: center;
-		line-height: 1.4;
+		line-height: 1;
 	}
 	.text-sec{
 		color: var(--orange-c2c);
 	}
-	.text-bold{
-		color: var(--Blue-C2C);
-		font-size: 2rem;
-		font-family: 'Akzidenz-Grotesk BQ', sans-serif; 
-		font-weight: 700;
-		word-wrap: break-word;
-		line-height: 1.5;
-		text-align: center;
-	}
+	
 	.icons-conts{
 		display: flex;
 		justify-content: space-between;
@@ -474,6 +466,78 @@ input, select, textarea {
 	.back{
 		background: #F6F6F6;
 	}
+
+	.section-unete{
+		p.first-child{
+			margin-top: 3%;
+			font-size: 48px !important;
+			font-family: 'AkzidenzGroteskBQ-Bold', sans-serif; 
+			font-weight: bold !important;
+			word-wrap: break-word;
+			color:var(--Blue-C2C);
+			text-align: center;
+			line-height: 1;
+		}
+
+		
+	}
+
+	p.question{
+		color: var(--Blue-C2C);
+		font-size: 63px !important;
+		font-family: 'AkzidenzGroteskBQ-Bold', sans-serif; 
+		font-weight: 800 !important;
+		word-wrap: break-word;
+		line-height: 1;
+		text-align: center;
+	}
+	.text-orange{
+		color: $orangeC2C !important;
+	}
+
+	.content-icon3{
+		color: $grayC2C;
+		font-weight: bold;
+		font-size: 2rem;
+		text-align: center;
+		margin-top: 3%;
+		.col-sm-4{
+			max-width: 20%;
+		}
+		span{ 
+			color: $orangeC2C !important;
+			font-family: 'AkzidenzGroteskBQ-Italic', sans-serif;
+		}
+	}
+
+
+
+/*  section nuestros pilares */
+.section-pilares{
+	background-color: $grayBgsC2C;
+	.col-sm-3{
+		border-radius: 25px;		
+		padding: 3%;
+		margin: 0% 3%;
+		background-color: white;
+		-webkit-box-shadow: 10px 10px 17px -4px rgba(173,163,173,1);
+		-moz-box-shadow: 10px 10px 17px -4px rgba(173,163,173,1);
+		box-shadow: 10px 10px 17px -4px rgba(173,163,173,1);
+		max-width: 20%;
+		p.desc{
+			font-size: 16px;
+			font-family: 'Akzidenz-Grotesk BQ', sans-serif; 
+			font-weight: 200;
+		}
+		span{
+			font-size: 24px;
+			font-family: 'Akzidenz-Grotesk BQ', sans-serif; 
+		}
+	}
+}
+/* end section nuestros pilares*/
+
+
 	.cards{
 		max-width: 25%;
 		display: flex;
@@ -682,15 +746,17 @@ input, select, textarea {
       font-size: 18px !important;
     }
 	}
+
+	/*two__hovertext*/
 	.fiv-two{
     
 		background-image: url('../img/images/five-2.png');
     &:hover{
       background-image: url('../img/images/five-2_hover.png');
-      &__hovertext{
-        display: block;
+	  .fiv-two__hovertext{
+        display: block !important;
       }
-      &--nohover{
+      .fiv-two--nohover{
         display: none;
       }
     }
@@ -702,16 +768,17 @@ input, select, textarea {
       font-family: $Akzidenz;
       font-size: 18px !important;
     }
+   
 	}
 	.fiv-tr{
     
 		background-image: url('../img/images/five-3.png');
     &:hover{
       background-image: url('../img/images/five-3_hover.png');
-      &__hovertext{
-        display: block;
+      .fiv-tr__hovertext{
+        display: block !important;
       }
-      &--nohover{
+      .fiv-tr--nohover{
         display: none;
       }
     }

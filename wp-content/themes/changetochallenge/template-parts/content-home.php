@@ -11,8 +11,6 @@
 
  get_header();
 ?>  
-	<!-- Main -->
-  <div id="main">
 <!-- Banner -->
 <section id="banner" class="major">
 		<div class="inner">
@@ -24,64 +22,108 @@
 			</div>
 		</div>
 	</section>
+	<!-- Main -->
+  <div id="main">
+
 
 
 <!-- One -->
-<section id="one" class="info">
-  <div class="cont-section">
 
-    <div class="cont-cent text-cont">
-      <p class="text-prim">¡Únete a nosotros en estas aventuras y juntos dejaremos <span class="text-sec">nuestro mundo como un lugar mejor!</span></p>
-      <p class="text-bold">¿Por qué viajar con <br/>Chance to Challenge?</p>
-    </div>
-    <div class="icons-conts">
-      <div class="cards">
-        <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/icon-map.png" alt="" srcset="">
-        <p><span>250+ </span>Aventuras completadas</p>
-      </div>
-      <div class="cards">
-        <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/icon-bot.png" alt="" srcset="">
-        <p><span>3,000+ </span>Challengers</p>
-      </div>
-      <div class="cards">
-        <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/icon-plan.png" alt="" srcset="">
-        <p><span>20+ <br> </span>Destinos</p>
+<div class="container-fluid section-unete">
+    <!-- Control the column width, and how they should appear on different devices -->
+    <div class="row text-center  d-flex justify-content-center mt-5">
+      <div class="col-sm-6" >
+      <p class="first-child">¡Únete a nosotros en estas aventuras y juntos dejaremos <span class="text-orange">nuestro mundo como un lugar mejor!</span></p>
       </div>
     </div>
-  </div>
-</section>
-<section id="sub-one" class="info2 info">
-  <div class="cont-section2  py-3 back">
+    <div class="row text-center mt-5">
+      <div class="col-sm-12" >
+        <p class="question"><strong>¿Por qué viajar con <br/>Chance to Challenge?</strong></p>
+      </div>
+    </div>
+    <br>
+    
+    <div class="row d-flex justify-content-center text-center content-icon3">
+      <div class="col-sm-4" >
+      <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/icon-map.png" alt="" srcset="">
+      <p><span>250+ </span>Aventuras<br /> completadas</p>
+      </div>
+      <div class="col-sm-4" >
+      <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/icon-bot.png" alt="" srcset="">
+          <p><span>3,000+ <br /></span>Challengers</p>
+      </div>
+      <div class="col-sm-4" >
+      <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/icon-plan.png" alt="" srcset="">
+          <p><span>20+ <br> </span>Destinos</p>
+      </div>
+    </div>
+    <br>
+</div>
+   
 
-    <div class="cont-cent text-cont">
-      <p class="text-bold py-2 mb-5">Nuestros Pilares</p>
+<div class="container-fluid section-pilares pt-5 pb-5">    
+    <div class="row text-center">
+      <div class="col-sm-12" >
+        <p class="question"><strong>Nuestros Pilares</strong></p>
+      </div>
     </div>
-    <div class="icons-conts">
-      <div class="cards-sec">
+    <div class="row d-flex justify-content-center text-center content-icon3">
+      <div class="col-sm-3" >
         <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/icon-pino.png" alt="" srcset="">
-        <p>Empower</p>
-        <span>Desafía tus límites</span>
-        <p class="desc">Ofrecemos una variedad de destinos y aventuras organizadas para que disfrutes de actividades al aire libre y conozcas destinos increíbles.</p>
+          <p>Empower</p>
+          <span>Desafía tus límites</span>
+          <p class="desc">Ofrecemos una variedad de destinos y aventuras organizadas para que disfrutes de actividades al aire libre y conozcas destinos increíbles.</p>
       </div>
-      <div class="cards-sec">
-        <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/icon-trans.png" alt="" srcset="">
+      <div class="col-sm-3" >
+      <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/icon-trans.png" alt="" srcset="">
         <p>Transform</p>
         <span>Viaja por una causa</span>
         <p class="desc">Viajando colaboras con una causa específica destinada a la ecología o impacto social en la comunidad del destino que visitarás.</p>
       </div>
-      <div class="cards-sec">
-        <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/icon-heal.png" alt="" srcset="">
+      <div class="col-sm-3" >
+      <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/icon-heal.png" alt="" srcset="">
         <p>Heal</p>
         <span>Conecta contigo</span>
         <p class="desc">Viaja a destinos increíbles y libera tu espíritu salvaje. En tu aventura conocerás amigos nuevos y estarás siempre acompañado por una guía.</p>
       </div>
     </div>
-  </div>
-</section>
+    <br>
+</div>
+
+<div class="container-fluid section-pilares pt-5 pb-5">    
+    <div class="row text-center">
+      <div class="col-sm-12" >
+        <p class="question"><strong>Porque viajar sin sentido... <br><span class="text-orange">No tiene sentido </span></strong></p>
+      </div>
+    </div>
+    <div class="row d-flex justify-content-center text-center content-icon3">
+      <div class="col-sm-3" >
+        <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/icon-pino.png" alt="" srcset="">
+          <p>Empower</p>
+          <span>Desafía tus límites</span>
+          <p class="desc">Ofrecemos una variedad de destinos y aventuras organizadas para que disfrutes de actividades al aire libre y conozcas destinos increíbles.</p>
+      </div>
+      <div class="col-sm-3" >
+      <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/icon-trans.png" alt="" srcset="">
+        <p>Transform</p>
+        <span>Viaja por una causa</span>
+        <p class="desc">Viajando colaboras con una causa específica destinada a la ecología o impacto social en la comunidad del destino que visitarás.</p>
+      </div>
+      <div class="col-sm-3" >
+      <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/icon-heal.png" alt="" srcset="">
+        <p>Heal</p>
+        <span>Conecta contigo</span>
+        <p class="desc">Viaja a destinos increíbles y libera tu espíritu salvaje. En tu aventura conocerás amigos nuevos y estarás siempre acompañado por una guía.</p>
+      </div>
+    </div>
+    <br>
+</div>
+ 
+    
 <section id="two" class="info my-4">
   <div class="cont-section ">
     <div class="cont-cent">
-      <p class="text-bold py-3 my-3">Porque viajar sin sentido... <br><span class="text-sec">No tiene sentido </span></p>
+      <p class="text-bold py-3 my-3"></p>
     </div>
     <div class="icons-conts">
       <div class="cards-thr">

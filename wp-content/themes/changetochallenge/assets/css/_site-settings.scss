@@ -15,8 +15,12 @@ $fontR: '../fonts/';
 @include font-face("bold", "#{$fontR}helvetica/HelveticaNeueBold", $file-formats: woff);
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
-@include font-face ("Akzidenz-Grotesk BQ", #{$fontR}'webfonts/AkzidenzGroteskBQ-Reg', $file-formats : ttf); 
-@include font-face ("Roboto", #{$fontR}'webfonts/Roboto-Regular', $file-formats : ttf); 
+@include font-face ("Akzidenz-Grotesk BQ", "#{$fontR}akzidenz-grotesk-bq-regular", $file-formats : woff); 
+@include font-face ("Roboto", "#{$fontR}webfonts/Roboto-Regular", $file-formats : ttf); 
+@include font-face ("AkzidenzGroteskBQ-Bold", "#{$fontR}AkzidenzGroteskBQ-Bold", $file-formats : woff); 
+@include font-face ("AkzidenzGroteskBQ-Italic", "#{$fontR}AkzidenzGroteskBQ-Italic", $file-formats : woff); 
+
+
 
 
 
@@ -26,6 +30,8 @@ $hmedium: 'medium', sans-serif;
 $hbold: 'bold', sans-serif;
 $roboto: 'Roboto', sans-serif;
 $Akzidenz: 'Akzidenz-Grotesk BQ', sans-serif;
+$Akzidenz-bold: 'AkzidenzGroteskBQ-Bold', sans-serif;
+$Akzidenz-italic: 'AkzidenzGroteskBQ-Italic', sans-serif;
 
 // = Colors
 // -----------------------------

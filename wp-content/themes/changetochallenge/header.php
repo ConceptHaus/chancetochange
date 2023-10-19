@@ -18,12 +18,36 @@
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
 	<link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(''); ?>favicon.ico">
-	<link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(''); ?>favicon.ico">
-	<link rel="shortcut icon" type="image/x-icon" href="<?php echo get_template_directory_uri(''); ?>favicon.ico">
+	
+	<link rel="apple-touch-icon" sizes="57x57" href="<?php echo get_template_directory_uri(''); ?>/assets/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="<?php echo get_template_directory_uri(''); ?>/assets/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="<?php echo get_template_directory_uri(''); ?>/assets/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="<?php echo get_template_directory_uri(''); ?>/assets/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="<?php echo get_template_directory_uri(''); ?>/assets/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="<?php echo get_template_directory_uri(''); ?>/assets/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="<?php echo get_template_directory_uri(''); ?>/assets/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="<?php echo get_template_directory_uri(''); ?>/assets/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_template_directory_uri(''); ?>/assets/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="<?php echo get_template_directory_uri(''); ?>/assets/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="<?php echo get_template_directory_uri(''); ?>/assets/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="<?php echo get_template_directory_uri(''); ?>/assets/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="<?php echo get_template_directory_uri(''); ?>/assets/favicon/favicon-16x16.png">
+	<link rel="manifest" href="<?php echo get_template_directory_uri(''); ?>/assets/favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(''); ?>/assets/favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
 
 	<?php wp_head(); ?>
-	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>assets/vendor/jquery/dist/jquery.min.js"></script>
-  <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>assets/js/vendor/modernizr-2.8.3.min.js"></script>
+
+	<!-- Scripts -->
+	<script src="<?php echo get_template_directory_uri(''); ?>/assets/js/jquery.min.js"></script>
+	<script src="<?php echo get_template_directory_uri(''); ?>/assets/js/jquery.scrolly.min.js"></script>
+	<script src="<?php echo get_template_directory_uri(''); ?>/assets/js/jquery.scrollex.min.js"></script>
+	<script src="<?php echo get_template_directory_uri(''); ?>/assets/js/browser.min.js"></script>
+	<script src="<?php echo get_template_directory_uri(''); ?>/assets/js/breakpoints.min.js"></script>
+	<script src="<?php echo get_template_directory_uri(''); ?>/assets/js/util.js"></script>
+	<script src="<?php echo get_template_directory_uri(''); ?>/assets/js/main.js"></script>
+	<script src="<?php echo get_template_directory_uri(''); ?>/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
 	<script>var siteURL = '<?php echo get_site_url(); ?>';</script>
 </head>
 <body class="is-preload">
@@ -31,7 +55,7 @@
 <!-- Wrapper -->
 	<div id="wrapper">
 
-<!--
+
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'changetochallenge' ); ?></a>
 
@@ -53,7 +77,7 @@
 				?>
 				<p class="site-description"><?php echo $changetochallenge_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
 			<?php endif; ?>
-		</div><!- - .site-branding  - ->
+		</div><!-- .site-branding  -->
 
 		<nav id="site-navigation" class="main-navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'changetochallenge' ); ?></button>
@@ -65,8 +89,8 @@
 				)
 			);
 			?>
-		</nav><!- - #site-navigation - ->
-	</header><!-  - #masthead -->
+		</nav><!-- #site-navigation -->
+	</header><!-- #masthead -->
 
 	
 		<!-- Header -->
@@ -75,37 +99,37 @@
 			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo logo-mob"><img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/header/C2C-B-blanco-mob.png" alt=""></a>
 			<nav>
 				<ul class="links-max">
-					<li><a href="index.html" class="cont-ave">Tipos de<br>aventura<img src="images/right-arrow-icon.png" alt=""></a> </li>
+					<li><a href="index.html" class="cont-ave">Tipos de<br>aventura<img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/right-arrow-icon.png" alt=""></a> </li>
 					<li><a href="landing.html">Tienda</a></li>
 					<li><a href="generic.html">Es/EN</a></li>
 				</ul>
 				<nav class="menu-min">
-					<a href="#menu"><img src="images/menu.png" alt="menu"></a>
+					<a href="#menu"><img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/menu.png" alt="menu"></a>
 				</nav>
 			</nav>
 
 		</header>
 		<nav id="menu">
-			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo"><img src="images/C2C-blue-RGB.png" class="logo-mob" alt=""></a>
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo"><img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/C2C-blue-RGB.png" class="logo-mob" alt=""></a>
 			<ul class="links">
 				<li class="links-mob">Tipos de aventura</li>
 				<li>
-					<a href="#submenu" class="arrow no-cerrar-menu" data-toggle="submenu"><img src="images/right-arrow-icon-27 3.png" alt=""></a>
+					<a href="#submenu" class="arrow no-cerrar-menu" data-toggle="submenu"><img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/right-arrow-icon-27 3.png" alt=""></a>
 						<ul id="submenu">
 							<li><a href="#">Grupo ambierto</a></li>
 							<li><a href="#">Grupo cerrado</a></li>
 							<li><a href="#">Building empresarial</a></li>
 						</ul>
 				</li>
-				<li><a class="links-mob" href="landing.html">Tienda</a></li>
+				<li><a class="links-mob" href="#">Tienda</a></li>
 				</ul>
 				<ul class="contact">
 				<li>Escríbenos en:</li>
-				<li><img src="images/icon-whatsapp.svg" alt="" srcset=""><a href="http://"> 55 7358 6711</a></li>
-				<li><img src="images/icon-mail.svg" alt="" srcset=""><a href="mailto:info@chancetochallenge.com"> info@chancetochallenge.com</a></li>
+				<li><img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/icon-whatsapp.svg" alt="" srcset=""><a href="http://"> 55 7358 6711</a></li>
+				<li><img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/icon-mail.svg" alt="" srcset=""><a href="mailto:info@chancetochallenge.com"> info@chancetochallenge.com</a></li>
 				<li>Síguenos en:</li>
 				<li>
-					<a href="http://"><img src="images/group_sm.svg" alt="" srcset=""></a>
+					<a href="#"><img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/group_sm.svg" alt="" srcset=""></a>
 				</li>
 				</ul>
 			</nav>

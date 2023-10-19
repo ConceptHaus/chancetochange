@@ -32,13 +32,25 @@
   font-family: "Akzidenz-Grotesk BQ";
   font-style: normal;
   font-weight: normal;
-  src: url("../fonts/ webfonts/AkzidenzGroteskBQ-Reg.ttf") format("truetype");
+  src: url("../fonts/akzidenz-grotesk-bq-regular.woff") format("woff");
 }
 @font-face {
   font-family: "Roboto";
   font-style: normal;
   font-weight: normal;
-  src: url("../fonts/ webfonts/Roboto-Regular.ttf") format("truetype");
+  src: url("../fonts/webfonts/Roboto-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "AkzidenzGroteskBQ-Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/AkzidenzGroteskBQ-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "AkzidenzGroteskBQ-Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/AkzidenzGroteskBQ-Italic.woff") format("woff");
 }
 .overlayClass, .overProgress, .overlayGenerico {
   width: 100%;
@@ -1433,7 +1445,7 @@ body.is-ie header.major > h1:after {
 }
 
 .text-cont {
-  width: 50%;
+  width: 53%;
   margin-top: 2.5rem;
 }
 
@@ -1451,27 +1463,17 @@ body.is-ie header.major > h1:after {
 }
 
 .text-prim {
-  font-size: 1.5rem;
+  font-size: 48px;
   font-family: "Akzidenz-Grotesk BQ", sans-serif;
-  font-weight: 500;
+  font-weight: bold !important;
   word-wrap: break-word;
   color: var(--Blue-C2C);
   text-align: center;
-  line-height: 1.4;
+  line-height: 1;
 }
 
 .text-sec {
   color: var(--orange-c2c);
-}
-
-.text-bold {
-  color: var(--Blue-C2C);
-  font-size: 2rem;
-  font-family: "Akzidenz-Grotesk BQ", sans-serif;
-  font-weight: 700;
-  word-wrap: break-word;
-  line-height: 1.5;
-  text-align: center;
 }
 
 .icons-conts {
@@ -1487,6 +1489,70 @@ body.is-ie header.major > h1:after {
   background: #F6F6F6;
 }
 
+.section-unete p.first-child {
+  margin-top: 3%;
+  font-size: 48px !important;
+  font-family: "AkzidenzGroteskBQ-Bold", sans-serif;
+  font-weight: bold !important;
+  word-wrap: break-word;
+  color: var(--Blue-C2C);
+  text-align: center;
+  line-height: 1;
+}
+
+p.question {
+  color: var(--Blue-C2C);
+  font-size: 63px !important;
+  font-family: "AkzidenzGroteskBQ-Bold", sans-serif;
+  font-weight: 800 !important;
+  word-wrap: break-word;
+  line-height: 1;
+  text-align: center;
+}
+
+.text-orange {
+  color: #FF6900 !important;
+}
+
+.content-icon3 {
+  color: #4E4E4E;
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 3%;
+}
+.content-icon3 .col-sm-4 {
+  max-width: 20%;
+}
+.content-icon3 span {
+  color: #FF6900 !important;
+  font-family: "AkzidenzGroteskBQ-Italic", sans-serif;
+}
+
+/*  section nuestros pilares */
+.section-pilares {
+  background-color: #F6F6F6;
+}
+.section-pilares .col-sm-3 {
+  border-radius: 25px;
+  padding: 3%;
+  margin: 0% 3%;
+  background-color: white;
+  -webkit-box-shadow: 10px 10px 17px -4px rgb(173, 163, 173);
+  box-shadow: 10px 10px 17px -4px rgb(173, 163, 173);
+  max-width: 20%;
+}
+.section-pilares .col-sm-3 p.desc {
+  font-size: 16px;
+  font-family: "Akzidenz-Grotesk BQ", sans-serif;
+  font-weight: 200;
+}
+.section-pilares .col-sm-3 span {
+  font-size: 24px;
+  font-family: "Akzidenz-Grotesk BQ", sans-serif;
+}
+
+/* end section nuestros pilares*/
 .cards {
   max-width: 25%;
   display: -webkit-box;
@@ -1781,16 +1847,17 @@ body.is-ie header.major > h1:after {
   font-size: 18px !important;
 }
 
+/*two__hovertext*/
 .fiv-two {
   background-image: url("../img/images/five-2.png");
 }
 .fiv-two:hover {
   background-image: url("../img/images/five-2_hover.png");
 }
-.fiv-two:hover__hovertext {
-  display: block;
+.fiv-two:hover .fiv-two__hovertext {
+  display: block !important;
 }
-.fiv-two:hover--nohover {
+.fiv-two:hover .fiv-two--nohover {
   display: none;
 }
 .fiv-two__hovertext {
@@ -1808,10 +1875,10 @@ body.is-ie header.major > h1:after {
 .fiv-tr:hover {
   background-image: url("../img/images/five-3_hover.png");
 }
-.fiv-tr:hover__hovertext {
-  display: block;
+.fiv-tr:hover .fiv-tr__hovertext {
+  display: block !important;
 }
-.fiv-tr:hover--nohover {
+.fiv-tr:hover .fiv-tr--nohover {
   display: none;
 }
 .fiv-tr__hovertext {
