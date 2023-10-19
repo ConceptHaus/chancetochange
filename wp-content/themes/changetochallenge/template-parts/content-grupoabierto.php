@@ -25,8 +25,8 @@
 
 				<!-- Main -->
 					<div id="main">
-						<section id="sub-one" class="info2 info mt-3 pt-5">
-							<div class="cont-section2  py-3 gen-cont botoneraTiposAventuras">
+						<section id="sub-one" class="info2 info mt-3 pt-5 pb-3">
+							<div class="container  py-3 gen-cont botoneraTiposAventuras">
 								<div><a href="<?php echo esc_url( "/grupo-abierto" ); ?>" class="gen-btn active">Aventura abierta</a></div>
 								<div><a href="<?php echo esc_url( "/grupo-cerrado" ); ?>" class="gen-btn">Aventura privada</a></div>
 								<div><a href="<?php echo esc_url( "/empresarial" ); ?>" class="gen-btn">Aventura empresarial</a></div>

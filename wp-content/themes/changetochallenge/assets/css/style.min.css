@@ -1393,15 +1393,79 @@ body.is-ie header.major > h1:after {
   display: flex;
   padding: 4rem 0 2rem 0;
   background-attachment: fixed;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   border-bottom: 0 !important;
   cursor: default;
   height: 60vh;
   margin-bottom: -3.25rem;
   max-height: 32rem;
   min-height: 22rem;
+}
+
+#bannerTiposAventurasCerrado {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 4rem 0 2rem 0;
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-bottom: 0 !important;
+  cursor: default;
+  height: 60vh;
+  margin-bottom: -3.25rem;
+  max-height: 42rem;
+  min-height: 22rem;
+  background-image: url("../img/slider/banner-cerrado.png");
+}
+#bannerTiposAventurasCerrado p {
+  color: white;
+  font-family: "Akzidenz-Grotesk BQ", sans-serif;
+  font-weight: bold;
+}
+#bannerTiposAventurasCerrado p:nth-child(1) {
+  font-size: 54px;
+}
+#bannerTiposAventurasCerrado p:nth-child(2) {
+  font-size: 70px;
+}
+
+#bannerTiposAventurasEmpresarial {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 4rem 0 2rem 0;
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-bottom: 0 !important;
+  cursor: default;
+  height: 60vh;
+  margin-bottom: -3.25rem;
+  max-height: 42rem;
+  min-height: 22rem;
+  background-image: url("../img/slider/banner-empresarial.png");
+}
+#bannerTiposAventurasEmpresarial p {
+  color: white;
+  font-family: "Akzidenz-Grotesk BQ", sans-serif;
+  font-weight: bold;
+}
+#bannerTiposAventurasEmpresarial p:nth-child(1) {
+  font-size: 54px;
+}
+#bannerTiposAventurasEmpresarial p:nth-child(2) {
+  font-size: 70px;
 }
 
 #banner .inner {
@@ -1540,6 +1604,10 @@ body.is-ie header.major > h1:after {
 }
 .section-unete p.carouselAventuras {
   font-size: 64px !important;
+}
+.section-unete p.carouselAventuras.cerrado {
+  font-size: 64px;
+  font-weight: lighter;
 }
 
 p.question {
@@ -2376,6 +2444,9 @@ body.is-preload #banner > .inner {
   font-family: "Akzidenz-Grotesk BQ", sans-serif;
   text-decoration: none;
 }
+.botoneraTiposAventuras a:visited {
+  color: white !important;
+}
 .botoneraTiposAventuras hr {
   height: 3% !important;
   opacity: inherit !important;
@@ -2412,17 +2483,17 @@ body.is-preload #banner > .inner {
 }
 
 /** loop productos */
-.loopProductos {
+.loopProductos, .content-form {
   background-color: #F6F6F6;
 }
-.loopProductos .content-img {
+.loopProductos .content-img, .content-form .content-img {
   text-align: start;
 }
-.loopProductos .content-img.second {
+.loopProductos .content-img.second, .content-form .content-img.second {
   text-align: end;
   vertical-align: middle;
 }
-.loopProductos h3 {
+.loopProductos h3, .content-form h3 {
   color: var(--Blue-C2C);
   font-size: 48px;
   font-family: "AkzidenzGroteskBQ-Bold", sans-serif;
@@ -2430,28 +2501,35 @@ body.is-preload #banner > .inner {
   word-wrap: break-word;
   text-align: left;
 }
-.loopProductos p.descriptionProduct {
+.loopProductos p.descriptionProduct, .content-form p.descriptionProduct {
   font-size: 16px;
   font-family: "Akzidenz-Grotesk BQ", sans-serif;
   font-weight: lighter;
   word-wrap: break-word;
   text-align: left;
 }
-.loopProductos .listProduct {
+.loopProductos p.descriptionProduct.contacto, .content-form p.descriptionProduct.contacto {
+  font-size: 34px;
+}
+.loopProductos p.descriptionProduct.contacto span, .content-form p.descriptionProduct.contacto span {
+  font-family: "Akzidenz-Grotesk BQ", sans-serif;
+  font-weight: bold;
+}
+.loopProductos .listProduct, .content-form .listProduct {
   color: #7B7B7B;
   list-style: none;
   text-align: left;
   font-size: 24px;
   font-weight: bold;
 }
-.loopProductos .listProduct li {
+.loopProductos .listProduct li, .content-form .listProduct li {
   border-bottom: 2px solid #FF6900;
   padding: 1% 0%;
 }
-.loopProductos .listProduct li:last-child {
+.loopProductos .listProduct li:last-child, .content-form .listProduct li:last-child {
   border: none;
 }
-.loopProductos a.btnReservar {
+.loopProductos a.btnReservar, .content-form a.btnReservar {
   margin-top: 4%;
   background-color: #1D3A6B !important;
   text-decoration: none;
@@ -2462,10 +2540,10 @@ body.is-preload #banner > .inner {
   font-size: 20px;
   font-family: "AkzidenzGrotesk BQ", sans-serif;
 }
-.loopProductos a.btnReservar:visited {
+.loopProductos a.btnReservar:visited, .content-form a.btnReservar:visited {
   color: white;
 }
-.loopProductos.Bgswhite {
+.loopProductos.Bgswhite, .content-form.Bgswhite {
   background-color: white;
 }
 
@@ -2475,6 +2553,86 @@ body.is-preload #banner > .inner {
 
 /*   end loop productos*/
 /* end grupo abierto */
+/* empresarial */
+.contEmpresas .col-sm-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  vertical-align: middle;
+}
+.contEmpresas .col-sm-3 img {
+  margin: 3% 3%;
+}
+
+.content-form {
+  background-color: #F6F6F6;
+}
+.content-form form input, .content-form form textarea {
+  border: 1px solid #8AB5D4;
+  color: #4E4E4E;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  border-radius: 18px;
+  -webkit-box-shadow: inherit;
+          box-shadow: inherit;
+  margin: 3% 0%;
+}
+.content-form form input:focus, .content-form form textarea:focus {
+  border: 1px solid #FF6900 !important;
+  -webkit-box-shadow: 5px 6px 5px 0px rgb(194, 188, 194);
+  box-shadow: 5px 6px 5px 0px rgb(194, 188, 194);
+  -webkit-transition: 100ms linear;
+  transition: 100ms linear;
+}
+.content-form form input::-webkit-input-placeholder, .content-form form textarea::-webkit-input-placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+.content-form form input::-moz-placeholder, .content-form form textarea::-moz-placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+.content-form form input:-ms-input-placeholder, .content-form form textarea:-ms-input-placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+.content-form form input::-ms-input-placeholder, .content-form form textarea::-ms-input-placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+.content-form form input::placeholder, .content-form form textarea::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+.content-form form input.w-30, .content-form form textarea.w-30 {
+  width: 10%;
+  float: left;
+  margin: 0% 2%;
+  height: 40px;
+}
+.content-form form input.ultimo, .content-form form textarea.ultimo {
+  float: inherit;
+}
+.content-form form .btnSubmit {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #1D3A6B;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 23px;
+  padding: 3% 10%;
+  border-radius: 23px;
+}
+.content-form form span.datecustomField {
+  font-size: 16px;
+  font-family: "AkzidenzGrotesk BQ", sans-serif;
+  color: #4E4E4E !important;
+  font-weight: lighter;
+}
+
+/* end empresarial */
 /* ==|====================
    Layout/Footer
    ======================= */
