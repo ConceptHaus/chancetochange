@@ -510,6 +510,96 @@ input, select, textarea {
 		}
 	}
 
+	.buscando{
+		p.question2{
+			color: var(--Blue-C2C);
+			font-size: 48px !important;
+			font-family: 'AkzidenzGroteskBQ-Bold', sans-serif; 
+			font-weight: 800 !important;
+			word-wrap: break-word;
+			line-height: 1;
+			text-align: center;
+		}
+		.col-sm-3{
+			background-color: $grayBgsC2C;
+			border: 1px solid $lighBlueC2C;
+			border-radius: 40px;
+			padding: 3%;
+			margin: 0% 3%;
+			text-align: center;
+			max-width: 20% !important;
+			
+			&:nth-child(1){
+				&:hover{
+					background-image: url('../img/images/fot-1_hover.png');
+					background-repeat: no-repeat;
+					background-size: cover;
+				}
+			}
+
+			&:nth-child(2){
+				&:hover{
+					background-image: url('../img/images/fot-2_hover.png');
+				background-repeat: no-repeat;
+				background-size: cover;
+				}
+			}
+
+			&:nth-child(3){
+				&:hover{
+					background-image: url('../img/images/fot-3_hover.png');
+				background-repeat: no-repeat;
+				background-size: cover;
+				}
+			}
+			&:hover{
+				img{
+					display: none !important;
+				}
+				.text-thr{
+					p{
+						color: white !important;
+					}
+				}
+			}
+
+			.text-thr{
+				p{
+					font-family: 'Roboto', sans-serif;
+					font-weight: lighter;
+				}
+				&:nth-child(1){
+					font-size: 24px;
+				}
+				&:nth-child(2){
+					font-size: 20px;
+				}
+			}
+
+			img{ 
+				border-radius: 25px;
+				width: 100%;
+			}
+
+			a{
+				border-radius: 25px;
+				background-color: $blueC2C;
+				color: white !important;
+				text-decoration: none;
+				padding: 2% 6%;
+				font-size: 20px;
+				font-family: 'Roboto', sans-serif;
+				margin-top: 3% !important;
+				&:hover{
+					cursor: pointer;
+					background-color: $orangeC2C;
+					color: white !important;
+				}
+			}
+
+
+		}
+	}
 
 
 /*  section nuestros pilares */
@@ -654,9 +744,6 @@ input, select, textarea {
 		border-radius: 15px;
 		padding: 0;
 		margin: 1rem 0;
-	}
-	.text-thr{
-		width: 80%;
 	}
 	.cards-thr .des{
 		color: var(--gray-c2c);

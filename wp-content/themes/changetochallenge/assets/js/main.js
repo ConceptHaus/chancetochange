@@ -321,7 +321,16 @@
 			e.preventDefault();
 			e.stopPropagation();
 		});
+
+		$(".cont-ave-desktop").click(function(e) {
+			e.preventDefault();
+			e.stopPropagation();
+			$menu._toggle();
+		});
+
 	});
 	
+
+
 	
 })(jQuery);

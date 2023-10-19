@@ -98,11 +98,11 @@
 			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo logo1"><img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/header/C2C-blanco-RGB 1.png" alt=""></a>
 			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo logo-mob"><img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/header/C2C-B-blanco-mob.png" alt=""></a>
 			<nav>
-				<ul class="links-max">
-					<li><a href="index.html" class="cont-ave">Tipos de<br>aventura<img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/right-arrow-icon.png" alt=""></a> </li>
-					<li><a href="landing.html">Tienda</a></li>
-					<li><a href="generic.html">Es/EN</a></li>
-				</ul>
+			<ul class="links-max">
+						<li><a href="#" class="cont-ave cont-ave-desktop">Tipos de<br>aventura<img src="images/right-arrow-icon.png" alt=""></a> </li>
+						<li><a href="#">Tienda</a></li>
+						<li><a href="#">Es/EN</a></li>
+					</ul>
 				<nav class="menu-min">
 					<a href="#menu"><img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/menu.png" alt="menu"></a>
 				</nav>
