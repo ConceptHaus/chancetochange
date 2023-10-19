@@ -137,27 +137,69 @@
     <div class="cont-cent">
       <p class="text-bold py-3 my3">Nuestro impacto</p>
     </div>
-    <div class="icons-conts row">
-      <div class="col-1 d-flex align-items-center"><img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/right-arrow.png"></div>
-      <div class="cards-fou col-5">
-        <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/imp1.png" alt="" srcset="">
-        <div class="text-fou">
-          <p>FERNANDA</p>
-          <span>Viaje privado a Caminata Nevado a Valle</span>
-          <p class="des-fou">“Éramos un grupo de 9 personas y TODOS volveríamos a hacerla. ¡La ruta está padrísima! Nos tocó ver la mariposa monarca lo cual estuvo increíble. Los guías siempre al pendiente de nuestra seguridad y la del ecosistema. Llevé a mi perro y fue quien más lo disfrutó. Las cabañas rústicas pero acogedoras y la comida muy rica. Sin duda valió la pena, ya estoy planeando mi próxima experiencia con ellos. ¡Superaron mis expectativas!"</p>
-        </div>
-      </div>
-      <div class="cards-fou col-5">
-        <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/imp2.png" alt="" srcset="">
-        <div class="text-fou">
-          <p>CLAUDIO</p>
-          <span>Team building Empresarial Dinamos</span>
-          <p class="des-fou">“Recomiendo enormemente trabajar con Chance to Challenge. Para nuestro equipo fue una experiencia única que definitivamente volveríamos a hacer con C to C. La organización fue impecable y tuvimos la oportunidad de tener sesiones guiadas de team building y también espacio para trabajar por 
-            nuestra cuenta como equipo.”</p>
-        </div>
-      </div>
-      <div class="col-1 d-flex align-items-center"><img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/left-arrow.png"></div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="slideHome">
+            <div class="icons-conts">
+    
+              <div>
+                <div class="cards-fou">
+                  <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/imp1.png" alt="" srcset="">
+                  <div class="text-fou">
+                    <p>FERNANDA 1</p>
+                    <span>Viaje privado a Caminata Nevado a Valle</span>
+                    <p class="des-fou">“Éramos un grupo de 9 personas y TODOS volveríamos a hacerla. ¡La ruta está padrísima! Nos tocó ver la mariposa monarca lo cual estuvo increíble. Los guías siempre al pendiente de nuestra seguridad y la del ecosistema. Llevé a mi perro y fue quien más lo disfrutó. Las cabañas rústicas pero acogedoras y la comida muy rica. Sin duda valió la pena, ya estoy planeando mi próxima experiencia con ellos. ¡Superaron mis expectativas!"</p>
+                  </div>
+                </div><!-- end.cards-fou -->
+              </div>
+              <div>
+                <div class="cards-fou">
+                  <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/imp1.png" alt="" srcset="">
+                  <div class="text-fou">
+                    <p>FERNANDA 2</p>
+                    <span>Viaje privado a Caminata Nevado a Valle</span>
+                    <p class="des-fou">“Éramos un grupo de 9 personas y TODOS volveríamos a hacerla. ¡La ruta está padrísima! Nos tocó ver la mariposa monarca lo cual estuvo increíble. Los guías siempre al pendiente de nuestra seguridad y la del ecosistema. Llevé a mi perro y fue quien más lo disfrutó. Las cabañas rústicas pero acogedoras y la comida muy rica. Sin duda valió la pena, ya estoy planeando mi próxima experiencia con ellos. ¡Superaron mis expectativas!"</p>
+                  </div>
+                </div><!-- end.cards-fou -->
+              </div>
+              <div>
+                <div class="cards-fou">
+                  <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/imp1.png" alt="" srcset="">
+                  <div class="text-fou">
+                    <p>FERNANDA 3</p>
+                    <span>Viaje privado a Caminata Nevado a Valle</span>
+                    <p class="des-fou">“Éramos un grupo de 9 personas y TODOS volveríamos a hacerla. ¡La ruta está padrísima! Nos tocó ver la mariposa monarca lo cual estuvo increíble. Los guías siempre al pendiente de nuestra seguridad y la del ecosistema. Llevé a mi perro y fue quien más lo disfrutó. Las cabañas rústicas pero acogedoras y la comida muy rica. Sin duda valió la pena, ya estoy planeando mi próxima experiencia con ellos. ¡Superaron mis expectativas!"</p>
+                  </div>
+                </div><!-- end.cards-fou -->
+              </div>
+              <div>
+                <div class="cards-fou">
+                  <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/imp1.png" alt="" srcset="">
+                  <div class="text-fou">
+                    <p>FERNANDA 4</p>
+                    <span>Viaje privado a Caminata Nevado a Valle</span>
+                    <p class="des-fou">“Éramos un grupo de 9 personas y TODOS volveríamos a hacerla. ¡La ruta está padrísima! Nos tocó ver la mariposa monarca lo cual estuvo increíble. Los guías siempre al pendiente de nuestra seguridad y la del ecosistema. Llevé a mi perro y fue quien más lo disfrutó. Las cabañas rústicas pero acogedoras y la comida muy rica. Sin duda valió la pena, ya estoy planeando mi próxima experiencia con ellos. ¡Superaron mis expectativas!"</p>
+                  </div>
+                </div><!-- end.cards-fou -->
+              </div>
+    
+            </div><!-- end.icons-conts -->
+            <a href="#" class="btnSlideProd bLeftP" id="prevslideHome"></a>
+            <a href="#" class="btnSlideProd nRightP" id="nextslideHome"></a>
+          </div><!-- end.slideHome -->
+        </div><!-- end.col-* -->
+      </div><!-- end.row -->
+    </div><!-- end.container -->
+    <div class="row">
+      <!-- <div class="col-1 d-flex align-items-center">
+        <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/right-arrow.png">
+      </div> -->
+      
+      <!-- <div class="col-1 d-flex align-items-center"><img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/left-arrow.png"></div> -->
     </div>
+
   </div>
 </section>
 <section id="tr" class="info my-4">

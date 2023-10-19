@@ -73,21 +73,21 @@
 }
 
 .btnSlideProd {
-  width: 32px; height: 64px; @include position(absolute, 50% null null null); background-color: transparent; line-height: 64px; border: none; outline: 0; display: none!important; text-align: center; z-index: 10; font-size: rem(42px); padding: 0; margin: 0; cursor: pointer; color: $col1; @include transition(all 0.23s); border-radius: 0; @include transition(opacity 0.45s ease-in-out);
+  width: 32px; height: 64px; @include position(absolute, 50% null null null); background-color: transparent; line-height: 64px; border: none; outline: 0; display: none!important; text-align: center; z-index: 10; font-size: rem(42px); padding: 0; margin: 0; cursor: pointer; color: $grayC2C; @include transition(all 0.23s); border-radius: 0; @include transition(opacity 0.45s ease-in-out);
   &:before, &:after {
     font-family: 'LineIcons';
   }
   &:hover {
-    color: $col2; border: none; background-color: transparent;
+    color: $c5; border: none; background-color: transparent;
   }
   &.bLeftP {
-    left: 7px; @include transform(translateY(-50%));
+    left: -7px; @include transform(translateY(-50%));
     &:before {
       content: '\ea5a';
     }
   }
   &.nRightP {
-    right: 7px; @include transform(translateY(-50%));
+    right: -7px; @include transform(translateY(-50%));
     &:after {
       content: '\ea5c';
     }
@@ -98,26 +98,26 @@
   @media all and (min-width: 640px) {
     display: block!important;
     &.bLeftP {
-      left: 10px;
+      left: -10px;
     }
     &.nRightP {
-      right: 10px;
+      right: -10px;
     }
   }
   @media all and (min-width: 768px) {
     &.bLeftP {
-      left: 5px;
+      left: -5px;
     }
     &.nRightP {
-      right: 5px;
+      right: -5px;
     }
   }
   @media all and (min-width: 1280px) {
     &.bLeftP {
-      left: 20px;
+      left: -20px;
     }
     &.nRightP {
-      right: 20px;
+      right: -20px;
     }
   }
 }

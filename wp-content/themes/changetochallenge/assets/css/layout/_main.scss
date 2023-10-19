@@ -460,8 +460,9 @@ input, select, textarea {
 	}
 	
 	.icons-conts{
-		display: flex;
-		justify-content: space-between;
+		// display: flex;
+		// justify-content: space-between;
+		width: 100%; height: auto; padding: 0; margin: 0; position: relative; box-sizing: border-box;
 	}
 	.back{
 		background: #F6F6F6;
@@ -678,11 +679,11 @@ input, select, textarea {
 		justify-content: center;
 		align-items: center;
 	}
-	.icons-conts{
-		display: flex;
-		justify-content: space-between;
+	// .icons-conts{
+	// 	display: flex;
+	// 	justify-content: space-between;
 
-	}
+	// }
 	.cards-sec{
 		max-width: 30%;
 		display: flex;
@@ -765,8 +766,11 @@ input, select, textarea {
 		word-wrap: break-word;
 		text-align: center;
 	}
+	.slideHome {
+		width: 100%; height: auto; padding: 0; margin: 0; position: relative; box-sizing: border-box;
+	}
 	.cards-fou{
-		max-width: 43%;
+		max-width: 100%;
 		display: flex;
 		flex-direction: column;
     	align-items: center;

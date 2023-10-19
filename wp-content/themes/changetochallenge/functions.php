@@ -145,11 +145,11 @@ function changetochallenge_scripts() {
 	wp_enqueue_style( 'bootstrap-style',  '/wp-content/themes/changetochallenge/assets/vendor/bootstrap/css/bootstrap.css', array(), _S_VERSION );
 	wp_enqueue_style( 'main-style', '/wp-content/themes/changetochallenge/assets/css/style.min.css', array(), _S_VERSION );
 	wp_enqueue_style( 'animate-style',  '/wp-content/themes/changetochallenge/assets/css/vendor/animate.css', array(), _S_VERSION );
-	wp_enqueue_style( 'hover-style',  '/wp-content/themes/changetochallenge/assets/css/vendor/hover-min.csss', array(), _S_VERSION );
+	wp_enqueue_style( 'hover-style',  '/wp-content/themes/changetochallenge/assets/css/vendor/hover-min.css', array(), _S_VERSION );
 	wp_enqueue_style( 'progress-style',  '/wp-content/themes/changetochallenge/assets/css/nprogress.css', array(), _S_VERSION );
 
 	//  Borra este navigation -->
-	wp_enqueue_script( 'changetochallenge-navigation', '/wp-content/themes/changetochallenge/assets/js/navigation.js', array(), _S_VERSION, true );
+	// wp_enqueue_script( 'changetochallenge-navigation', '/wp-content/themes/changetochallenge/assets/js/navigation.js', array(), _S_VERSION, true );
 	// Borra este archivo de navigation.js < --
 	wp_enqueue_script( 'nprogress-script', '/wp-content/themes/changetochallenge/assets/js/plugins/nprogress.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'popper-script', '/wp-content/themes/changetochallenge/assets/vendor/popper.js/dist/umd/popper.min.js', array(), _S_VERSION, true );
