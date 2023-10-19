@@ -60,42 +60,55 @@
                 <br>
             </div>
 
-			
-<section id="sub-two" class="info2 info">
-  <div class="cont-section2  py-3 back">
-    <div class="cont-cent">
-      <p class="text-bold py-3 my3">Nuestro impacto</p>
-    </div>
+			<div class="container-fluid section-unete ">
+                <!-- Control the column width, and how they should appear on different devices -->
+                <div class="row text-center  d-flex justify-content-center mt-5">
+                  <div class="col-sm-6" >
+                  <p class="first-child carouselAventuras">Descubre nuestras próximas fechas <span class="text-orange"> y súmate a la aventura</span></p>
+                  </div>
+                </div>
+                <br>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div class="slideHome ">
-            <div class="icons-conts">
-    
-              <div>
-                <div class="cards-fou tiposAventuras">
-                  <img class="tiposAventuras"  src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/grupoAbierto/image-1.png" alt="" srcset="">
-                </div><!-- end.cards-fou -->
-              </div>
-              <div>
-                <div class="cards-fou tiposAventuras">
-                  <img class="tiposAventuras" src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/grupoAbierto/image-2.png" alt="" srcset="">
-                </div><!-- end.cards-fou -->
-              </div>
-              <div>
-                <div class="cards-fou tiposAventuras">
-                  <img class="tiposAventuras"  src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/grupoAbierto/image-3.png" alt="" srcset="">
-                </div><!-- end.cards-fou -->
-              </div>
-              
-            </div><!-- end.icons-conts -->
-            <a href="#" class="btnSlideProd bLeftP" id="prevslideHome"></a>
-            <a href="#" class="btnSlideProd nRightP" id="nextslideHome"></a>
-          </div><!-- end.slideHome -->
-        </div><!-- end.col-* -->
-      </div><!-- end.row -->
-    </div><!-- end.container -->
+				<div class="container pt-5 pb-5">
+				<div class="row">
+					<div class="col-12">
+					<div class="slideHome ">
+						<div class="icons-conts">
+				
+						<div>
+							<div class="cards-fou tiposAventuras">
+							<img class="tiposAventuras"  src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/grupoAbierto/image-1.png" alt="" srcset="">
+							</div><!-- end.cards-fou -->
+						</div>
+						<div>
+							<div class="cards-fou tiposAventuras">
+							<img class="tiposAventuras" src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/grupoAbierto/image-2.png" alt="" srcset="">
+							</div><!-- end.cards-fou -->
+						</div>
+						<div>
+							<div class="cards-fou tiposAventuras">
+							<img class="tiposAventuras"  src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/grupoAbierto/image-3.png" alt="" srcset="">
+							</div><!-- end.cards-fou -->
+						</div>
+						
+						</div><!-- end.icons-conts -->
+						<a href="#" class="btnSlideProd bLeftP" id="prevslideHome"></a>
+						<a href="#" class="btnSlideProd nRightP" id="nextslideHome"></a>
+					</div><!-- end.slideHome -->
+					</div><!-- end.col-* -->
+				</div><!-- end.row -->
+
+
+				<div class="row text-center  d-flex justify-content-center mt-5">
+                  <div class="col-sm-6" >
+                  	<p class="first-child carouselAventuras">Elige el mes <br/><span class="text-orange">para tu Challenge </span></p>
+					<div class="mt-5">
+						<a href="#" class="gen-btn showAllMonth">Ver todos los meses</a>
+					</div>
+                  </div>
+                </div>
+                <br>
+			</div><!-- end.container -->
     <div class="row">
       <!-- <div class="col-1 d-flex align-items-center">
         <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/right-arrow.png">
@@ -105,7 +118,7 @@
     </div>
 
   </div>
-</section>
+</div>
 						<!-- cards -->
 						<div id="sub-one" class="info2 info">
 							<div class="sect-one py-3">

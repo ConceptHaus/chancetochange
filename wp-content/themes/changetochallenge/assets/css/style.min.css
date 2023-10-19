@@ -1538,6 +1538,9 @@ body.is-ie header.major > h1:after {
   text-align: center;
   line-height: 1;
 }
+.section-unete p.carouselAventuras {
+  font-size: 64px !important;
+}
 
 p.question {
   color: var(--Blue-C2C);
@@ -2401,6 +2404,11 @@ body.is-preload #banner > .inner {
   max-height: 390px !important;
   height: 390px !important;
   border-radius: 30px !important;
+}
+
+.showAllMonth {
+  background-color: #1D3A6B;
+  color: white;
 }
 
 /* end grupo abierto */
