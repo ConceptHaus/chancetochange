@@ -524,10 +524,28 @@ input, select, textarea {
 			background-color: $grayBgsC2C;
 			border: 1px solid $lighBlueC2C;
 			border-radius: 40px;
-			padding: 3%;
+			padding: 2%;
 			margin: 0% 3%;
 			text-align: center;
 			max-width: 20% !important;
+			max-height: 500px;
+			height: 500px;
+  			position: relative;	
+			
+			.text-thr{
+				p{
+					font-family: 'Roboto', sans-serif;
+					font-weight: lighter;
+				}
+				&:nth-child(1){
+					font-size: 24px;
+					font-weight: bold !important;
+				}
+				&:nth-child(2){
+					font-size: 20px;
+					margin-bottom: 4%;
+				}
+			}
 			
 			&:nth-child(1){
 				&:hover{
@@ -563,18 +581,7 @@ input, select, textarea {
 				}
 			}
 
-			.text-thr{
-				p{
-					font-family: 'Roboto', sans-serif;
-					font-weight: lighter;
-				}
-				&:nth-child(1){
-					font-size: 24px;
-				}
-				&:nth-child(2){
-					font-size: 20px;
-				}
-			}
+			
 
 			img{ 
 				border-radius: 25px;
@@ -586,10 +593,14 @@ input, select, textarea {
 				background-color: $blueC2C;
 				color: white !important;
 				text-decoration: none;
-				padding: 2% 6%;
+				padding: 3% 8%;
 				font-size: 20px;
 				font-family: 'Roboto', sans-serif;
-				margin-top: 3% !important;
+				position: absolute;
+				display: block;
+				bottom: 30px;
+				left: 50%;
+				transform: translateX(-50%);
 				&:hover{
 					cursor: pointer;
 					background-color: $orangeC2C;
