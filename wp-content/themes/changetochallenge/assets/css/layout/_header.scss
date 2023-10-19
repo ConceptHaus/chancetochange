@@ -89,6 +89,7 @@
   font-weight: 600;
   word-wrap: break-word;
   text-decoration: none;
+  color: white;
 }
 
 #header nav a:last-child {
@@ -336,6 +337,8 @@ nav a{
   color: var(--Blue-C2C);
   text-decoration: none;
 }
-.links-max a{
-  color: white;
+.links-max{
+  a{
+    color: white !important;
+  }
 }

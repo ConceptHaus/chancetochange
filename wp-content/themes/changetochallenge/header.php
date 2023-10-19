@@ -59,71 +59,43 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'changetochallenge' ); ?></a>
 
-	<header id="masthead" class="site-header" >
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$changetochallenge_description = get_bloginfo( 'description', 'display' );
-			if ( $changetochallenge_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $changetochallenge_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding  -->
-
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'changetochallenge' ); ?></button>
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				)
-			);
-			?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
 
 	
-		<!-- Header -->
-		<header id="header">
-			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo logo1"><img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/header/C2C-blanco-RGB 1.png" alt=""></a>
-			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo logo-mob"><img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/header/C2C-B-blanco-mob.png" alt=""></a>
-			<nav>
-			<ul class="links-max">
-						<li><a href="#" class="cont-ave cont-ave-desktop">Tipos de<br>aventura<img src="images/right-arrow-icon.png" alt=""></a> </li>
-						<li><a href="#">Tienda</a></li>
-						<li><a href="#">Es/EN</a></li>
-					</ul>
-				<nav class="menu-min">
-					<a href="#menu"><img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/menu.png" alt="menu"></a>
-				</nav>
-			</nav>
-
-		</header>
-		<nav id="menu">
-			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo"><img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/C2C-blue-RGB.png" class="logo-mob" alt=""></a>
-			<ul class="links">
-				<li class="links-mob">Tipos de aventura</li>
-				<li>
-					<a href="#submenu" class="arrow no-cerrar-menu" data-toggle="submenu"><img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/right-arrow-icon-27 3.png" alt=""></a>
-						<ul id="submenu">
-							<li><a href="#">Grupo ambierto</a></li>
-							<li><a href="#">Grupo cerrado</a></li>
-							<li><a href="#">Building empresarial</a></li>
-						</ul>
-				</li>
-				<li><a class="links-mob" href="#">Tienda</a></li>
+	<!-- Header -->
+	<header id="header">
+		<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo logo1"><img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/header/C2C-blanco-RGB 1.png" alt=""></a>
+		<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo logo-mob"><img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/header/C2C-B-blanco-mob.png" alt=""></a>
+		<nav>
+		<ul class="links-max">
+					<li><a href="#" class="cont-ave cont-ave-desktop">Tipos de<br>aventura<img src="images/right-arrow-icon.png" alt=""></a> </li>
+					<li><a href="#">Tienda</a></li>
+					<li><a href="#">Es/EN</a></li>
 				</ul>
-				<ul class="contact">
+			<nav class="menu-min">
+				<a href="#menu"><img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/menu.png" alt="menu"></a>
+			</nav>
+		</nav>
+
+	</header>
+	<nav id="menu">
+		<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo"><img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/C2C-blue-RGB.png" class="logo-mob" alt=""></a>
+		<ul class="links">
+			<li class="links-mob">
+				
+					Tipos de aventura
+				
+				</li>
+			<li>
+				<a href="#submenu" class="arrow no-cerrar-menu" data-toggle="submenu"><img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/right-arrow-icon-27 3.png" alt=""></a>
+				<ul id="submenu">
+					<li><a href="<?php echo esc_url( "/grupo-abierto" ); ?>">Grupo abierto</a></li>
+					<li><a href="<?php echo esc_url( "/grupo-cerrado" ); ?>">Grupo cerrado</a></li>
+					<li><a href="<?php echo esc_url( "/empresarial" ); ?>">Building empresarial</a></li>
+				</ul>
+			</li>
+			<li><a class="links-mob" href="#">Tienda</a></li>
+			</ul>
+			<ul class="contact">
 				<li>Escríbenos en:</li>
 				<li><img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/icon-whatsapp.svg" alt="" srcset=""><a href="http://"> 55 7358 6711</a></li>
 				<li><img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/icon-mail.svg" alt="" srcset=""><a href="mailto:info@chancetochallenge.com"> info@chancetochallenge.com</a></li>
@@ -131,5 +103,5 @@
 				<li>
 					<a href="#"><img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/group_sm.svg" alt="" srcset=""></a>
 				</li>
-				</ul>
-			</nav>
+			</ul>
+		</nav>

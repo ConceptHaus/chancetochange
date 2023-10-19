@@ -1,6 +1,6 @@
 <?php
 /**
- * Template name: TipoAventuras
+ * Template name: GrupoAbierto
  
  * Template part for displaying posts
  *
@@ -14,67 +14,98 @@
 
 				<!-- Banner -->
         <section id="bannerTiposAventuras" class="major">
-						<div class="container-fluid d-flex justify-content-end">
-							<div class="major">
-								<h1>Be a challenger</h1>
-              </div>
-							<div class="content">
-								<p>Descubre la nueva manera<br/>de conocer nuevos destinos <br/>y retos con causa</p>
-							</div>
-						</div>
-					</section>
+			<div class="container-fluid d-flex justify-content-end">
+				<div class="row d-flex justify-content-end mt-5 ">
+					<h1>Be a challenger</h1>
+					<hr/>
+					<p>Explora el mundo con causa. <br />Despierta tu potencial.<br />Acepta el desafío.</p>
+				</div>
+			</div>
+		</section>
 
 				<!-- Main -->
 					<div id="main">
-						<section id="sub-one" class="info2 info">
+						<section id="sub-one" class="info2 info mt-3 pt-5">
 							<div class="cont-section2  py-3 gen-cont botoneraTiposAventuras">
-								<div><a href="#" class="gen-btn">Aventura abierta</a></div>
-								<div><a href="#" class="gen-btn">Aventura privada</a></div>
-								<div><a href="#" class="gen-btn">Aventura empresarial</a></div>
+								<div><a href="<?php echo esc_url( "/grupo-abierto" ); ?>" class="gen-btn active">Aventura abierta</a></div>
+								<div><a href="<?php echo esc_url( "/grupo-cerrado" ); ?>" class="gen-btn">Aventura privada</a></div>
+								<div><a href="<?php echo esc_url( "/empresarial" ); ?>" class="gen-btn">Aventura empresarial</a></div>
 							</div>
 						</section>
 						<!-- One -->
 
-						<section id="one" class="info">
-							<div class="cont-section">
-								<div class="cont-cent text-cont">
-									<p class="text-bold">¿Cómo reservar con <br/>Chance to Challenge?</p>
-								</div>
-								<div class="icons-conts">
-									<div class="cards">
-										<img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/grupoAbierto/icon-cal.png" alt="" srcset="">
-										<p>Revisa las fechas que tenemos disponibles</p>
-									</div>
-									<div class="cards">
-										<img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/grupoAbierto/icon-bos.svg" alt="" srcset="">
-										<p>Elige tu aventura</p>
-									</div>
-									<div class="cards">
-										<img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/grupoAbierto/icon-che.svg" alt="" srcset="">
-										<p>Inscríbete</p>
-									</div>
-								</div>
-								
-								<div class="cont-cent text-cont">
-									<p class="text-bold lh-1 my-4">Descubre nuestras próximas fechas <br><span>y súmate a la aventura</span></p>
-								</div>
+            <div class="container-fluid section-unete ">
+                <!-- Control the column width, and how they should appear on different devices -->
+                <div class="row text-center  d-flex justify-content-center mt-5">
+                  <div class="col-sm-6" >
+                  <p class="first-child">¿Cómo reservar con Chance to Challenge?</p>
+                  </div>
+                </div>
+                <br>
+                
+                <div class="row d-flex justify-content-center text-center content-icon3">
+                  <div class="col-sm-4" >
+                  <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/grupoAbierto/icon-reserva.png" alt="" srcset="">
+                  <p class="tipoaventura">Revisa las fechas que tenemos disponibles</p>
+                  </div>
+                  <div class="col-sm-4" >
+                  <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/grupoAbierto/icon-elige.png" alt="" srcset="">
+                      <p class="tipoaventura">Elige tu aventura</p>
+                  </div>
+                  <div class="col-sm-4" >
+                  <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/grupoAbierto/icon-inscribete.png" alt="" srcset="">
+                      <p class="tipoaventura">Inscríbete</p>
+                  </div>
+                </div>
+                <br>
+            </div>
 
-								<div class="icons-conts row pt-4">
-									<div class="col-1 d-flex align-items-center"><img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/right-arrow.png"></div>
-									<div class="cards-fou col-5">
-										<img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/grupoAbierto/image-1.png" alt="" srcset="">
-									</div>
-									<div class="cards-fou col-5">
-										<img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/grupoAbierto/image-2.png" alt="" srcset="">
-									</div>
-									<div class="col-1 d-flex align-items-center"><img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/left-arrow.png"></div>
-								</div>
-								<div class="cont-cent text-cont">
-									<p class="text-bold lh-1 my-4">Elige el mes<br><span>para tu Challenge</span></p>
-								</div>
-								<div><button href="#" class="gen-btn">Ver todos los meses <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/grupoAbierto/down-arrow.png" alt="" class="down-arrow"></button></div>
-						</section>
+			
+<section id="sub-two" class="info2 info">
+  <div class="cont-section2  py-3 back">
+    <div class="cont-cent">
+      <p class="text-bold py-3 my3">Nuestro impacto</p>
+    </div>
 
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="slideHome ">
+            <div class="icons-conts">
+    
+              <div>
+                <div class="cards-fou tiposAventuras">
+                  <img class="tiposAventuras"  src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/grupoAbierto/image-1.png" alt="" srcset="">
+                </div><!-- end.cards-fou -->
+              </div>
+              <div>
+                <div class="cards-fou tiposAventuras">
+                  <img class="tiposAventuras" src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/grupoAbierto/image-2.png" alt="" srcset="">
+                </div><!-- end.cards-fou -->
+              </div>
+              <div>
+                <div class="cards-fou tiposAventuras">
+                  <img class="tiposAventuras"  src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/grupoAbierto/image-3.png" alt="" srcset="">
+                </div><!-- end.cards-fou -->
+              </div>
+              
+            </div><!-- end.icons-conts -->
+            <a href="#" class="btnSlideProd bLeftP" id="prevslideHome"></a>
+            <a href="#" class="btnSlideProd nRightP" id="nextslideHome"></a>
+          </div><!-- end.slideHome -->
+        </div><!-- end.col-* -->
+      </div><!-- end.row -->
+    </div><!-- end.container -->
+    <div class="row">
+      <!-- <div class="col-1 d-flex align-items-center">
+        <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/right-arrow.png">
+      </div> -->
+      
+      <!-- <div class="col-1 d-flex align-items-center"><img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/left-arrow.png"></div> -->
+    </div>
+
+  </div>
+</section>
 						<!-- cards -->
 						<div id="sub-one" class="info2 info">
 							<div class="sect-one py-3">

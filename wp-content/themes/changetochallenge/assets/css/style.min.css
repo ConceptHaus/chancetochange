@@ -728,6 +728,7 @@ h6 {
   font-weight: 600;
   word-wrap: break-word;
   text-decoration: none;
+  color: white;
 }
 
 #header nav a:last-child {
@@ -984,7 +985,7 @@ nav a {
 }
 
 .links-max a {
-  color:  white;
+  color:  white !important;
 }
 
 /* ==|====================
@@ -1514,12 +1515,13 @@ body.is-ie header.major > h1:after {
 }
 
 .icons-conts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .back {
@@ -1564,6 +1566,10 @@ p.question {
 .content-icon3 span {
   color: #FF6900 !important;
   font-family: "AkzidenzGroteskBQ-Italic", sans-serif;
+}
+.content-icon3 p.tipoaventura {
+  font-size: 32px;
+  line-height: initial;
 }
 
 .buscando p.question2 {
@@ -1738,15 +1744,6 @@ p.question {
           align-items: center;
 }
 
-.icons-conts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
 .cards-sec {
   max-width: 30%;
   display: -webkit-box;
@@ -1854,8 +1851,18 @@ p.question {
   text-align: center;
 }
 
+.slideHome {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .cards-fou {
-  max-width: 43%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2270,22 +2277,6 @@ body.is-preload #banner > .inner {
           justify-content: center;
 }
 
-.cards-fou {
-  max-width: 43%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-radius: 2rem;
-  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
-}
-
 .cards-fou img {
   width: 90%;
   border-radius: 15px;
@@ -2381,6 +2372,35 @@ body.is-preload #banner > .inner {
   font-weight: 200;
   font-family: "Akzidenz-Grotesk BQ", sans-serif;
   text-decoration: none;
+}
+.botoneraTiposAventuras hr {
+  height: 3% !important;
+  opacity: inherit !important;
+}
+
+#bannerTiposAventuras hr {
+  height: 2% !important;
+  opacity: inherit !important;
+  margin-left: 3%;
+}
+#bannerTiposAventuras p {
+  font-size: 30px;
+  font-weight: 200;
+  font-family: "Akzidenz-Grotesk BQ", sans-serif;
+}
+
+.gen-btn.active {
+  background-color: #FF6900;
+}
+
+.cards-fou img.tiposAventuras {
+  max-width: 560px !important;
+  width: 560px !important;
+  min-width: 560px !important;
+  min-height: 390px !important;
+  max-height: 390px !important;
+  height: 390px !important;
+  border-radius: 30px !important;
 }
 
 /* end grupo abierto */
@@ -3397,7 +3417,7 @@ form div.error-line {
   padding: 0;
   margin: 0;
   cursor: pointer;
-  color: #712a81;
+  color: #4E4E4E;
   -webkit-transition: all 0.23s;
   transition: all 0.23s;
   border-radius: 0;
@@ -3408,12 +3428,12 @@ form div.error-line {
   font-family: "LineIcons";
 }
 .btnSlideProd:hover {
-  color: #4f1b5b;
+  color: #959595;
   border: none;
   background-color: transparent;
 }
 .btnSlideProd.bLeftP {
-  left: 7px;
+  left: -7px;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
@@ -3421,7 +3441,7 @@ form div.error-line {
   content: "\ea5a";
 }
 .btnSlideProd.nRightP {
-  right: 7px;
+  right: -7px;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
@@ -3438,26 +3458,26 @@ form div.error-line {
     display: block !important;
   }
   .btnSlideProd.bLeftP {
-    left: 10px;
+    left: -10px;
   }
   .btnSlideProd.nRightP {
-    right: 10px;
+    right: -10px;
   }
 }
 @media all and (min-width: 768px) {
   .btnSlideProd.bLeftP {
-    left: 5px;
+    left: -5px;
   }
   .btnSlideProd.nRightP {
-    right: 5px;
+    right: -5px;
   }
 }
 @media all and (min-width: 1280px) {
   .btnSlideProd.bLeftP {
-    left: 20px;
+    left: -20px;
   }
   .btnSlideProd.nRightP {
-    right: 20px;
+    right: -20px;
   }
 }
 
