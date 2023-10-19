@@ -13,10 +13,10 @@
 
 
 <?php
-if(is_archive()){ 
+/*if(is_archive()){ 
 	el contenido del archivo o categoria 
 }
-else { ?>
+else {*/ ?>
 	<header class="entry-header">
 		<?php
 		if ( is_singular() ) :
@@ -39,12 +39,10 @@ else { ?>
 	<?php changetochallenge_post_thumbnail(); ?>
 
 
-	<footer class="entry-footer">
-		<?php changetochallenge_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
-	<?php
-}
+	<?php /*
+}*/
 ?>
+
 
 
 

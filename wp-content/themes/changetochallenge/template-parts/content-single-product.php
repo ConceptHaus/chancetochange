@@ -1,7 +1,5 @@
 <?php
 /**
- * Template name: GrupoAbierto
- 
  * Template part for displaying posts
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
@@ -9,11 +7,22 @@
  * @package Change_to_challenge
  */
 
- get_header();
-?>  
-
-				<!-- Banner -->
-        <section id="bannerTiposAventuras" class="major">
+?>
+<!-- Banner -->
+<section id="" class="major" style="align-items: center;
+		background-image: url(<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/detailproduct/banner-pruduct.png);
+		display: flex;
+		padding: 4rem 0 2rem 0 ;
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		border-bottom: 0 !important;
+		cursor: default;
+		height: 60vh;
+		margin-bottom: -3.25rem;
+		max-height: 32rem;
+		min-height: 22rem;">
 			<div class="container-fluid d-flex justify-content-end">
 				<div class="row d-flex justify-content-end mt-5 ">
 					<h1>Be a challenger</h1>
@@ -253,7 +262,3 @@
 						</div>
 						
 					</div>
-
-
-<?php
-get_footer();

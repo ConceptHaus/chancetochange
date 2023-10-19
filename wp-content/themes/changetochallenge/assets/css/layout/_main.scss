@@ -1274,4 +1274,51 @@ width: 80%;
 	color: white;
 }
 
+
+
+/** loop productos */
+.loopProductos{
+	background-color: $grayBgsC2C;
+	h3{
+		color: var(--Blue-C2C);
+		font-size: 48px;
+		font-family: 'Akzidenz-Grotesk BQ', sans-serif;
+		font-weight: bold;
+		word-wrap: break-word;
+		text-align: left;
+	}
+	p.descriptionProduct{
+		font-size: 16px;
+		font-family: 'Akzidenz-Grotesk BQ', sans-serif;
+		font-weight:lighter;
+		word-wrap: break-word;
+		text-align: left;
+	}
+	.listProduct
+	{
+		color: $grayLetter;
+		list-style: none;
+		text-align: left;
+		font-size: 24px;
+		font-weight: bold;
+		li{
+			border-bottom: 2px solid $orangeC2C;
+			padding: 2% 0%;
+			&:last-child{
+				 border: none;
+			}
+		}
+		a{
+			background-color: $blueC2C;
+			text-decoration: none;
+			padding: 3% 5%;
+			color: white;
+		}
+	}
+}
+.border-rad{
+	border-radius: 30px;
+}
+/*   end loop productos*/
+
 /* end grupo abierto */

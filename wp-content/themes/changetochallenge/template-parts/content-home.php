@@ -109,7 +109,7 @@
           <p>Aventura con Challengers como tú</p>
           <p class="des">Elige una de nuestras próximas fechas y súmate a la aventura</p>
         </div>
-        <a href="#">Conocer más</a>
+        <a href="<?php echo esc_url( "/grupo-abierto" ); ?>">Conocer más</a>
       </div>
       <div class="col-sm-3" >
         <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/fot-2.png" alt="" srcset="">
@@ -160,9 +160,7 @@
                   <div class="text-fou">
                     <p>CLAUDIO</p>
                     <span>Team building Empresarial Dinamos</span>
-                    <p class="des-fou">“Recomiendo enormemente trabajar con Chance to Challenge. Para nuestro equipo fue una experiencia única que definitivamente volveríamos a hacer con 
-C to C. La organización fue impecable y tuvimos la oportunidad de tener sesiones guiadas de team building y también espacio para trabajar por 
-nuestra cuenta como equipo.”</p>
+                    <p class="des-fou">“Recomiendo enormemente trabajar con Chance to Challenge. Para nuestro equipo fue una experiencia única que definitivamente volveríamos a hacer con C to C. La organización fue impecable y tuvimos la oportunidad de tener sesiones guiadas de team building y también espacio para trabajar por nuestra cuenta como equipo.”</p>
                   </div>
                 </div><!-- end.cards-fou -->
               </div>
@@ -172,9 +170,7 @@ nuestra cuenta como equipo.”</p>
                   <div class="text-fou">
                     <p>CLAUDIA</p>
                     <span>Sierra Gorda, Querétaro</span>
-                    <p class="des-fou">“¡Increíble! ¡Qué lugares tan hermosos! ¡Los guías maravillosos! Chuy rifadísimo, la casita ecológica espectacular… 
-¡Todo! Una gran experiencia.”
-</p>
+                    <p class="des-fou">“¡Increíble! ¡Qué lugares tan hermosos! ¡Los guías maravillosos! Chuy rifadísimo, la casita ecológica espectacular… ¡Todo! Una gran experiencia.”</p>
                   </div>
                 </div><!-- end.cards-fou -->
               </div>
