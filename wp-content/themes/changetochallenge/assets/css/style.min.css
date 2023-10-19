@@ -2415,10 +2415,17 @@ body.is-preload #banner > .inner {
 .loopProductos {
   background-color: #F6F6F6;
 }
+.loopProductos .content-img {
+  text-align: start;
+}
+.loopProductos .content-img.second {
+  text-align: end;
+  vertical-align: middle;
+}
 .loopProductos h3 {
   color: var(--Blue-C2C);
   font-size: 48px;
-  font-family: "Akzidenz-Grotesk BQ", sans-serif;
+  font-family: "AkzidenzGroteskBQ-Bold", sans-serif;
   font-weight: bold;
   word-wrap: break-word;
   text-align: left;
@@ -2439,16 +2446,27 @@ body.is-preload #banner > .inner {
 }
 .loopProductos .listProduct li {
   border-bottom: 2px solid #FF6900;
-  padding: 2% 0%;
+  padding: 1% 0%;
 }
 .loopProductos .listProduct li:last-child {
   border: none;
 }
-.loopProductos .listProduct a {
-  background-color: #1D3A6B;
+.loopProductos a.btnReservar {
+  margin-top: 4%;
+  background-color: #1D3A6B !important;
   text-decoration: none;
-  padding: 3% 5%;
+  padding: 2% 20%;
+  color: white !important;
+  border-radius: 40px;
+  position: relative;
+  font-size: 20px;
+  font-family: "AkzidenzGrotesk BQ", sans-serif;
+}
+.loopProductos a.btnReservar:visited {
   color: white;
+}
+.loopProductos.Bgswhite {
+  background-color: white;
 }
 
 .border-rad {

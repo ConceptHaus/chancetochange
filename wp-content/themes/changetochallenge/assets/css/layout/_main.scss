@@ -1279,10 +1279,18 @@ width: 80%;
 /** loop productos */
 .loopProductos{
 	background-color: $grayBgsC2C;
+
+	.content-img{
+		text-align: start;
+		&.second{
+			text-align: end;
+			vertical-align: middle;
+		}
+	}
 	h3{
 		color: var(--Blue-C2C);
 		font-size: 48px;
-		font-family: 'Akzidenz-Grotesk BQ', sans-serif;
+		font-family: 'AkzidenzGroteskBQ-Bold', sans-serif; 
 		font-weight: bold;
 		word-wrap: break-word;
 		text-align: left;
@@ -1303,17 +1311,30 @@ width: 80%;
 		font-weight: bold;
 		li{
 			border-bottom: 2px solid $orangeC2C;
-			padding: 2% 0%;
+			padding: 1% 0%;
 			&:last-child{
 				 border: none;
 			}
 		}
-		a{
-			background-color: $blueC2C;
-			text-decoration: none;
-			padding: 3% 5%;
+		
+	}
+	a.btnReservar{
+		margin-top: 4%;
+		background-color: $blueC2C !important;
+		text-decoration: none;
+		padding: 2% 20%;
+		color: white !important;
+		border-radius: 40px;
+		position: relative;
+		font-size: 20px;
+		font-family: 'AkzidenzGrotesk BQ', sans-serif; 
+		&:visited{
 			color: white;
 		}
+	}
+
+	&.Bgswhite{
+		background-color: white;
 	}
 }
 .border-rad{

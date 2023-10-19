@@ -114,25 +114,75 @@
 
 	<div class="container-fluid section-unete loopProductos pt-5">
 		<!-- Control the column width, and how they should appear on different devices -->	
-		
-		<div class="row d-flex justify-content-center  content-icon3">
-			<div class="col-sm-6" >
-			<img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/grupoAbierto/sect-1.png" alt="" srcset="" class="border-rad">
-			</div>
-			<div class="col-sm-6" >
-				<div class="col-sm-8" >
+		<div class="container">
+			<div class="row d-flex justify-content-center  content-icon3">
+				<div class="col-sm-6 content-img" >
+				<img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/grupoAbierto/sect-1.png" alt="" srcset="" class="border-rad">
+				</div>
+				<div class="col-sm-6" >
 					<h3>Nevado a valle</h3>
-					<p class="descriptionProduct">
+					<p class="descriptionProduct mt-5">
 					En esta caminata podrás conocer uno de los bosques más profundos de México en una expedición desde la parte baja del Nevado de Toluca hasta Valle de Bravo. El sendero ofrece varios miradores donde puedes detenerte y disfrutar de las vistas impresionantes de los valles y montañas.
 					</p>
-					<ul class="listProduct">
+					<ul class="listProduct mt-3">
 						<li>3 de febrero</li>
 						<li>2 días</li>
 						<li>Costo: $3,000 MXN</li>
 						<li>Nivel Básico</li>
 					</ul>
-					<a href="<?php echo esc_url( "/product/nevado-a-valle" ); ?>">Reservar</a>
+					<div class="col-sm-6 text-left d-flex justify-start" >
+						<a href="<?php echo esc_url( "/product/nevado-a-valle" ); ?>" class="btnReservar">Reservar</a>
+					</div>
 				</div>
+			</div>
+		</div>
+		<br>
+	</div>
+
+	<div class="container-fluid section-unete loopProductos Bgswhite pt-5">
+		<!-- Control the column width, and how they should appear on different devices -->	
+		<div class="container">
+			<div class="row d-flex justify-content-center  content-icon3">
+				
+				<div class="col-sm-6" >
+						<h3>Nevado a valle</h3>
+						<p class="descriptionProduct mt-5">
+						En esta caminata podrás conocer uno de los bosques más profundos de México en una expedición desde la parte baja del Nevado de Toluca hasta Valle de Bravo. El sendero ofrece varios miradores donde puedes detenerte y disfrutar de las vistas impresionantes de los valles y montañas.
+						</p>
+						<ul class="listProduct mt-3">
+							<li>3 de febrero</li>
+							<li>2 días</li>
+							<li>Costo: $3,000 MXN</li>
+							<li>Nivel Básico</li>
+						</ul>
+						<div class="col-sm-6 text-left d-flex justify-start" >
+							<a href="<?php echo esc_url( "/product/nevado-a-valle" ); ?>" class="btnReservar">Reservar</a>
+						</div>
+				</div>
+				<div class="col-sm-6 content-img second" >
+					<img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/grupoAbierto/image-1.png" alt="" srcset="" class="border-rad">
+				</div>
+			</div>
+			<div class="row d-flex justify-content-center  content-icon3">
+				<div class="col-sm-6 content-img " >
+					<img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/grupoAbierto/image-1.png" alt="" srcset="" class="border-rad">
+				</div>
+				<div class="col-sm-6" >
+						<h3>Nevado a valle</h3>
+						<p class="descriptionProduct mt-5">
+						En esta caminata podrás conocer uno de los bosques más profundos de México en una expedición desde la parte baja del Nevado de Toluca hasta Valle de Bravo. El sendero ofrece varios miradores donde puedes detenerte y disfrutar de las vistas impresionantes de los valles y montañas.
+						</p>
+						<ul class="listProduct mt-3">
+							<li>3 de febrero</li>
+							<li>2 días</li>
+							<li>Costo: $3,000 MXN</li>
+							<li>Nivel Básico</li>
+						</ul>
+						<div class="col-sm-6 text-left d-flex justify-start" >
+							<a href="<?php echo esc_url( "/product/nevado-a-valle" ); ?>" class="btnReservar">Reservar</a>
+						</div>
+				</div>
+				
 			</div>
 		</div>
 		<br>
@@ -140,119 +190,7 @@
 
 
 
-						<!-- cards -->
-						<div id="sub-one" class="info2 info">
-							<div class="sect-one py-3">
-								<div class="cont-sect">
-									
-								</div>
-								<div class="cont-sect">
-									<div class="sub-sec">
-										<p class="sec-title"> Nevado a Valle</p>
-										<p class="sec-text">En esta caminata podrás conocer uno de los bosques más profundos de México en una expedición desde la parte baja del Nevado de Toluca hasta Valle de Bravo. <br> El sendero ofrece varios miradores donde puedes detenerte y disfrutar de las vistas impresionantes de los valles y montañas.</p>
-										<p class="sec-det ">3 de febrero</p>
-										<p class="sec-det ">2 días</p>
-										<p class="sec-det ">Costo: $3,000 MXN</p>
-										<p class="sec-det sec-ult">Nivel Básico</p>
-
-										<a href="" class="gen-btn my-4">Reservar</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div id="two" class="info my-4">
-							<div class="sect-one py-3">
-								<div class="cont-sect-two">
-									<div class="sub-sec sub-left">
-										<p class="sec-title"> Nevado a Valle</p>
-										<p class="sec-text">En esta caminata podrás conocer uno de los bosques más profundos de México en una expedición desde la parte baja del Nevado de Toluca hasta Valle de Bravo. <br> El sendero ofrece varios miradores donde puedes detenerte y disfrutar de las vistas impresionantes de los valles y montañas.</p>
-										<p class="sec-det ">3 de febrero</p>
-										<p class="sec-det ">2 días</p>
-										<p class="sec-det ">Costo: $3,000 MXN</p>
-										<p class="sec-det sec-ult">Nivel Básico</p>
-
-										<a href="" class="gen-btn my-4">Reservar</a>
-									</div>
-								</div>
-								<div class="cont-sect-img">
-									<img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/grupoAbierto/sect-a-1.png">
-								</div>
-							</div>
-							<div class="sect-one py-3">
-								<div class="cont-sect-img">
-									<img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/grupoAbierto/sect-a-1.png">
-								</div>
-								<div class="cont-sect-two">
-									<div class="sub-sec sub-left">
-										<p class="sec-title"> Nevado a Valle</p>
-										<p class="sec-text">En esta caminata podrás conocer uno de los bosques más profundos de México en una expedición desde la parte baja del Nevado de Toluca hasta Valle de Bravo. <br> El sendero ofrece varios miradores donde puedes detenerte y disfrutar de las vistas impresionantes de los valles y montañas.</p>
-										<p class="sec-det ">3 de febrero</p>
-										<p class="sec-det ">2 días</p>
-										<p class="sec-det ">Costo: $3,000 MXN</p>
-										<p class="sec-det sec-ult">Nivel Básico</p>
-
-										<a href="" class="gen-btn my-4">Reservar</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div id="sub-one" class="info2 info">
-							<div class="sect-one py-3">
-								<div class="cont-sect">
-									<img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/grupoAbierto/sect-1.png" alt="" srcset="">
-								</div>
-								<div class="cont-sect">
-									<div class="sub-sec">
-										<p class="sec-title"> Nevado a Valle</p>
-										<p class="sec-text">En esta caminata podrás conocer uno de los bosques más profundos de México en una expedición desde la parte baja del Nevado de Toluca hasta Valle de Bravo. <br> El sendero ofrece varios miradores donde puedes detenerte y disfrutar de las vistas impresionantes de los valles y montañas.</p>
-										<p class="sec-det ">3 de febrero</p>
-										<p class="sec-det ">2 días</p>
-										<p class="sec-det ">Costo: $3,000 MXN</p>
-										<p class="sec-det sec-ult">Nivel Básico</p>
-
-										<a href="" class="gen-btn my-4">Reservar</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div id="two" class="info my-4">
-							<div class="sect-one py-3">
-								<div class="cont-sect-two">
-									<div class="sub-sec sub-left">
-										<p class="sec-title"> Nevado a Valle</p>
-										<p class="sec-text">En esta caminata podrás conocer uno de los bosques más profundos de México en una expedición desde la parte baja del Nevado de Toluca hasta Valle de Bravo. <br> El sendero ofrece varios miradores donde puedes detenerte y disfrutar de las vistas impresionantes de los valles y montañas.</p>
-										<p class="sec-det ">3 de febrero</p>
-										<p class="sec-det ">2 días</p>
-										<p class="sec-det ">Costo: $3,000 MXN</p>
-										<p class="sec-det sec-ult">Nivel Básico</p>
-
-										<a href="" class="gen-btn my-4">Reservar</a>
-									</div>
-								</div>
-								<div class="cont-sect-img">
-									<img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/grupoAbierto/sect-a-1.png">
-								</div>
-							</div>
-							<div class="sect-one py-3">
-								<div class="cont-sect-img">
-									<img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/grupoAbierto/sect-a-1.png">
-								</div>
-								<div class="cont-sect-two">
-									<div class="sub-sec sub-left">
-										<p class="sec-title"> Nevado a Valle</p>
-										<p class="sec-text">En esta caminata podrás conocer uno de los bosques más profundos de México en una expedición desde la parte baja del Nevado de Toluca hasta Valle de Bravo. <br> El sendero ofrece varios miradores donde puedes detenerte y disfrutar de las vistas impresionantes de los valles y montañas.</p>
-										<p class="sec-det ">3 de febrero</p>
-										<p class="sec-det ">2 días</p>
-										<p class="sec-det ">Costo: $3,000 MXN</p>
-										<p class="sec-det sec-ult">Nivel Básico</p>
-
-										<a href="" class="gen-btn my-4">Reservar</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						
-					</div>
+					
 
 
 <?php
