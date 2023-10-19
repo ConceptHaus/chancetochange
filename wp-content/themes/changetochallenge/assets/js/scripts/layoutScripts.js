@@ -1,7 +1,6 @@
 //Scripts layoutScripts v1.0
 
 $(function(){
-<<<<<<< HEAD
   $('.icons-conts').slick({
     infinite: false,
     slidesToShow: 2,
@@ -27,12 +26,5 @@ $(function(){
         }
       }
     ]
-=======
-    
-$('.card-carousel').slick({
-    infinite: true,
-    slidesToShow: 2,
-    slidesToScroll: 1
->>>>>>> 82bfc183436575c1a9b50039795671af58be0815
   });
 });
