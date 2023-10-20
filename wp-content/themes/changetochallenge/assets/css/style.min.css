@@ -1660,8 +1660,8 @@ p.question {
   margin: 0% 3%;
   text-align: center;
   max-width: 20% !important;
-  max-height: 500px;
-  height: 500px;
+  max-height: 550px;
+  height: 550px;
   position: relative;
 }
 .buscando .col-sm-3 .text-thr p {
@@ -1679,17 +1679,17 @@ p.question {
 .buscando .col-sm-3:nth-child(1):hover {
   background-image: url("../img/images/fot-1_hover.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 .buscando .col-sm-3:nth-child(2):hover {
   background-image: url("../img/images/fot-2_hover.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 .buscando .col-sm-3:nth-child(3):hover {
   background-image: url("../img/images/fot-3_hover.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 .buscando .col-sm-3:hover img {
   display: none !important;
@@ -2018,11 +2018,100 @@ p.question {
   max-height: 473px;
 }
 
-.fiv-one {
+.card {
+  border-radius: 40px;
+  min-height: 550px;
+  height: 550px;
+  border: none;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card.one {
   background-image: url("../img/images/five-1.png");
+}
+.card.one:hover {
+  background-image: url("../img/images/five-1_hover.png");
+}
+.card.two {
+  background-image: url("../img/images/five-2.png");
+}
+.card.two:hover {
+  background-image: url("../img/images/five-2_hover.png");
+}
+.card.three {
+  background-image: url("../img/images/five-3.png");
+}
+.card.three:hover {
+  background-image: url("../img/images/five-3_hover.png");
+}
+.card:hover .text-hover {
+  display: block !important;
+}
+.card:hover .card-title {
+  background-color: inherit;
+}
+.card .card-body {
+  padding: 0% !important;
+}
+.card .card-body .card-title {
+  background-color: #1D3A6B;
+  color: white;
+  font-family: "Akzidenz-Grotesk BQ", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  width: 100%;
+  padding: 4% 0%;
+  text-align: center;
+  position: relative;
+  top: 10%;
+  line-height: 22px;
+  height: 80px;
+  min-height: 80px;
+  max-height: 200px;
+}
+.card .card-body .text-hover {
+  display: none;
+  color: white;
+  text-align: center;
+  font-family: "Akzidenz-Grotesk BQ", sans-serif;
+  font-size: 16px !important;
+  font-weight: lighter;
+  position: relative;
+  top: 15%;
+  max-width: 80%;
+  margin-left: 10%;
+}
+
+.fiv-one {
+  min-height: 550px;
+  height: 550px;
+  width: 100%;
+  position: relative;
+  border-radius: 40px;
+}
+.fiv-one .text-fiv {
+  background-color: var(--Blue-C2C);
+  position: relative;
+  top: 2.5rem;
+  color: white;
+  text-align: center;
+  width: 37%;
+  height: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: -1% !important;
 }
 .fiv-one:hover {
   background-image: url("../img/images/five-1_hover.png");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .fiv-one:hover .fiv-one__hovertext {
   display: block !important;
@@ -2048,9 +2137,13 @@ p.question {
 /*two__hovertext*/
 .fiv-two {
   background-image: url("../img/images/five-2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .fiv-two:hover {
   background-image: url("../img/images/five-2_hover.png");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .fiv-two:hover .fiv-two__hovertext {
   display: block !important;
@@ -2075,9 +2168,13 @@ p.question {
 
 .fiv-tr {
   background-image: url("../img/images/five-3.png");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .fiv-tr:hover {
   background-image: url("../img/images/five-3_hover.png");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .fiv-tr:hover .fiv-tr__hovertext {
   display: block !important;
@@ -2660,20 +2757,34 @@ body.is-preload #banner > .inner {
   color: white;
 }
 
-.detail-product div h3 {
+.detail-product h3 {
   color: #1D3A6B;
   font-size: 60px;
   font-family: "AkzidenzGrotesk BQ", sans-serif;
 }
-.detail-product div img {
-  height: 100%;
-}
-.detail-product div a {
+.detail-product a {
   background-color: #1D3A6B;
   color: white;
   font-family: "AkzidenzGrotesk BQ", sans-serif;
   padding: 2% 5%;
   border-radius: 50px;
+}
+.detail-product p.descriptionProduct {
+  color: #1D3A6B;
+  font-family: "AkzidenzGrotesk BQ", sans-serif;
+  font-size: 38px;
+}
+.detail-product p.etiqueta {
+  color: #1D3A6B;
+  font-family: "AkzidenzGrotesk BQ", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+.detail-product p.valor {
+  color: #4E4E4E;
+  font-family: "AkzidenzGrotesk BQ", sans-serif;
+  font-size: 20px;
+  font-weight: normal;
 }
 
 /* end single product */

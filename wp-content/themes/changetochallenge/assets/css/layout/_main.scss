@@ -617,8 +617,8 @@ input, select, textarea {
 			margin: 0% 3%;
 			text-align: center;
 			max-width: 20% !important;
-			max-height: 500px;
-			height: 500px;
+			max-height: 550px;
+			height: 550px;
   			position: relative;	
 			
 			.text-thr{
@@ -640,7 +640,7 @@ input, select, textarea {
 				&:hover{
 					background-image: url('../img/images/fot-1_hover.png');
 					background-repeat: no-repeat;
-					background-size: cover;
+					background-size: contain;
 				}
 			}
 
@@ -648,7 +648,7 @@ input, select, textarea {
 				&:hover{
 					background-image: url('../img/images/fot-2_hover.png');
 				background-repeat: no-repeat;
-				background-size: cover;
+				background-size: contain;
 				}
 			}
 
@@ -656,7 +656,7 @@ input, select, textarea {
 				&:hover{
 					background-image: url('../img/images/fot-3_hover.png');
 				background-repeat: no-repeat;
-				background-size: cover;
+				background-size: contain;
 				}
 			}
 			&:hover{
@@ -918,10 +918,97 @@ input, select, textarea {
 		max-height: 473px;
 
 	}
+
+	.card{
+		border-radius: 40px;
+		min-height: 550px;
+		height: 550px;
+		border: none;
+		background-repeat: no-repeat;
+		background-size: cover;
+		&.one{
+			background-image: url('../img/images/five-1.png');
+			&:hover{
+				background-image: url('../img/images/five-1_hover.png');
+			}
+		}
+		&.two{
+			background-image: url('../img/images/five-2.png');			
+			&:hover{
+				background-image: url('../img/images/five-2_hover.png');
+			}
+		}
+		&.three{
+			background-image: url('../img/images/five-3.png');
+			&:hover{
+				background-image: url('../img/images/five-3_hover.png');
+			}
+		}
+		&:hover{
+			.text-hover{
+				display: block !important;				
+			}
+			.card-title{
+				background-color: inherit;
+			}
+		}
+		.card-body{
+			padding: 0% !important;
+			.card-title{
+				background-color: $blueC2C;
+				color: white;
+				font-family: 'Akzidenz-Grotesk BQ', sans-serif;
+				font-weight: bold;
+				font-size: 24px;
+				width: 100%;
+				padding: 4% 0%;
+				text-align: center;
+				position: relative;
+				top: 10%;
+				line-height: 22px;
+				height: 80px;
+				min-height: 80px;
+				max-height: 200px;
+			}
+			.text-hover{
+				display: none;	
+				color: white;
+				text-align: center;
+				font-family: 'Akzidenz-Grotesk BQ', sans-serif; 
+				font-size: 16px !important;
+				font-weight: lighter;
+				position: relative;
+				top: 15%;
+				max-width: 80%;
+				margin-left: 10%;			
+			}
+		}
+	}
+	
 	.fiv-one{
-		background-image: url('../img/images/five-1.png');
+		
+		min-height: 550px;
+		height: 550px;
+		width: 100%;
+		position: relative;
+		border-radius: 40px;
+		.text-fiv{
+			background-color: var(--Blue-C2C);
+			position: relative;
+			top: 2.5rem;
+			color:white;
+			text-align: center;
+			width: 37%;
+			height: 20%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin: -1% !important;
+		}
 		&:hover{
 			background-image: url('../img/images/five-1_hover.png');
+			background-repeat: no-repeat;
+			background-size: contain;
 			.fiv-one__hovertext{
 				display: block !important;
 			}
@@ -931,13 +1018,13 @@ input, select, textarea {
 			}
 		}
 		&__hovertext{
-		max-width: 90%;
-		color: white;
-		text-align: center;
-		padding-top: 5%;
-		font-family: 'Akzidenz-Grotesk BQ', sans-serif; 
-		font-size: 18px !important;
-		font-weight: lighter;
+			max-width: 90%;
+			color: white;
+			text-align: center;
+			padding-top: 5%;
+			font-family: 'Akzidenz-Grotesk BQ', sans-serif; 
+			font-size: 18px !important;
+			font-weight: lighter;
 		}
 		.fiv-one--nohover{
 			font-size: 24px;
@@ -949,8 +1036,12 @@ input, select, textarea {
 	.fiv-two{
     
 		background-image: url('../img/images/five-2.png');
+		background-repeat: no-repeat;
+			background-size: contain;
 		&:hover{
 			background-image: url('../img/images/five-2_hover.png');
+			background-repeat: no-repeat;
+			background-size: contain;
 			.fiv-two__hovertext{
 				display: block !important;
 			}
@@ -977,8 +1068,12 @@ input, select, textarea {
 	.fiv-tr{
     
 		background-image: url('../img/images/five-3.png');
+		background-repeat: no-repeat;
+			background-size: contain;
 		&:hover{
 			background-image: url('../img/images/five-3_hover.png');
+			background-repeat: no-repeat;
+			background-size: contain;
 			.fiv-tr__hovertext{
 				display: block !important;
 			}
@@ -1513,7 +1608,7 @@ width: 80%;
 }
 
 .detail-product{
-	div{
+	
 	h3{
 		color: $blueC2C;
 		font-size: 60px;
@@ -1521,7 +1616,7 @@ width: 80%;
 
 	}
 	img{
-		height: 100%;
+		
 	}
 	a{
 		background-color: $blueC2C;
@@ -1529,8 +1624,25 @@ width: 80%;
 		font-family: 'AkzidenzGrotesk BQ', sans-serif; 
 		padding: 2% 5%;
 		border-radius: 50px;
-
 	}
+	p.descriptionProduct{
+		color: $blueC2C;
+		font-family: 'AkzidenzGrotesk BQ', sans-serif; 
+		font-size: 38px;
+	}
+	p.etiqueta{
+		color: $blueC2C;
+		font-family: 'AkzidenzGrotesk BQ', sans-serif; 
+		font-size: 20px;
+		font-weight: bold;
+	}
+	p.valor{
+		color: $grayC2C;
+		font-family: 'AkzidenzGrotesk BQ', sans-serif; 
+		font-size: 20px;
+		font-weight:normal;
+	}
+
 }
-}
+
 /* end single product */

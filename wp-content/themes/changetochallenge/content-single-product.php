@@ -105,13 +105,13 @@ $product->get_review_count();
 		<!-- Control the column width, and how they should appear on different devices -->	
 		<div class="container">
 			<div class="row d-flex justify-content-center pt-5 detail-product">
-				<div class="col-sm-6" >
+				<div class="col-sm-6 detail-product" >
 					<h3><?php echo $product->get_name(); ?></h3>
 					<img src="<?php echo the_field('foto_vertical'); ?>" alt="" srcset="" class="border-rad">
 					<a href="<?php echo the_field("pdf_informativo");?>" target="_blank">PDF Informativo</a>
 				</div>
 				<div class="col-sm-6" >
-					<div class="col-sm-8" >
+					<div class="col-sm-8 detail-product" >
 						<p class="descriptionProduct">Conoce más sobre <br/> este challenge</p>
 						<hr class="hr-orange"/>
 						<?php if(get_field('challenge')) { ?>							

@@ -31,7 +31,7 @@
 
 <div class="container-fluid section-unete">
     <!-- Control the column width, and how they should appear on different devices -->
-    <div class="row text-center  d-flex justify-content-center mt-5">
+    <div class="row text-center  d-flex justify-content-center mt-5 pt-5">
       <div class="col-sm-6" >
       <p class="first-child">¡Únete a nosotros en estas aventuras y juntos dejaremos <span class="text-orange">nuestro mundo como un lugar mejor!</span></p>
       </div>
@@ -194,81 +194,81 @@
 </section>
 
 
-<div class="container-fluid section-unete  causas pt-5 pb-5">    
-    <div class="row text-center">
-      <div class="col-sm-12" >
-        <p class="question"><strong>Estas son <span class="text-orange">nuestras causas</span></strong></p>
-      </div>
-    </div>
-    
-    <div class="row d-flex justify-content-center text-center content-icon3">
-      <div class="col-sm-3" >
-      <div class="cards-fiv fiv-one">
-          <div class="text-fiv fiv-one--nohover">
-            <p>Bosques sustentables</p>          
-          </div>
-          <p class="fiv-one__hovertext" style="display:none;">Un uso sostenible de los bosques implica utilizarlos y cuidarlos de manera que se puedan satisfacer las necesidades y al mismo tiempo protegerlos para el futuro. 
-          Los métodos sostenibles no son los mismos en todos los lugares. Cada comunidad debe averiguar el más adecuado para sí misma y para la preservación del bosque. Apoyamos organizaciones que trabajan bajo este principio. </p>
+<div class="container-fluid">
+<div class="row d-flex justify-content-center pt-5 pb-5">
+  <div class="col-sm-3">
+    <div class="card one">
+      <div class="card-body">
+        <h5 class="card-title">Bosques sustentables</h5>
+        <div class="text-hover">
+          <p class="card-text">Un uso sostenible de los bosques implica utilizarlos y cuidarlos de manera que se puedan satisfacer las necesidades y al mismo tiempo protegerlos para el futuro. Los métodos sostenibles no son los mismos en todos los lugares. Cada comunidad debe averiguar el más adecuado para sí misma y para la preservación del bosque. Apoyamos organizaciones que trabajan bajo este principio.</p>
         </div>
-      </div>
-      <div class="col-sm-3" >
-      <div class="cards-fiv fiv-two">
-        <div class="text-fiv fiv-two--nohover">
-          <p>Desarrollo de<br>comunidades sustentables</p>
-        </div>
-        <p class="fiv-two__hovertext" style="display:none;">Consideramos que un desarrollo económico ambientalmente sostenible es garantía de que, esforzándose por satisfacer la demanda actual, se dejará en patrimonio un ambiente sano y recursos naturales suficientes para hacer frente a las necesidades de generaciones futuras.
-</p>
-      </div>
-      </div>
-      <div class="col-sm-3" >
-      <div class="cards-fiv fiv-tr">
-        <div class="text-fiv fiv-tr--nohover">
-          <p>Proyectos<br>hidrológicos</p>
-        </div>
-        <p class="fiv-tr__hovertext" style="display:none;">La protección de las reservas acuíferas disponibles en el planeta es entonces una acción que todos los países, gobiernos y comunidades deben procurar a fin de asegurar que esos cursos naturales de agua permitan la subsistencia no sólo del ser humano si no de cualquier forma de vida conocida.</p>
-      </div>
-      </div>
-    </div>
-    <br>
-</div>
-
-<section id="sub-one" class="info2 info">
-  <div class="cont-section2  py-3 back">
-
-    <div class="d-flex justify-content-between w-100">
-      <div class="w-40">
-        <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/contact.png" alt="" class="w-800 h-auto rounded-5">
-      </div>
-      <div class="w-50 px-3 d-flex flex-column form-cont">
-        <h3 class="text-bold py-2 mb-1">Nuestros Pilares</h3>
-        <p> Si tienes alguna duda o comentario, <br>
-        <span>escríbenos y pronto nos pondremos en contacto contigo.</span></p>
-        <form action="" method="post">
-          <!-- Campo para Nombre Completo -->
-          <div class="mb-3 sty-form">
-            <input type="text" class="form-control" id="name" placeholder="Nombre Completo*:">
-          </div>
-
-          <!-- Campo para Correo Electrónico -->
-          <div class="mb-3 sty-form">
-            <input type="email" class="form-control" id="email" placeholder="Correo*:">
-          </div>
-
-          <!-- Campo para Teléfono -->
-          <div class="mb-3 sty-form">
-            <input type="tel" class="form-control" id="phone" placeholder="Tel*:">
-          </div>
-
-          <!-- Campo para Mensaje -->
-          <div class="mb-3 sty-form">
-            <textarea class="form-control" id="message" placeholder="Dejar un mensaje:"></textarea>
-          </div>
-          <input type="submit" class="btn-env" value="Enviar">
-        </form>
       </div>
     </div>
   </div>
-</section>
+  <div class="col-sm-3">
+    <div class="card two">
+      <div class="card-body">
+        <h5 class="card-title">Desarrollo de <br/>comunidades sustentables</h5>
+        <div class="text-hover">
+          <p class="card-text">Consideramos que un desarrollo económico ambientalmente sostenible es garantía de que, esforzándose por satisfacer la demanda actual, se dejará en patrimonio un ambiente sano y recursos naturales suficientes para hacer frente a las necesidades de generaciones futuras.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <div class="card three">
+      <div class="card-body">
+        <h5 class="card-title">Proyectos hidrológicos</h5>
+        <div class="text-hover">
+          <p class="card-text">Consideramos que un desarrollo económico ambientalmente sostenible es garantía de que, esforzándose por satisfacer la demanda actual, se dejará en patrimonio un ambiente sano y recursos naturales suficientes para hacer frente a las necesidades de generaciones futuras.
+</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="container-fluid content-form pt-5 pb-5">
+	<div class="container">
+		<div class="row d-flex justify-content-center  content-icon3">
+			<div class="col-sm-6 content-img" >
+				<img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/contact.png" alt="" srcset="" class="border-rad">
+			</div>
+			<div class="col-sm-6" >
+				<h3>Contáctanos</h3>
+				<p class="descriptionProduct contacto mt-2">
+				Si tienes alguna duda o comentario, <span class="text-orange">escríbenos y pronto nos pondremos en contacto contigo.</span></p>
+				<br/>
+				<div class="content-frm">
+				<form action="" method="post">
+					<!-- Campo para Nombre Completo -->
+					<div class="mb-3 sty-form">
+						<input type="text" class="form-control required" id="name" placeholder="Nombre Completo*:">
+					</div>
+
+					<!-- Campo para Correo Electrónico -->
+					<div class="mb-3 sty-form">
+						<input type="email" class="form-control required" id="email" placeholder="Correo*:">
+					</div>
+
+          <!-- Campo para telefono -->
+					<div class="mb-3 sty-form">
+						<input type="text" class="form-control required" id="tel" placeholder="Tel*:">
+					</div>
+
+					<!-- Campo para Mensaje -->
+					<div class="mb-3 sty-form">
+						<textarea class="form-control" id="message" placeholder="Dejanos tu mensaje:"></textarea>
+					</div>
+					<input type="submit" class="btn-env btnSubmit mt-4" value="Enviar">
+				</form>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
 </div>
 
 
