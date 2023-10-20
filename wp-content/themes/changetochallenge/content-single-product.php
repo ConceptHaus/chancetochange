@@ -76,7 +76,7 @@ $product->get_downloadable();
 $product->get_download_limit();
  
 // Obtener imágenes del producto.
-$product->get_image_id();
+$product->get_image_id(); 
 get_the_post_thumbnail_url( $product->get_id(), 'full' );
 $product->get_gallery_image_ids();
  
@@ -101,31 +101,132 @@ $product->get_review_count();
 
 		
 
-	<div class="container-fluid section-unete loopProductos pt-5">
+	<div class="container-fluid  pt-5">
 		<!-- Control the column width, and how they should appear on different devices -->	
-		
-		<div class="row d-flex justify-content-center  content-icon3">
-			<div class="col-sm-6 text-left" >
-				<h3><?php echo $product->get_name() ?></h3>
-				<img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/grupoAbierto/sect-1.png" alt="" srcset="" class="border-rad">
-			</div>
-			<div class="col-sm-6" >
-				<div class="col-sm-8" >
-					
-					<p class="descriptionProduct">
-					En esta caminata podrás conocer uno de los bosques más profundos de México en una expedición desde la parte baja del Nevado de Toluca hasta Valle de Bravo. El sendero ofrece varios miradores donde puedes detenerte y disfrutar de las vistas impresionantes de los valles y montañas.
-					</p>
-					<ul class="listProduct">
-						<li>3 de febrero</li>
-						<li>2 días</li>
-						<li>Costo: $3,000 MXN</li>
-						<li>Nivel Básico</li>
-					</ul>
-					<a href="<?php echo esc_url( "/product/nevado-a-valle" ); ?>">Reservar</a>
+		<div class="container">
+			<div class="row d-flex justify-content-center pt-5 detail-product">
+				<div class="col-sm-6" >
+					<h3><?php echo $product->get_name(); ?></h3>
+					<img src="<?php echo the_field('foto_vertical'); ?>" alt="" srcset="" class="border-rad">
+					<a href="<?php echo the_field("pdf_informativo");?>">PDF Informativo</a>
+				</div>
+				<div class="col-sm-6" >
+					<div class="col-sm-8" >
+						<p class="descriptionProduct">Conoce más sobre <br/> este challenge</p>
+						<hr class="hr-orange"/>
+						<?php if(get_field('challenge')) { ?>							
+							<div class="row">
+								<div class="col-sm-6">
+									<p class="etiqueta">Challenge</p>
+								</div>
+								<div class="col-sm-6">
+									<p class="valor"><?php echo the_field('challenge'); ?></p>
+								</div>
+							</div>
+						<?php } ?>
+						<?php if(get_field('tipo_de_causa')) { ?>							
+							<div class="row">
+								<div class="col-sm-6">
+									<p class="etiqueta">Tipo de causa</p>
+								</div>
+								<div class="col-sm-6">
+									<p class="valor"><?php echo the_field('tipo_de_causa'); ?></p>
+								</div>
+							</div>
+						<?php } ?>
+						<?php if(get_field('duracion')) { ?>							
+							<div class="row">
+								<div class="col-sm-6">
+									<p class="etiqueta">Duración</p>
+								</div>
+								<div class="col-sm-6">
+									<p class="valor"><?php echo the_field('duracion'); ?></p>
+								</div>
+							</div>
+						<?php } ?>
+						<?php if(get_field('nivel_fisico')) { ?>							
+							<div class="row">
+								<div class="col-sm-6">
+									<p class="etiqueta">Nivel físico</p>
+								</div>
+								<div class="col-sm-6">
+									<p class="valor"><?php echo the_field('nivel_fisico'); ?></p>
+								</div>
+							</div>
+						<?php } ?>
+						<?php if(get_field('nivel_tecnico')) { ?>							
+							<div class="row">
+								<div class="col-sm-6">
+									<p class="etiqueta">Nivel técnico</p>
+								</div>
+								<div class="col-sm-6">
+									<p class="valor"><?php echo the_field('nivel_tecnico'); ?></p>
+								</div>
+							</div>
+						<?php } ?>
+						<?php if(get_field('punto_de_encuentro')) { ?>							
+							<div class="row">
+								<div class="col-sm-6">
+									<p class="etiqueta">Punto de encuentro</p>
+								</div>
+								<div class="col-sm-6">
+									<p class="valor"><?php echo the_field('punto_de_encuentro'); ?></p>
+								</div>
+							</div>
+						<?php } ?>
+						<?php if(get_field('inicia_en')) { ?>							
+							<div class="row">
+								<div class="col-sm-6">
+									<p class="etiqueta">Inicia en</p>
+								</div>
+								<div class="col-sm-6">
+									<p class="valor"><?php echo the_field('inicia_en'); ?></p>
+								</div>
+							</div>
+						<?php } ?>
+						<?php if(get_field('termina_en')) { ?>							
+							<div class="row">
+								<div class="col-sm-6">
+									<p class="etiqueta">Termina en</p>
+								</div>
+								<div class="col-sm-6">
+									<p class="valor"><?php echo the_field('termina_en'); ?></p>
+								</div>
+							</div>
+						<?php } ?>
+						<hr class="hr-orange"/>
+						<?php if(get_field('incluye')) { ?>							
+							<div class="row">
+								<div class="col-sm-12">
+									<p class="etiqueta"><strong>Incluye: </strong><?php echo the_field('incluye'); ?></p>
+								</div>
+							</div>
+						<?php } ?>
+						<?php if(get_field('se_recomienda_llevar')) { ?>							
+							<div class="row">
+								<div class="col-sm-12">
+									<p class="etiqueta"><strong>Se recomienda llevar: </strong><?php echo the_field('se_recomienda_llevar'); ?></p>
+								</div>
+							</div>
+						<?php } ?>
+
+												
+						<div class="row">
+							<div class="col-sm-12">
+								<h3><span>Costo: </span><?php echo $product->get_price(); ?> mxn</h3>
+								<?php if(get_field('se_recomienda_llevar')) { ?>	
+									<p class="etiqueta"><?php echo the_field("nota_costo"); ?></p>
+								<?php } ?>
+							</div>
+						</div>
+						
+						
+						
+					</div>
 				</div>
 			</div>
+			<br>
 		</div>
-		<br>
 	</div>
 
 						<section id="sub-one" class="info2 info mt-3 pt-5">

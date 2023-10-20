@@ -2660,6 +2660,22 @@ body.is-preload #banner > .inner {
   color: white;
 }
 
+.detail-product div h3 {
+  color: #1D3A6B;
+  font-size: 60px;
+  font-family: "AkzidenzGrotesk BQ", sans-serif;
+}
+.detail-product div img {
+  height: 100%;
+}
+.detail-product div a {
+  background-color: #1D3A6B;
+  color: white;
+  font-family: "AkzidenzGrotesk BQ", sans-serif;
+  padding: 2% 5%;
+  border-radius: 50px;
+}
+
 /* end single product */
 /* ==|====================
    Layout/Footer

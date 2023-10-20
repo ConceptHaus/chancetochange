@@ -1511,4 +1511,26 @@ width: 80%;
 		color: white;
 	}
 }
+
+.detail-product{
+	div{
+	h3{
+		color: $blueC2C;
+		font-size: 60px;
+		font-family: 'AkzidenzGrotesk BQ', sans-serif; 
+
+	}
+	img{
+		height: 100%;
+	}
+	a{
+		background-color: $blueC2C;
+		color: white;
+		font-family: 'AkzidenzGrotesk BQ', sans-serif; 
+		padding: 2% 5%;
+		border-radius: 50px;
+
+	}
+}
+}
 /* end single product */
