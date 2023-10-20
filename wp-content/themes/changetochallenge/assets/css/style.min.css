@@ -2633,6 +2633,34 @@ body.is-preload #banner > .inner {
 }
 
 /* end empresarial */
+/*  single product */
+#single-product {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 4rem 0 2rem 0;
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: 0 !important;
+  cursor: default;
+  height: 60vh;
+  margin-bottom: -3.25rem;
+  max-height: 32rem;
+  min-height: 22rem;
+}
+#single-product h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 80px;
+  font-weight: bold;
+  color: white;
+}
+
+/* end single product */
 /* ==|====================
    Layout/Footer
    ======================= */

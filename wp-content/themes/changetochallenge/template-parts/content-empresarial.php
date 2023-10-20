@@ -108,7 +108,52 @@
 			</div><!-- end.container -->
 		</div>
 	</div>
- 
+
+<?php
+add_shortcode('custom_loop', 'custom_loop_shortcode');
+function custom_loop_shortcode() {
+    ob_start();
+    $meta_query   = WC()->query->get_meta_query();
+
+    $meta_query[] = array(
+        'key'   => '_featured',
+        'value' => 'yes'
+    );
+    $args = array(
+        'post_type'   =>  'product',
+        'post_status' => 'publish',
+        'stock'       =>  1,
+        'showposts'   =>  6,
+        'orderby'     =>  'date',
+        'order'       =>  'DESC',
+        'meta_query'  =>  $meta_query   //Use it if you want featured products only
+    );
+
+    $loop = new WP_Query( $args );
+    ?><ul><?php
+    while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
+        <li>    
+            <?php 
+                if ( has_post_thumbnail( $loop->post->ID ) ) 
+                    echo get_the_post_thumbnail( $loop->post->ID, 'shop_catalog' ); 
+                else 
+                    echo '<img src="' . woocommerce_placeholder_img_src() . '" alt="Placeholder" width="65px" height="115px" />'; 
+            ?>
+            <h3><?php the_title(); ?></h3>
+
+            <?php 
+                echo $product->get_price_html(); 
+                woocommerce_template_loop_add_to_cart( $loop->post, $product );
+            ?>    
+        </li>
+    <?php 
+    endwhile;
+    ?></ul><?php
+    wp_reset_query();     
+
+    return ob_get_clean();
+}
+?>
 	<div class="container-fluid section-unete loopProductos pt-5">
 		<!-- Control the column width, and how they should appear on different devices -->	
 		<div class="container">
