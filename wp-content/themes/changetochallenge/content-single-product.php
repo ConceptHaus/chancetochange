@@ -108,65 +108,66 @@ $product->get_review_count();
 				<div class="col-sm-6 detail-product" >
 					<h3><?php echo $product->get_name(); ?></h3>
 					<img src="<?php echo the_field('foto_vertical'); ?>" alt="" srcset="" class="border-rad">
-					<a href="<?php echo the_field("pdf_informativo");?>" target="_blank">PDF Informativo</a>
+					<br/>
+					<a href="<?php echo the_field("pdf_informativo");?>" target="_blank" class="mt-4">PDF Informativo</a>
 				</div>
 				<div class="col-sm-6" >
-					<div class="col-sm-8 detail-product" >
+					<div class="col-sm-12 detail-product" >
 						<p class="descriptionProduct">Conoce más sobre <br/> este challenge</p>
 						<hr class="hr-orange"/>
 						<?php if(get_field('challenge')) { ?>							
 							<div class="row">
-								<div class="col-sm-6">
+								<div class="col-sm-4">
 									<p class="etiqueta">Challenge</p>
 								</div>
-								<div class="col-sm-6">
+								<div class="col-sm-8">
 									<p class="valor"><?php echo the_field('challenge'); ?></p>
 								</div>
 							</div>
 						<?php } ?>
 						<?php if(get_field('tipo_de_causa')) { ?>							
 							<div class="row">
-								<div class="col-sm-6">
+								<div class="col-sm-4">
 									<p class="etiqueta">Tipo de causa</p>
 								</div>
-								<div class="col-sm-6">
+								<div class="col-sm-8">
 									<p class="valor"><?php echo the_field('tipo_de_causa'); ?></p>
 								</div>
 							</div>
 						<?php } ?>
 						<?php if(get_field('duracion')) { ?>							
 							<div class="row">
-								<div class="col-sm-6">
+								<div class="col-sm-4">
 									<p class="etiqueta">Duración</p>
 								</div>
-								<div class="col-sm-6">
+								<div class="col-sm-8">
 									<p class="valor"><?php echo the_field('duracion'); ?></p>
 								</div>
 							</div>
 						<?php } ?>
 						<?php if(get_field('nivel_fisico')) { ?>							
 							<div class="row">
-								<div class="col-sm-6">
+								<div class="col-sm-4">
 									<p class="etiqueta">Nivel físico</p>
 								</div>
-								<div class="col-sm-6">
+								<div class="col-sm-8">
 									<p class="valor"><?php echo the_field('nivel_fisico'); ?></p>
 								</div>
 							</div>
 						<?php } ?>
 						<?php if(get_field('nivel_tecnico')) { ?>							
 							<div class="row">
-								<div class="col-sm-6">
+								<div class="col-sm-4">
 									<p class="etiqueta">Nivel técnico</p>
 								</div>
-								<div class="col-sm-6">
+								<div class="col-sm-8">
 									<p class="valor"><?php echo the_field('nivel_tecnico'); ?></p>
 								</div>
 							</div>
 						<?php } ?>
 						<?php if(get_field('punto_de_encuentro')) { ?>							
 							<div class="row">
-								<div class="col-sm-6">
+								<div class="col-sm-4">
 									<p class="etiqueta">Punto de encuentro</p>
 								</div>
 								<div class="col-sm-6">
@@ -176,20 +177,20 @@ $product->get_review_count();
 						<?php } ?>
 						<?php if(get_field('inicia_en')) { ?>							
 							<div class="row">
-								<div class="col-sm-6">
+								<div class="col-sm-4">
 									<p class="etiqueta">Inicia en</p>
 								</div>
-								<div class="col-sm-6">
+								<div class="col-sm-8">
 									<p class="valor"><?php echo the_field('inicia_en'); ?></p>
 								</div>
 							</div>
 						<?php } ?>
 						<?php if(get_field('termina_en')) { ?>							
 							<div class="row">
-								<div class="col-sm-6">
+								<div class="col-sm-4">
 									<p class="etiqueta">Termina en</p>
 								</div>
-								<div class="col-sm-6">
+								<div class="col-sm-8">
 									<p class="valor"><?php echo the_field('termina_en'); ?></p>
 								</div>
 							</div>
@@ -198,14 +199,14 @@ $product->get_review_count();
 						<?php if(get_field('incluye')) { ?>							
 							<div class="row">
 								<div class="col-sm-12">
-									<p class="etiqueta"><strong>Incluye: </strong><?php echo the_field('incluye'); ?></p>
+									<p class="etiqueta">Incluye: </p><p class="valor"><?php echo the_field('incluye'); ?></strong></p>
 								</div>
 							</div>
 						<?php } ?>
 						<?php if(get_field('se_recomienda_llevar')) { ?>							
 							<div class="row">
 								<div class="col-sm-12">
-									<p class="etiqueta"><strong>Se recomienda llevar: </strong><?php echo the_field('se_recomienda_llevar'); ?></p>
+									<p class="etiqueta">Se recomienda llevar: </p><p class="valor"><?php echo the_field('se_recomienda_llevar'); ?></p>
 								</div>
 							</div>
 						<?php } ?>
@@ -213,9 +214,9 @@ $product->get_review_count();
 												
 						<div class="row">
 							<div class="col-sm-12">
-								<h3><span>Costo: </span><?php echo $product->get_price(); ?> mxn</h3>
+								<h3><span>Costo: </span>$ <?php echo $product->get_price(); ?> mxn</h3>
 								<?php if(get_field('se_recomienda_llevar')) { ?>	
-									<p class="etiqueta"><?php echo the_field("nota_costo"); ?></p>
+									<p class="valor"><?php echo the_field("nota_costo"); ?></p>
 								<?php } ?>
 							</div>
 						</div>
@@ -229,11 +230,59 @@ $product->get_review_count();
 		</div>
 	</div>
 
-						<section id="sub-one" class="info2 info mt-3 pt-5">
-							<div class="cont-section2  py-3 gen-cont botoneraTiposAventuras">
-								<div><a href="<?php echo esc_url( "/grupo-abierto" ); ?>" class="gen-btn active">Aventura abierta</a></div>
-								<div><a href="<?php echo esc_url( "/grupo-cerrado" ); ?>" class="gen-btn">Aventura privada</a></div>
-								<div><a href="<?php echo esc_url( "/empresarial" ); ?>" class="gen-btn">Aventura empresarial</a></div>
-							</div>
-						</section>
-						<!-- One -->
+	<div class="container-fluid section-unete">
+		<!-- Control the column width, and how they should appear on different devices -->
+		<div class="row text-center  d-flex justify-content-center mt-5 pt-5">
+			<div class="col-sm-6" >
+				<p class="first-child">Unirme a grupo abierto</p>
+			</div>
+		</div>
+		<br>
+	</div>
+
+	<section id="sub-one" class="info2 info mt-3 pt-5">
+		<div class="cont-section2  py-3 gen-cont botoneraTiposAventuras">
+			<div><a href="<?php echo esc_url( "/grupo-abierto" ); ?>" class="gen-btn active">Aventura abierta</a></div>
+			<div><a href="<?php echo esc_url( "/grupo-cerrado" ); ?>" class="gen-btn">Aventura privada</a></div>
+			<div><a href="<?php echo esc_url( "/empresarial" ); ?>" class="gen-btn">Aventura empresarial</a></div>
+		</div>
+	</section>
+
+	<div class="container-fluid section-unete ">
+		<!-- Control the column width, and how they should appear on different devices -->
+		<div class="row text-center  d-flex justify-content-center mt-5">
+			<div class="col-sm-6" >
+			<p class="first-child">Otros <p class="text-orange">challenges</p> de interés</p>
+			</div>
+		</div>
+		<br>
+		
+		<div class="container pt-5 pb-5">
+			<div class="row">
+				<div class="col-12">
+					<div class="slideHome ">
+						<div class="icons-contsSngle">				
+							<div>
+								<div class="cards-fou tiposAventuras">
+								<img class="tiposAventuras"  src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/grupoAbierto/image-1.png" alt="" srcset="">
+							</div><!-- end.cards-fou -->
+						</div>
+						<div>
+							<div class="cards-fou tiposAventuras">
+							<img class="tiposAventuras" src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/grupoAbierto/image-2.png" alt="" srcset="">
+							</div><!-- end.cards-fou -->
+						</div>
+						<div>
+							<div class="cards-fou tiposAventuras">
+							<img class="tiposAventuras"  src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/grupoAbierto/image-3.png" alt="" srcset="">
+							</div><!-- end.cards-fou -->
+						</div>
+					</div><!-- end.icons-conts -->
+					<a href="#" class="btnSlideProd bLeftP"  id="prevslideSingle"></a>
+					<a href="#" class="btnSlideProd nRightP" id="nextslideSingle"></a>
+				</div><!-- end.slideHome -->
+			</div><!-- end.col-* -->
+		</div><!-- end.row -->
+		<br>
+	</div>
+ 

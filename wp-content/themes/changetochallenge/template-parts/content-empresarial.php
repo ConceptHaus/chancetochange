@@ -76,24 +76,24 @@
 									<div>
 										<div class="cards-fou tiposAventuras">
 										<img class="tiposAventuras"  src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/grupoAbierto/image-1.png" alt="" srcset="">
-										</div><!-- end.cards-fou -->
-									</div>
-									<div>
-										<div class="cards-fou tiposAventuras">
-										<img class="tiposAventuras" src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/grupoAbierto/image-2.png" alt="" srcset="">
-										</div><!-- end.cards-fou -->
-									</div>
-									<div>
-										<div class="cards-fou tiposAventuras">
-										<img class="tiposAventuras"  src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/grupoAbierto/image-3.png" alt="" srcset="">
-										</div><!-- end.cards-fou -->
-									</div>
-								</div><!-- end.icons-conts -->
-								<a href="#" class="btnSlideProd bLeftP" id="prevslideHome"></a>
-								<a href="#" class="btnSlideProd nRightP" id="nextslideHome"></a>
-							</div><!-- end.slideHome -->
-						</div><!-- end.col-* -->
-					</div><!-- end.row -->
+									</div><!-- end.cards-fou -->
+								</div>
+								<div>
+									<div class="cards-fou tiposAventuras">
+									<img class="tiposAventuras" src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/grupoAbierto/image-2.png" alt="" srcset="">
+									</div><!-- end.cards-fou -->
+								</div>
+								<div>
+									<div class="cards-fou tiposAventuras">
+									<img class="tiposAventuras"  src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/grupoAbierto/image-3.png" alt="" srcset="">
+									</div><!-- end.cards-fou -->
+								</div>
+							</div><!-- end.icons-conts -->
+							<a href="#" class="btnSlideProd bLeftP" id="prevslideHome"></a>
+							<a href="#" class="btnSlideProd nRightP" id="nextslideHome"></a>
+						</div><!-- end.slideHome -->
+					</div><!-- end.col-* -->
+				</div><!-- end.row -->
  
  
 					<div class="row text-center  d-flex justify-content-center mt-5">

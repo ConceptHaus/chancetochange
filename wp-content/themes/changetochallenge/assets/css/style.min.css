@@ -1659,10 +1659,14 @@ p.question {
   padding: 2%;
   margin: 0% 3%;
   text-align: center;
-  max-width: 20% !important;
   max-height: 550px;
   height: 550px;
   position: relative;
+}
+@media all and (min-width: 768px) {
+  .buscando .col-sm-3 {
+    max-width: 20% !important;
+  }
 }
 .buscando .col-sm-3 .text-thr p {
   font-family: "Roboto", sans-serif;
@@ -1679,17 +1683,17 @@ p.question {
 .buscando .col-sm-3:nth-child(1):hover {
   background-image: url("../img/images/fot-1_hover.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 .buscando .col-sm-3:nth-child(2):hover {
   background-image: url("../img/images/fot-2_hover.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 .buscando .col-sm-3:nth-child(3):hover {
   background-image: url("../img/images/fot-3_hover.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 .buscando .col-sm-3:hover img {
   display: none !important;
@@ -2781,10 +2785,15 @@ body.is-preload #banner > .inner {
   font-weight: bold;
 }
 .detail-product p.valor {
-  color: #4E4E4E;
+  color: #4E4E4E !important;
   font-family: "AkzidenzGrotesk BQ", sans-serif;
   font-size: 20px;
-  font-weight: normal;
+  font-weight: lighter;
+}
+
+.hr-orange {
+  border-bottom: 3px solid #FF6900;
+  opacity: 1;
 }
 
 /* end single product */

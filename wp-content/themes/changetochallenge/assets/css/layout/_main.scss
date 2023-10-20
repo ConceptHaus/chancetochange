@@ -616,7 +616,10 @@ input, select, textarea {
 			padding: 2%;
 			margin: 0% 3%;
 			text-align: center;
-			max-width: 20% !important;
+			@media all and (min-width: 768px) {
+				max-width: 20% !important;
+			 }
+			 			
 			max-height: 550px;
 			height: 550px;
   			position: relative;	
@@ -640,7 +643,7 @@ input, select, textarea {
 				&:hover{
 					background-image: url('../img/images/fot-1_hover.png');
 					background-repeat: no-repeat;
-					background-size: contain;
+					background-size: cover;
 				}
 			}
 
@@ -648,7 +651,7 @@ input, select, textarea {
 				&:hover{
 					background-image: url('../img/images/fot-2_hover.png');
 				background-repeat: no-repeat;
-				background-size: contain;
+				background-size: cover;
 				}
 			}
 
@@ -656,7 +659,7 @@ input, select, textarea {
 				&:hover{
 					background-image: url('../img/images/fot-3_hover.png');
 				background-repeat: no-repeat;
-				background-size: contain;
+				background-size: cover;
 				}
 			}
 			&:hover{
@@ -1637,12 +1640,16 @@ width: 80%;
 		font-weight: bold;
 	}
 	p.valor{
-		color: $grayC2C;
+		color: $grayC2C !important;
 		font-family: 'AkzidenzGrotesk BQ', sans-serif; 
 		font-size: 20px;
-		font-weight:normal;
+		font-weight:lighter;
 	}
 
+}
+.hr-orange{
+	border-bottom: 3px solid $orangeC2C;
+	opacity: 1;
 }
 
 /* end single product */

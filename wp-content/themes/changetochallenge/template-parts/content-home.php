@@ -117,7 +117,7 @@
           <p>Aventura organizada especialmente para tu grupo</p>
           <p class="des">Personalizada e ideal para grupos a partir de 8 personas</p>
         </div>
-        <a href="#">Conocer más</a>
+        <a href="<?php echo esc_url( "/grupo-cerrado" ); ?>">Conocer más</a>
       </div>
       <div class="col-sm-3" >
       <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/fot-3.png" alt="" srcset="">
@@ -125,7 +125,7 @@
           <p>Aventuras enfocadas en team building empresarial</p>
           <p class="des"> Conecta con la naturaleza y crea lazos inquebrantables</p>
         </div>
-        <a href="#">Conocer más</a>
+        <a href="<?php echo esc_url( "/empresarial" ); ?>">Conocer más</a>
       </div>
     </div>
     <br>
