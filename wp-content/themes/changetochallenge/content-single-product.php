@@ -108,7 +108,7 @@ $product->get_review_count();
 				<div class="col-sm-6" >
 					<h3><?php echo $product->get_name(); ?></h3>
 					<img src="<?php echo the_field('foto_vertical'); ?>" alt="" srcset="" class="border-rad">
-					<a href="<?php echo the_field("pdf_informativo");?>">PDF Informativo</a>
+					<a href="<?php echo the_field("pdf_informativo");?>" target="_blank">PDF Informativo</a>
 				</div>
 				<div class="col-sm-6" >
 					<div class="col-sm-8" >
