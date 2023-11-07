@@ -205,7 +205,7 @@ get_header();
 								<img src="<?php echo the_field('foto_horizontal'); ?>" alt="" srcset="" class="border-rad">
 							</div>
 							<div class="col-sm-6" >
-									<h3><?php the_title().$aux; ?></h3>
+									<h3><?php the_title().$aux;  ?></h3>
 									<p class="descriptionProduct mt-5">
 										<?php echo $product->get_short_description(); ?>
 									</p>
