@@ -155,7 +155,7 @@ get_header();
 							</p>
 							<ul class="listProduct mt-3">
 								<li>3 de febrero</li>
-								<li>Duración:<?php if(isset(get_post_meta($loop->post->ID , 'duracion', true)) && !empty(get_post_meta($loop->post->ID , 'duracion', true))) {echo get_post_meta($loop->post->ID , 'duracion', true); }?></li>
+								<li>Duración:<?php echo get_post_meta($loop->post->ID , 'duracion', true); ?></li>
 								<li>Costo: $ <?php echo $product->get_price_html(); ?> MXN</li>
 								<li>Nivel técnico: <?php echo get_post_meta($loop->post->ID , 'nivel_tecnico', true); ?></li>
 							</ul>
