@@ -2765,6 +2765,10 @@ body.is-preload #banner > .inner {
   color: #1D3A6B;
   font-size: 60px;
   font-family: "AkzidenzGrotesk BQ", sans-serif;
+  font-weight: 700;
+}
+.detail-product h3 span {
+  color: #4E4E4E !important;
 }
 .detail-product a {
   background-color: #1D3A6B;
@@ -2772,11 +2776,16 @@ body.is-preload #banner > .inner {
   font-family: "AkzidenzGrotesk BQ", sans-serif;
   padding: 2% 5%;
   border-radius: 50px;
+  text-align: center;
+  width: 90%;
+  min-width: 300px;
+  display: inherit;
 }
 .detail-product p.descriptionProduct {
   color: #1D3A6B;
   font-family: "AkzidenzGrotesk BQ", sans-serif;
   font-size: 38px;
+  font-weight: 700;
 }
 .detail-product p.etiqueta {
   color: #1D3A6B;
@@ -2790,13 +2799,68 @@ body.is-preload #banner > .inner {
   font-size: 20px;
   font-weight: lighter;
 }
+.detail-product p.valorAste {
+  font-family: "AkzidenzGrotesk BQ", sans-serif;
+  font-size: 16px;
+  font-weight: lighter;
+  color: #4E4E4E;
+  font-style: italic;
+}
+.detail-product p.valorAste strong {
+  color: #FF6900;
+}
 
 .hr-orange {
   border-bottom: 3px solid #FF6900;
   opacity: 1;
 }
 
+/* Carousel de single product */
+.carouselsingle {
+  position: relative;
+}
+.carouselsingle .contName {
+  background: #1D3A6B;
+  position: absolute;
+  width: 90%;
+  top: 15% !important;
+  text-align: center;
+  padding: 2% 0%;
+}
+.carouselsingle .contName h3 {
+  color: white;
+  font-family: "AkzidenzGrotesk BQ", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+.carouselsingle a {
+  background: #1D3A6B;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  border-radius: 40px;
+  font-weight: lighter;
+  width: 200px;
+  text-align: center;
+  padding: 2% 5%;
+  margin-top: 5%;
+}
+
+.hr-orange.singleprod {
+  border-bottom: 0.8px solid #FF6900 !important;
+}
+
 /* end single product */
+/* section privacy*/
+.privacy p {
+  color: #4E4E4E;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: lighter;
+  text-align: justify;
+}
+
+/* end section privacy*/
 /* ==|====================
    Layout/Footer
    ======================= */
@@ -2863,7 +2927,6 @@ body.is-preload #banner > .inner {
   line-height: 2;
   word-wrap: break-word;
   list-style: none;
-  padding: 2rem 1.5rem;
   text-decoration: none;
 }
 
@@ -2879,6 +2942,27 @@ body.is-preload #banner > .inner {
   font-weight: 500;
   text-decoration: underline;
   word-wrap: break-word;
+  padding-left: 0% !important;
+}
+.aviso:hover {
+  color: white !important;
+  text-decoration: none;
+  cursor: pointer;
+}
+.aviso:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.ancordFooter:hover {
+  color: white !important;
+  text-decoration: none;
+  cursor: pointer;
+}
+.ancordFooter:visited {
+  color: white;
+  text-decoration: none;
+  color: white;
 }
 
 /* Modules */

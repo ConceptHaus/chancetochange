@@ -20,3 +20,11 @@ Stack trace:
 #6 {main}
   thrown in C:\xampp2\htdocs\chancetochange\wp-content\themes\changetochallenge\content-single-product.php on line 15
 
+2023-11-07T04:35:54+00:00 CRITICAL Uncaught Error: Call to a member function get_name() on null in C:\xampp2\htdocs\chancetochange\wp-content\themes\changetochallenge\template-parts\content-privacidad.php:31
+Stack trace:
+#0 C:\xampp2\htdocs\chancetochange\wp-includes\template-loader.php(106): include()
+#1 C:\xampp2\htdocs\chancetochange\wp-blog-header.php(19): require_once('C:\\xampp2\\htdoc...')
+#2 C:\xampp2\htdocs\chancetochange\index.php(17): require('C:\\xampp2\\htdoc...')
+#3 {main}
+  thrown in C:\xampp2\htdocs\chancetochange\wp-content\themes\changetochallenge\template-parts\content-privacidad.php on line 31
+

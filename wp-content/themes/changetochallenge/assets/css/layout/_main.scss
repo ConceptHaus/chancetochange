@@ -1616,6 +1616,10 @@ width: 80%;
 		color: $blueC2C;
 		font-size: 60px;
 		font-family: 'AkzidenzGrotesk BQ', sans-serif; 
+		font-weight: 700;
+		span{
+			color: $grayC2C !important;
+		}
 
 	}
 	img{
@@ -1627,11 +1631,16 @@ width: 80%;
 		font-family: 'AkzidenzGrotesk BQ', sans-serif; 
 		padding: 2% 5%;
 		border-radius: 50px;
+		text-align: center;
+		width: 90%;
+		min-width: 300px;
+		display: inherit;
 	}
 	p.descriptionProduct{
 		color: $blueC2C;
 		font-family: 'AkzidenzGrotesk BQ', sans-serif; 
 		font-size: 38px;
+		font-weight: 700;
 	}
 	p.etiqueta{
 		color: $blueC2C;
@@ -1645,6 +1654,16 @@ width: 80%;
 		font-size: 20px;
 		font-weight:lighter;
 	}
+	p.valorAste{
+		font-family: 'AkzidenzGrotesk BQ', sans-serif; 
+		font-size: 16px;
+		font-weight: lighter;
+		color: $grayC2C;
+		font-style: italic;
+		strong{
+			color: $orangeC2C;
+		}
+	}
 
 }
 .hr-orange{
@@ -1652,4 +1671,55 @@ width: 80%;
 	opacity: 1;
 }
 
+/* Carousel de single product */
+.carouselsingle{
+	position: relative;
+	.contName{
+		background: $blueC2C;
+		position: absolute;
+		width: 90%;
+		top: 15% !important;
+		text-align: center;
+		padding: 2% 0%;
+		h3{
+			color: white;
+			font-family: 'AkzidenzGrotesk BQ', sans-serif; 
+			font-size: 20px;
+			font-weight: bold;
+		}
+	}
+
+	a{
+		background: $blueC2C;
+		color: white;
+		font-family: 'Roboto', sans-serif;
+		font-size: 20px;
+		border-radius: 40px;
+		font-weight: lighter;
+		width: 200px;
+		text-align: center;
+		padding: 2% 5%;
+		margin-top: 5%;
+	}
+}
+
+
+.hr-orange.singleprod{
+	border-bottom: 0.8px solid $orangeC2C !important;
+}
+
 /* end single product */
+
+
+/* section privacy*/
+.privacy{
+	p{
+		color: $grayC2C;
+		font-family: 'Roboto', sans-serif;
+		font-size: 20px;
+		font-weight: lighter;
+		text-align: justify;
+	}
+}
+
+/* end section privacy*/ 
