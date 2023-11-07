@@ -136,7 +136,7 @@ get_header();
 		</div>
 
 		<?php
-		 $args = array( 'post_type' => 'product', 'posts_per_page' => 15, 'product_cat' => 'grupo-cerrado', 'orderby' => 'rand' );
+		 $args = array( 'post_type' => 'product', 'product_cat' => 'grupo-cerrado', 'orderby' => 'rand' );
 		 $loop = new WP_Query( $args );
 		 $aux=1;
 		 while ( $loop->have_posts() ) : $loop->the_post(); global $product; 
@@ -155,12 +155,12 @@ get_header();
 							</p>
 							<ul class="listProduct mt-3">
 								<li>3 de febrero</li>
-								<li>2 días</li>
-								<li>Costo: $3,000 MXN</li>
-								<li>Nivel Básico</li>
+								<li>Duración:<?php if(isset(get_post_meta($loop->post->ID , 'duracion', true)) && !empty(get_post_meta($loop->post->ID , 'duracion', true))) {echo get_post_meta($loop->post->ID , 'duracion', true); }?></li>
+								<li>Costo: $ <?php echo $product->get_price_html(); ?> MXN</li>
+								<li>Nivel técnico: <?php echo get_post_meta($loop->post->ID , 'nivel_tecnico', true); ?></li>
 							</ul>
 							<div class="col-sm-6 text-left d-flex justify-start" >
-								<a href="<?php echo esc_url( "/product/nevado-a-valle" ); ?>" class="btnReservar">Reservar</a>
+								<a href="<?php echo get_permalink( $loop->post->ID ) ?>" class="btnReservar">Reservar</a>
 							</div>
 						</div>
 					</div>
@@ -180,12 +180,12 @@ get_header();
 									</p>
 									<ul class="listProduct mt-3">
 										<li>3 de febrero</li>
-										<li>2 días</li>
-										<li>Costo: $3,000 MXN</li>
-										<li>Nivel Básico</li>
+										<li>Duración:<?php if(isset(get_post_meta($loop->post->ID , 'duracion', true)) && !empty(get_post_meta($loop->post->ID , 'duracion', true))) {echo get_post_meta($loop->post->ID , 'duracion', true); }?></li>
+										<li>Costo: $ <?php echo $product->get_price_html(); ?> MXN</li>
+										<li>Nivel técnico: <?php echo get_post_meta($loop->post->ID , 'nivel_tecnico', true); ?></li>
 									</ul>
 									<div class="col-sm-6 text-left d-flex justify-start" >
-										<a href="<?php echo esc_url( "/product/nevado-a-valle" ); ?>" class="btnReservar">Reservar</a>
+										<a href="<?php echo get_permalink( $loop->post->ID ) ?>" class="btnReservar">Reservar</a>
 									</div>
 							</div>
 							<div class="col-sm-6 content-img second" >
@@ -211,7 +211,7 @@ get_header();
 									</p>
 									<ul class="listProduct mt-3">
 										<li>3 de febrero</li>
-										<li>Duración:<?php echo get_post_meta($loop->post->ID , 'duracion', true); ?></li>
+										<li>Duración:<?php if(isset(get_post_meta($loop->post->ID , 'duracion', true)) && !empty(get_post_meta($loop->post->ID , 'duracion', true))) {echo get_post_meta($loop->post->ID , 'duracion', true); }?></li>
 										<li>Costo: $ <?php echo $product->get_price_html(); ?> MXN</li>
 										<li>Nivel técnico: <?php echo get_post_meta($loop->post->ID , 'nivel_tecnico', true); ?></li>
 									</ul>
