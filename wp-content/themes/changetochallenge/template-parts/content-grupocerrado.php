@@ -139,6 +139,7 @@ get_header();
 		 $args = array( 'post_type' => 'product', 'product_cat' => 'grupo-cerrado', 'orderby' => 'rand' );
 		 $loop = new WP_Query( $args );
 		 $aux=1;
+		 echo count($loop);
 		 while ( $loop->have_posts() ) : $loop->the_post(); global $product; 
 		 if($aux == 1){		
 		?>
@@ -156,7 +157,7 @@ get_header();
 							<ul class="listProduct mt-3">
 								<li>3 de febrero</li>
 								<li>Duración:<?php echo get_post_meta($loop->post->ID , 'duracion', true); ?></li>
-								<li>Costo: $ <?php echo $product->get_price_html(); ?> MXN</li>
+								<li>Costo:<?php echo $product->get_price_html(); ?> MXN</li>
 								<li>Nivel técnico: <?php echo get_post_meta($loop->post->ID , 'nivel_tecnico', true); ?></li>
 							</ul>
 							<div class="col-sm-6 text-left d-flex justify-start" >
@@ -181,7 +182,7 @@ get_header();
 									<ul class="listProduct mt-3">
 										<li>3 de febrero</li>
 										<li>Duración:<?php echo get_post_meta($loop->post->ID , 'duracion', true); ?></li>
-										<li>Costo: $ <?php echo $product->get_price_html(); ?> MXN</li>
+										<li>Costo:<?php echo $product->get_price_html(); ?> MXN</li>
 										<li>Nivel técnico: <?php echo get_post_meta($loop->post->ID , 'nivel_tecnico', true); ?></li>
 									</ul>
 									<div class="col-sm-6 text-left d-flex justify-start" >
@@ -212,7 +213,7 @@ get_header();
 									<ul class="listProduct mt-3">
 										<li>3 de febrero</li>
 										<li>Duración:<?php echo get_post_meta($loop->post->ID , 'duracion', true); ?></li>
-										<li>Costo: $ <?php echo $product->get_price_html(); ?> MXN</li>
+										<li>Costo:<?php echo $product->get_price_html(); ?> MXN</li>
 										<li>Nivel técnico: <?php echo get_post_meta($loop->post->ID , 'nivel_tecnico', true); ?></li>
 									</ul>
 									<div class="col-sm-6 text-left d-flex justify-start" >
@@ -243,7 +244,7 @@ get_header();
 					   <ul class="listProduct mt-3">
 							<li>3 de febrero</li>
 							<li>Duración:<?php echo get_post_meta($loop->post->ID , 'duracion', true); ?></li>
-							<li>Costo: $ <?php echo $product->get_price_html(); ?> MXN</li>
+							<li>Costo:<?php echo $product->get_price_html(); ?> MXN</li>
 							<li>Nivel técnico: <?php echo get_post_meta($loop->post->ID , 'nivel_tecnico', true); ?></li>
 						</ul>
 						<div class="col-sm-6 text-left d-flex justify-start" >
@@ -266,7 +267,7 @@ get_header();
 					   <ul class="listProduct mt-3">
 							<li>3 de febrero</li>
 							<li>Duración:<?php echo get_post_meta($loop->post->ID , 'duracion', true); ?></li>
-							<li>Costo: $ <?php echo $product->get_price_html(); ?> MXN</li>
+							<li>Costo:<?php echo $product->get_price_html(); ?> MXN</li>
 							<li>Nivel técnico: <?php echo get_post_meta($loop->post->ID , 'nivel_tecnico', true); ?></li>
 						</ul>
 						<div class="col-sm-6 text-left d-flex justify-start" >
