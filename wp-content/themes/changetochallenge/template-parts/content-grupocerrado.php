@@ -139,7 +139,6 @@ get_header();
 		 $args = array( 'post_type' => 'product', 'product_cat' => 'grupo-cerrado', 'orderby' => 'rand' );
 		 $loop = new WP_Query( $args );
 		 $aux=1;
-		 echo count($loop);
 		 while ( $loop->have_posts() ) : $loop->the_post(); global $product; 
 		 if($aux == 1){		
 		?>
