@@ -1639,7 +1639,7 @@ p.question {
   font-family: "AkzidenzGroteskBQ-Italic", sans-serif;
 }
 .content-icon3 p.tipoaventura {
-  font-size: 32px;
+  font-size: 30px;
   line-height: initial;
 }
 
@@ -2579,8 +2579,50 @@ body.is-preload #banner > .inner {
 }
 
 .showAllMonth {
-  background-color: #1D3A6B;
+  background: #4E4E4E;
+  border-radius: 0% 0% 25px 25px;
+  padding: 1% 5%;
   color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+.showAllMonth:hover {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+.showAllMonth:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.contentShowMenu {
+  position: relative;
+}
+.contentShowMenu .contMenu {
+  display: none;
+  background-color: #F6F6F6;
+  border-radius: 0% 0% 25px 25px;
+  -webkit-box-shadow: 10px 10px 17px -4px rgb(173, 163, 173);
+  box-shadow: 10px 10px 17px -4px rgb(173, 163, 173);
+  position: absolute;
+  text-align: center;
+  left: 37%;
+  z-index: 30;
+  padding: 1% 5%;
+  color: #4E4E4E;
+  margin-top: 1%;
+  width: 25%;
+}
+.contentShowMenu .contMenu ul {
+  list-style: none;
+}
+.contentShowMenu .contMenu ul li span {
+  font-family: "AkzidenzGroteskBQ-Bold", sans-serif;
+  font-weight: lighter;
+  word-wrap: break-word;
+  font-size: 17px;
 }
 
 /** loop productos */
@@ -2848,6 +2890,10 @@ body.is-preload #banner > .inner {
 
 .hr-orange.singleprod {
   border-bottom: 0.8px solid #FF6900 !important;
+}
+
+.contslideProductoSingle {
+  position: relative !important;
 }
 
 /* end single product */

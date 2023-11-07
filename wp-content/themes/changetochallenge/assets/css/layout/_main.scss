@@ -594,7 +594,7 @@ input, select, textarea {
 			font-family: 'AkzidenzGroteskBQ-Italic', sans-serif;
 		}
 		p.tipoaventura{
-			font-size: 32px;
+			font-size: 30px;
 			line-height: initial;
 		}
 	}
@@ -1437,10 +1437,54 @@ width: 80%;
 }
 
 .showAllMonth{
-	background-color: $blueC2C;
+	background: $grayC2C;
+	border-radius: 0% 0% 25px 25px;
+	padding: 1% 5%;
 	color: white;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	&:hover{
+		color: white;
+		text-decoration: none;
+		cursor: pointer;
+	}
+	&:visited{
+		color: white;
+		text-decoration: none;
+	}
 }
 
+.contentShowMenu{
+	position: relative;
+	.contMenu{
+		display: none;
+		background-color: $grayBgsC2C;
+		border-radius: 0% 0% 25px 25px;
+		-webkit-box-shadow: 10px 10px 17px -4px rgba(173,163,173,1);
+		-moz-box-shadow: 10px 10px 17px -4px rgba(173,163,173,1);
+		box-shadow: 10px 10px 17px -4px rgb(173, 163, 173);
+		position: absolute;
+		text-align: center;
+		left: 37%;
+		z-index: 30;
+		padding: 1% 5%;
+		color: $grayC2C;
+		margin-top: 1%;
+		width: 25%;
+		ul{
+			list-style: none;
+			li{
+				span{
+					font-family: 'AkzidenzGroteskBQ-Bold', sans-serif; 
+					font-weight: lighter;
+					word-wrap: break-word;
+					font-size: 17px;
+				}
+			}			
+		}
+	}
+}
 
 
 /** loop productos */
@@ -1706,6 +1750,10 @@ width: 80%;
 
 .hr-orange.singleprod{
 	border-bottom: 0.8px solid $orangeC2C !important;
+}
+
+.contslideProductoSingle{
+	position: relative !important;
 }
 
 /* end single product */

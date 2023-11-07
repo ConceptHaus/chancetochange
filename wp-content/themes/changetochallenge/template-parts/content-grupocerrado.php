@@ -62,8 +62,8 @@ get_header();
 		   <div class="container-fluid section-unete ">
 			   <!-- Control the column width, and how they should appear on different devices -->
 			   <div class="row text-center  d-flex justify-content-center mt-5">
-				 <div class="col-sm-6" >
-				 <p class="first-child carouselAventuras">Reserva un grupo privado <span class="text-orange"> Disfruta la naturaleza con tus personas favoritas</span></p>
+				 <div class="col-sm-10" >
+				 <p class="first-child carouselAventuras">Reserva un grupo privado <br/><span class="text-orange"> Disfruta la naturaleza con tus personas favoritas</span></p>
 				 </div>
 			   </div>
 			   <br>
@@ -97,23 +97,45 @@ get_header();
 				   </div><!-- end.col-* -->
 			   </div><!-- end.row -->
 
-
 			   <div class="row text-center  d-flex justify-content-center mt-5">
-				 <div class="col-sm-12" >
-					 <p class="first-child carouselAventuras cerrado">Totalmente personalizada y es ideal a partir de 8 personas</span></p>
-				   <div class="mt-5">
-					   <a href="#" class="gen-btn showAllMonth">Ver todos los destinos</a>
-				   </div>
-				 </div>
-			   </div>
+				<div class="col-sm-12" >
+					<p class="first-child carouselAventuras cerrado">Totalmente personalizada y es ideal a partir de 8 personas</span></p>
+				
+				</div>
+		</div>
 			   <br>
 		   </div><!-- end.container -->
 	   </div>
    </div>
 
-   <div class="container-fluid section-unete loopProductos pt-5">
+   <div class="container-fluid section-unete loopProductos">
+
+		<div class="row text-center  d-flex justify-content-center">
+			<div class="col-sm-12 pt-2 mt-0 contentShowMenu">
+				<a class="gen-btn showAllMonth">Ver todos los destinos</a>
+				<div class="contMenu">
+					
+				<ul>
+					<?php
+					  $categories = get_terms( array(
+						'taxonomy' => 'product_cat',
+						'hide_empty' => false,
+						'parent' => 18 // or 
+						//'child_of' => 17 // to target not only direct children
+					) );
+					
+					foreach($categories as $category) { 
+					
+						echo '<li><span><a href="' . get_category_link( $category->term_id ) . '" title="' . sprintf( __( "View all posts in %s" ), $category->name ) . '" ' . '>' . $category->name.'</a> </p></span></li>';
+					
+					}
+					?>
+					</ul>
+				</div>
+			</div>
+		</div>
 	   <!-- Control the column width, and how they should appear on different devices -->	
-	   <div class="container">
+	   <div class="container mt-5">
 		   <div class="row d-flex justify-content-center  content-icon3">
 			   <div class="col-sm-6 content-img" >
 			   <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/grupoAbierto/sect-1.png" alt="" srcset="" class="border-rad">

@@ -307,35 +307,35 @@ print_r($terms); exit;
 		<!-- Control the column width, and how they should appear on different devices -->
 		<div class="row text-center  d-flex justify-content-center mt-5">
 			<div class="col-sm-6" >
-			<p class="first-child">Otros <strong class="text-orange">challenges</strong> de interés</p>
+				<p class="first-child">Otros <strong class="text-orange">challenges</strong> de interés</p>
 			</div>
 		</div>
 		<br>
 		
 		<div class="container pt-5 pb-5">
 			<div class="row">
-				<div class="col-12">
+				<div class="col-12 contslideProductoSingle">
 					<div class="slideProductoSingle ">
 						<div class="icons-contsSngle">		
-						<?php 
-							$args = array( 'post_type' => 'product', 'posts_per_page' => 15, 'product_cat' => 'empresarial', 'orderby' => 'rand', "limit" => 6 );
-							$loop = new WP_Query( $args );
-							$aux=1;
-							while ( $loop->have_posts() ) : $loop->the_post(); global $product; 
-							if( IDCURRENT !=  $loop->post->ID){
-						?>		
-							<div>
-								<div class="cards-fou tiposAventuras carouselsingle">
-									<img class=""  src="<?php echo the_field('foto_vertical'); ?>" alt="" srcset="">
-									<div class="contName"><h3><?php echo the_title(); ?></h3></div>
-									<a href="<?php echo get_permalink( $loop->post->ID ) ?>" class="btnReservar">Ver más</a>
-								</div><!-- end.cards-fou -->
-							</div>
-							
-						<?php
-							}
-							endwhile;
-						?>
+							<?php 
+								$args = array( 'post_type' => 'product', 'posts_per_page' => 15, 'product_cat' => 'empresarial', 'orderby' => 'rand', "limit" => 6 );
+								$loop = new WP_Query( $args );
+								$aux=1;
+								while ( $loop->have_posts() ) : $loop->the_post(); global $product; 
+								if( IDCURRENT !=  $loop->post->ID){
+							?>		
+								<div>
+									<div class="cards-fou tiposAventuras carouselsingle">
+										<img class=""  src="<?php echo the_field('foto_vertical'); ?>" alt="" srcset="">
+										<div class="contName"><h3><?php echo the_title(); ?></h3></div>
+										<a href="<?php echo get_permalink( $loop->post->ID ) ?>" class="btnReservar">Ver más</a>
+									</div><!-- end.cards-fou -->
+								</div>
+								
+							<?php
+								}
+								endwhile;
+							?>
 						</div>
 					</div><!-- end.icons-conts -->
 					<a href="#" class="btnSlideProd bLeftP"  id="prevslideSingle"></a>
