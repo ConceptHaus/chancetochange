@@ -136,7 +136,7 @@ get_header();
 		</div>
 
 		<?php
-		 $args = array( 'post_type' => 'product', 'posts_per_page' => 15, 'product_cat' => 'empresarial', 'orderby' => 'rand' );
+		 $args = array( 'post_type' => 'product', 'posts_per_page' => 15, 'product_cat' => 'grupo-cerrado', 'orderby' => 'rand' );
 		 $loop = new WP_Query( $args );
 		 $aux=1;
 		 while ( $loop->have_posts() ) : $loop->the_post(); global $product; 
