@@ -87,26 +87,11 @@ $product->get_rating_counts();
 $product->get_average_rating();
 $product->get_review_count();
 
-
-global $post;
-$args = array( 'taxonomy' => 'product_cat',);
-$terms = wp_get_post_terms($post->ID,'product_cat', $args);
- 
-$count = count($terms);
-if ($count > 0) {
- 
-  foreach ($terms as $term) {
-		echo '<div class="woocommerce-get-product-category">';
-		echo $term->description;
-		echo '</div>';
- 
-  }
- 
-}
+/*
 
 $terms = get_terms( 'product_cat', $args );
 print_r($terms); exit;
-
+*/
 
  
 
