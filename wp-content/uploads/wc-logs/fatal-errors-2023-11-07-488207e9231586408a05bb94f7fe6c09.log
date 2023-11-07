@@ -56,3 +56,15 @@ Stack trace:
 #3 {main}
   thrown in C:\xampp2\htdocs\chancetochange\wp-content\themes\changetochallenge\template-parts\content-grupocerrado.php on line 246
 
+2023-11-07T21:38:52+00:00 CRITICAL Uncaught Error: Call to a member function get_price_html() on null in C:\xampp2\htdocs\chancetochange\wp-content\themes\changetochallenge\template-parts\content-grupocerrado.php:246
+Stack trace:
+#0 C:\xampp2\htdocs\chancetochange\wp-includes\template-loader.php(106): include()
+#1 C:\xampp2\htdocs\chancetochange\wp-blog-header.php(19): require_once('C:\\xampp2\\htdoc...')
+#2 C:\xampp2\htdocs\chancetochange\index.php(17): require('C:\\xampp2\\htdoc...')
+#3 {main}
+  thrown in C:\xampp2\htdocs\chancetochange\wp-content\themes\changetochallenge\template-parts\content-grupocerrado.php on line 246
+
+2023-11-07T21:42:47+00:00 CRITICAL Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in C:\xampp2\htdocs\chancetochange\wp-content\themes\changetochallenge\template-parts\content-grupocerrado.php on line 158
+
+2023-11-07T21:42:48+00:00 CRITICAL Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in C:\xampp2\htdocs\chancetochange\wp-content\themes\changetochallenge\template-parts\content-grupocerrado.php on line 158
+
