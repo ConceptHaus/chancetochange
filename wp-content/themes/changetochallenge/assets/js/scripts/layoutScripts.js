@@ -57,5 +57,16 @@ $(function(){
       }
     ]
   });
+
+  $(".showAllMonth").click(function(){
+    
+    // Si elemento esta visible lo oculta y si no lo muestra
+    if ($('.contMenu').is(':visible')) {
+      $('.contMenu').hide();
+    } else {
+      $('.contMenu').show();
+    }
+
+  });
 });
 

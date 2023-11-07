@@ -28,3 +28,7 @@ Stack trace:
 #3 {main}
   thrown in C:\xampp2\htdocs\chancetochange\wp-content\themes\changetochallenge\template-parts\content-privacidad.php on line 31
 
+2023-11-07T18:52:38+00:00 CRITICAL syntax error, unexpected token "<", expecting end of file in C:\xampp2\htdocs\chancetochange\wp-content\themes\changetochallenge\template-parts\content-grupocerrado.php on line 124
+
+2023-11-07T18:57:52+00:00 CRITICAL syntax error, unexpected token "<", expecting end of file in C:\xampp2\htdocs\chancetochange\wp-content\themes\changetochallenge\template-parts\content-grupocerrado.php on line 124
+

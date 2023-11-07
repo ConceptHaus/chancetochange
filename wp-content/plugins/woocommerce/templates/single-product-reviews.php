@@ -24,6 +24,8 @@ if ( ! comments_open() ) {
 }
 
 ?>
+
+<!--
 <div id="reviews" class="woocommerce-Reviews">
 	<div id="comments">
 		<h2 class="woocommerce-Reviews-title">
@@ -142,4 +144,4 @@ if ( ! comments_open() ) {
 	<?php endif; ?>
 
 	<div class="clear"></div>
-</div>
+</div> -->
