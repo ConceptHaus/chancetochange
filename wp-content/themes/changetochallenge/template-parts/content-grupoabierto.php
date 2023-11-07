@@ -112,85 +112,131 @@
 		</div>
 	</div>
 
-	<div class="container-fluid section-unete loopProductos pt-5">
+	<div class="container-fluid section-unete loopProductos">
+
+<div class="row text-center  d-flex justify-content-center">
+	<div class="col-sm-12 pt-2 mt-0 contentShowMenu">
+		<a class="gen-btn showAllMonth">Ver todos los destinos</a>
+		<div class="contMenu">
+			
+		<ul>
+			<?php
+			  $categories = get_terms( array(
+				'taxonomy' => 'product_cat',
+				'hide_empty' => false,
+				'parent' => 18 // or 
+				//'child_of' => 17 // to target not only direct children
+			) );
+			
+			foreach($categories as $category) { 
+			
+				echo '<li><span><a href="' . get_category_link( $category->term_id ) . '" title="' . sprintf( __( "View all posts in %s" ), $category->name ) . '" ' . '>' . $category->name.'</a> </p></span></li>';
+			
+			}
+			?>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<?php
+ $args = array( 'post_type' => 'product', 'product_cat' => 'grupo-abierto', 'orderby' => 'rand' );
+ $loop = new WP_Query( $args );
+ $aux=1;
+ while ( $loop->have_posts() ) : $loop->the_post(); global $product; 
+ if($aux == 1){		
+?>
 		<!-- Control the column width, and how they should appear on different devices -->	
-		<div class="container">
+		<div class="container mt-5">
 			<div class="row d-flex justify-content-center  content-icon3">
 				<div class="col-sm-6 content-img" >
-				<img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/grupoAbierto/sect-1.png" alt="" srcset="" class="border-rad">
+				<img src="<?php echo the_field('foto_horizontal'); ?>" alt="" srcset="" class="border-rad">
 				</div>
 				<div class="col-sm-6" >
-					<h3>Nevado a valle</h3>
+					<h3><?php the_title(); ?></h3>
 					<p class="descriptionProduct mt-5">
-					En esta caminata podrás conocer uno de los bosques más profundos de México en una expedición desde la parte baja del Nevado de Toluca hasta Valle de Bravo. El sendero ofrece varios miradores donde puedes detenerte y disfrutar de las vistas impresionantes de los valles y montañas.
+						<?php echo $product->get_short_description(); ?>
 					</p>
 					<ul class="listProduct mt-3">
 						<li>3 de febrero</li>
-						<li>2 días</li>
-						<li>Costo: $3,000 MXN</li>
-						<li>Nivel Básico</li>
+						<li>Duración:<?php echo get_post_meta($loop->post->ID , 'duracion', true); ?></li>
+						<li>Costo:<?php echo $product->get_price_html(); ?> MXN</li>
+						<li>Nivel técnico: <?php echo get_post_meta($loop->post->ID , 'nivel_tecnico', true); ?></li>
 					</ul>
 					<div class="col-sm-6 text-left d-flex justify-start" >
-						<a href="<?php echo esc_url( "/product/nevado-a-valle" ); ?>" class="btnReservar">Reservar</a>
+						<a href="<?php echo get_permalink( $loop->post->ID ) ?>" class="btnReservar">Reservar</a>
 					</div>
 				</div>
 			</div>
 		</div>
-		<br>
-	</div>
-
-	<div class="container-fluid section-unete loopProductos Bgswhite pt-5">
-		<!-- Control the column width, and how they should appear on different devices -->	
-		<div class="container">
-			<div class="row d-flex justify-content-center  content-icon3">
-				
-				<div class="col-sm-6" >
-						<h3>Nevado a valle</h3>
-						<p class="descriptionProduct mt-5">
-						En esta caminata podrás conocer uno de los bosques más profundos de México en una expedición desde la parte baja del Nevado de Toluca hasta Valle de Bravo. El sendero ofrece varios miradores donde puedes detenerte y disfrutar de las vistas impresionantes de los valles y montañas.
-						</p>
-						<ul class="listProduct mt-3">
-							<li>3 de febrero</li>
-							<li>2 días</li>
-							<li>Costo: $3,000 MXN</li>
-							<li>Nivel Básico</li>
-						</ul>
-						<div class="col-sm-6 text-left d-flex justify-start" >
-							<a href="<?php echo esc_url( "/product/nevado-a-valle" ); ?>" class="btnReservar">Reservar</a>
-						</div>
-				</div>
-				<div class="col-sm-6 content-img second" >
-					<img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/grupoAbierto/image-1.png" alt="" srcset="" class="border-rad">
-				</div>
-			</div>
-			<div class="row d-flex justify-content-center  content-icon3">
-				<div class="col-sm-6 content-img " >
-					<img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/grupoAbierto/image-1.png" alt="" srcset="" class="border-rad">
-				</div>
-				<div class="col-sm-6" >
-						<h3>Nevado a valle</h3>
-						<p class="descriptionProduct mt-5">
-						En esta caminata podrás conocer uno de los bosques más profundos de México en una expedición desde la parte baja del Nevado de Toluca hasta Valle de Bravo. El sendero ofrece varios miradores donde puedes detenerte y disfrutar de las vistas impresionantes de los valles y montañas.
-						</p>
-						<ul class="listProduct mt-3">
-							<li>3 de febrero</li>
-							<li>2 días</li>
-							<li>Costo: $3,000 MXN</li>
-							<li>Nivel Básico</li>
-						</ul>
-						<div class="col-sm-6 text-left d-flex justify-start" >
-							<a href="<?php echo esc_url( "/product/nevado-a-valle" ); ?>" class="btnReservar">Reservar</a>
-						</div>
-				</div>
-				
-			</div>
-		</div>
-		<br>
-	</div>
-
-
-
+		   <br>
+	<?php } ?>
+	<?php if($aux==2){ ?>
+		<div class="container-fluid section-unete loopProductos Bgswhite pt-5">
+			<!-- Control the column width, and how they should appear on different devices -->	
+			<div class="container">
+				<div class="row d-flex justify-content-center  content-icon3">
 					
+					<div class="col-sm-6" >
+							<h3><?php the_title(); ?></h3>
+							<p class="descriptionProduct mt-5">
+								<?php echo $product->get_short_description(); ?>
+							</p>
+							<ul class="listProduct mt-3">
+								<li>3 de febrero</li>
+								<li>Duración:<?php echo get_post_meta($loop->post->ID , 'duracion', true); ?></li>
+								<li>Costo:<?php echo $product->get_price_html(); ?> MXN</li>
+								<li>Nivel técnico: <?php echo get_post_meta($loop->post->ID , 'nivel_tecnico', true); ?></li>
+							</ul>
+							<div class="col-sm-6 text-left d-flex justify-start" >
+								<a href="<?php echo get_permalink( $loop->post->ID ) ?>" class="btnReservar">Reservar</a>
+							</div>
+					</div>
+					<div class="col-sm-6 content-img second" >
+						<img src="<?php echo the_field('foto_horizontal'); ?>" alt="" srcset="" class="border-rad">
+					</div>
+				</div>
+			</div>
+			<br>
+		</div>
+	<?php } ?>
+	<?php if($aux==3){ ?>
+		<div class="container-fluid section-unete loopProductos Bgswhite pt-5">
+			<!-- Control the column width, and how they should appear on different devices -->	
+			<div class="container">
+				<div class="row d-flex justify-content-center  content-icon3">
+					<div class="col-sm-6 content-img " >
+						<img src="<?php echo the_field('foto_horizontal'); ?>" alt="" srcset="" class="border-rad">
+					</div>
+					<div class="col-sm-6" >
+							<h3><?php the_title();  ?></h3>
+							<p class="descriptionProduct mt-5">
+								<?php echo $product->get_short_description(); ?>
+							</p>
+							<ul class="listProduct mt-3">
+								<li>3 de febrero</li>
+								<li>Duración:<?php echo get_post_meta($loop->post->ID , 'duracion', true); ?></li>
+								<li>Costo:<?php echo $product->get_price_html(); ?> MXN</li>
+								<li>Nivel técnico: <?php echo get_post_meta($loop->post->ID , 'nivel_tecnico', true); ?></li>
+							</ul>
+							<div class="col-sm-6 text-left d-flex justify-start" >
+								<a href="<?php echo get_permalink( $loop->post->ID ) ?>" class="btnReservar">Reservar</a>
+							</div>
+					</div>
+					
+				</div>
+			</div>
+			<br>
+		</div>
+	<?php } ?>
+	<?php $aux = ($aux <3) ? $aux + 1 : 1; ?>
+	<?php endwhile; ?>
+<?php wp_reset_query(); ?>
+</div>
+
+
+
+		   
 
 
 <?php
