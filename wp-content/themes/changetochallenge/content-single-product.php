@@ -12,6 +12,7 @@
 $id = $product->get_id();
 // Obtener el ID del producto.
 $product->get_id();
+define("IDCURRENT", $product->get_id());
  
 // Información general del producto.
 $product->get_type();
@@ -90,7 +91,7 @@ $product->get_review_count();
 
 ?>
 <!-- Banner -->
-<section id="single-product" class="major container-fluid" style="background-image: url(<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/detailproduct/banner-pruduct.png);
+<section id="single-product" class="major container-fluid" style="background-image: url(<?php echo the_field('imagen_fondo_banner'); ?>);
 		 ">
 	<div class="container-fluid d-flex justify-content-center">
 		<div class="row d-flex justify-content-center mt-5 ">
@@ -242,9 +243,11 @@ $product->get_review_count();
 
 	<section id="sub-one" class="info2 info mt-3 pt-5">
 		<div class="cont-section2  py-3 gen-cont botoneraTiposAventuras">
+		
 			<div><a href="<?php echo esc_url( "/grupo-abierto" ); ?>" class="gen-btn active">Aventura abierta</a></div>
 			<div><a href="<?php echo esc_url( "/grupo-cerrado" ); ?>" class="gen-btn">Aventura privada</a></div>
 			<div><a href="<?php echo esc_url( "/empresarial" ); ?>" class="gen-btn">Aventura empresarial</a></div>
+
 		</div>
 	</section>
 
@@ -261,21 +264,25 @@ $product->get_review_count();
 			<div class="row">
 				<div class="col-12">
 					<div class="slideHome ">
-						<div class="icons-contsSngle">				
+						<div class="icons-contsSngle">		
+						<?php 
+			$args = array( 'post_type' => 'product', 'posts_per_page' => 15, 'product_cat' => 'empresarial', 'orderby' => 'rand', "limit" => 6 );
+			$loop = new WP_Query( $args );
+			$aux=1;
+			while ( $loop->have_posts() ) : $loop->the_post(); global $product; 
+			if( IDCURRENT !=  $loop->post->ID){
+		?>		
 							<div>
 								<div class="cards-fou tiposAventuras">
-								<img class="tiposAventuras"  src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/grupoAbierto/image-1.png" alt="" srcset="">
-							</div><!-- end.cards-fou -->
-						</div>
-						<div>
-							<div class="cards-fou tiposAventuras">
-							<img class="tiposAventuras" src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/grupoAbierto/image-2.png" alt="" srcset="">
-							</div><!-- end.cards-fou -->
-						</div>
-						<div>
-							<div class="cards-fou tiposAventuras">
-							<img class="tiposAventuras"  src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/grupoAbierto/image-3.png" alt="" srcset="">
-							</div><!-- end.cards-fou -->
+									<img class="tiposAventuras"  src="<?php echo the_field('foto_horizontal'); ?>" alt="" srcset="">
+									<div class=""><h3><?php echo the_title(); ?></h3></div>
+								</div><!-- end.cards-fou -->
+							</div>
+							
+		<?php
+			}
+			endwhile;
+		?>
 						</div>
 					</div><!-- end.icons-conts -->
 					<a href="#" class="btnSlideProd bLeftP"  id="prevslideSingle"></a>
@@ -286,3 +293,10 @@ $product->get_review_count();
 		<br>
 	</div>
  
+
+	
+
+
+
+	
+	<?php wp_reset_query(); ?>

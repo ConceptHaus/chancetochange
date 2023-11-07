@@ -67,6 +67,8 @@
 				  </div>
 				</div>
 				<br>
+		
+ 
  
 				<div class="container pt-5 pb-5">
 					<div class="row">
@@ -108,271 +110,107 @@
 			</div><!-- end.container -->
 		</div>
 	</div>
+	<?php
+        $args = array( 'post_type' => 'product', 'posts_per_page' => 15, 'product_cat' => 'empresarial', 'orderby' => 'rand' );
+        $loop = new WP_Query( $args );
+		$aux=1;
+        while ( $loop->have_posts() ) : $loop->the_post(); global $product; 
+		if($aux == 1){		
+	
+		?>
 
-<?php
-add_shortcode('custom_loop', 'custom_loop_shortcode');
-function custom_loop_shortcode() {
-    ob_start();
-    $meta_query   = WC()->query->get_meta_query();
-
-    $meta_query[] = array(
-        'key'   => '_featured',
-        'value' => 'yes'
-    );
-    $args = array(
-        'post_type'   =>  'product',
-        'post_status' => 'publish',
-        'stock'       =>  1,
-        'showposts'   =>  6,
-        'orderby'     =>  'date',
-        'order'       =>  'DESC',
-        'meta_query'  =>  $meta_query   //Use it if you want featured products only
-    );
-
-    $loop = new WP_Query( $args );
-    ?><ul><?php
-    while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
-        <li>    
-            <?php 
-                if ( has_post_thumbnail( $loop->post->ID ) ) 
-                    echo get_the_post_thumbnail( $loop->post->ID, 'shop_catalog' ); 
-                else 
-                    echo '<img src="' . woocommerce_placeholder_img_src() . '" alt="Placeholder" width="65px" height="115px" />'; 
-            ?>
-            <h3><?php the_title(); ?></h3>
-
-            <?php 
-                echo $product->get_price_html(); 
-                woocommerce_template_loop_add_to_cart( $loop->post, $product );
-            ?>    
-        </li>
-    <?php 
-    endwhile;
-    ?></ul><?php
-    wp_reset_query();     
-
-    return ob_get_clean();
-}
-?>
-	<div class="container-fluid section-unete loopProductos pt-5">
-		<!-- Control the column width, and how they should appear on different devices -->	
-		<div class="container">
-			<div class="row d-flex justify-content-center  content-icon3">
-				<div class="col-sm-6 content-img" >
-				<img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/grupoAbierto/sect-1.png" alt="" srcset="" class="border-rad">
-				</div>
-				<div class="col-sm-6" >
-					<h3>Nevado a valle</h3>
-					<p class="descriptionProduct mt-5">
-					En esta caminata podrás conocer uno de los bosques más profundos de México en una expedición desde la parte baja del Nevado de Toluca hasta Valle de Bravo. El sendero ofrece varios miradores donde puedes detenerte y disfrutar de las vistas impresionantes de los valles y montañas.
-					</p>
-					<ul class="listProduct mt-3">
-						<li>3 de febrero</li>
-						<li>2 días</li>
-						<li>Costo: $3,000 MXN</li>
-						<li>Nivel Básico</li>
-					</ul>
-					<div class="col-sm-6 text-left d-flex justify-start" >
-						<a href="<?php echo esc_url( "/product/nevado-a-valle" ); ?>" class="btnReservar">Reservar</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<br>
-	</div>
- 
-	<div class="container-fluid section-unete loopProductos Bgswhite pt-5">
-		<!-- Control the column width, and how they should appear on different devices -->	
-		<div class="container">
-			<div class="row d-flex justify-content-center  content-icon3">
-				
-				<div class="col-sm-6" >
-						<h3>Nevado a valle</h3>
-						<p class="descriptionProduct mt-5">
-						En esta caminata podrás conocer uno de los bosques más profundos de México en una expedición desde la parte baja del Nevado de Toluca hasta Valle de Bravo. El sendero ofrece varios miradores donde puedes detenerte y disfrutar de las vistas impresionantes de los valles y montañas.
-						</p>
-						<ul class="listProduct mt-3">
-							<li>3 de febrero</li>
-							<li>2 días</li>
-							<li>Costo: $3,000 MXN</li>
-							<li>Nivel Básico</li>
-						</ul>
-						<div class="col-sm-6 text-left d-flex justify-start" >
-							<a href="<?php echo esc_url( "/product/nevado-a-valle" ); ?>" class="btnReservar">Reservar</a>
+           
+		   <div class="container-fluid section-unete loopProductos pt-5">
+				<!-- Control the column width, and how they should appear on different devices -->	
+				<div class="container">
+					<div class="row d-flex justify-content-center  content-icon3">
+						<div class="col-sm-6 content-img" >
+						<img src="<?php echo the_field('foto_vertical'); ?>" alt="" srcset="" class="border-rad">
 						</div>
-				</div>
-				<div class="col-sm-6 content-img second" >
-					<img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/grupoAbierto/image-1.png" alt="" srcset="" class="border-rad">
-				</div>
-			</div>
-			<div class="row d-flex justify-content-center  content-icon3">
-				<div class="col-sm-6 content-img " >
-					<img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/grupoAbierto/image-1.png" alt="" srcset="" class="border-rad">
-				</div>
-				<div class="col-sm-6" >
-						<h3>Nevado a valle</h3>
-						<p class="descriptionProduct mt-5">
-						En esta caminata podrás conocer uno de los bosques más profundos de México en una expedición desde la parte baja del Nevado de Toluca hasta Valle de Bravo. El sendero ofrece varios miradores donde puedes detenerte y disfrutar de las vistas impresionantes de los valles y montañas.
-						</p>
-						<ul class="listProduct mt-3">
-							<li>3 de febrero</li>
-							<li>2 días</li>
-							<li>Costo: $3,000 MXN</li>
-							<li>Nivel Básico</li>
-						</ul>
-						<div class="col-sm-6 text-left d-flex justify-start" >
-							<a href="<?php echo esc_url( "/product/nevado-a-valle" ); ?>" class="btnReservar">Reservar</a>
+						<div class="col-sm-6" >
+							<h3><?php the_title(); ?></h3>
+							<p class="descriptionProduct mt-5">
+								<?php echo $product->get_short_description(); ?>
+							</p>
+							<ul class="listProduct mt-3">
+								<li>3 de febrero</li>
+								<li>Duración:<?php echo get_post_meta($loop->post->ID , 'duracion', true); ?></li>
+								<li>Costo: $ <?php echo $product->get_price_html(); ?> MXN</li>
+								<li>Nivel técnico: <?php echo get_post_meta($loop->post->ID , 'nivel_tecnico', true); ?></li>
+							</ul>
+							<div class="col-sm-6 text-left d-flex justify-start" >
+								<a href="<?php echo get_permalink( $loop->post->ID ) ?>" class="btnReservar">Reservar</a>
+							</div>
 						</div>
-				</div>
-				
-			</div>
-		</div>
-		<br>
-	</div>
-
-	<div class="container-fluid section-unete loopProductos pt-5">
-		<!-- Control the column width, and how they should appear on different devices -->	
-		<div class="container">
-			<div class="row d-flex justify-content-center  content-icon3">
-				<div class="col-sm-6 content-img" >
-				<img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/grupoAbierto/sect-1.png" alt="" srcset="" class="border-rad">
-				</div>
-				<div class="col-sm-6" >
-					<h3>Nevado a valle</h3>
-					<p class="descriptionProduct mt-5">
-					En esta caminata podrás conocer uno de los bosques más profundos de México en una expedición desde la parte baja del Nevado de Toluca hasta Valle de Bravo. El sendero ofrece varios miradores donde puedes detenerte y disfrutar de las vistas impresionantes de los valles y montañas.
-					</p>
-					<ul class="listProduct mt-3">
-						<li>3 de febrero</li>
-						<li>2 días</li>
-						<li>Costo: $3,000 MXN</li>
-						<li>Nivel Básico</li>
-					</ul>
-					<div class="col-sm-6 text-left d-flex justify-start" >
-						<a href="<?php echo esc_url( "/product/nevado-a-valle" ); ?>" class="btnReservar">Reservar</a>
 					</div>
-				</div>
-			</div>
-		</div>
-		<br>
-	</div>
-
-	<div class="container-fluid section-unete ">
-				<!-- Control the column width, and how they should appear on different devices -->
-				<div class="row text-center  d-flex justify-content-center mt-5">
-				  <div class="col-sm-6" >
-				  <p class="first-child">Juntos creando nuevas experiencias</p>
-				  </div>
 				</div>
 				<br>
-				<div class="container mt-5">
-					<div class="row d-flex justify-content-center text-center contEmpresas mb-5">
-						<div class="col-sm-3" >
-							<img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/grupoAbierto/facebook.png" alt="" srcset="">
+			</div>
+			<?php } ?>
+			<?php if($aux==2){ ?>
+				<div class="container-fluid section-unete loopProductos pt-5">
+					<!-- Control the column width, and how they should appear on different devices -->	
+					<div class="container">
+						<div class="row d-flex justify-content-center  content-icon3">
+							<div class="col-sm-6" >
+								<h3><?php the_title(); ?></h3>
+								<p class="descriptionProduct mt-5">
+									<?php echo $product->get_short_description(); ?>
+								</p>
+								<ul class="listProduct mt-3">
+									<li>3 de febrero</li>
+									<li>Duración:<?php echo get_post_meta($loop->post->ID , 'duracion', true); ?></li>
+									<li>Costo: $ <?php echo $product->get_price_html(); ?> MXN</li>
+									<li>Nivel técnico: <?php echo get_post_meta($loop->post->ID , 'nivel_tecnico', true); ?></li>
+								</ul>
+								<div class="col-sm-6 text-left d-flex justify-start" >
+									<a href="<?php echo get_permalink( $loop->post->ID ) ?>" class="btnReservar">Reservar</a>
+								</div>
+							</div>
+							<div class="col-sm-6 content-img" >
+								<img src="<?php echo the_field('foto_horizontal'); ?>" alt="" srcset="" class="border-rad">
+							</div>
 						</div>
-						<div class="col-sm-3" >
-							<img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/grupoAbierto/orbia.png" alt="" srcset="">
-						</div>
-						<div class="col-sm-3" >
-							<img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/grupoAbierto/bonafont.png" alt="" srcset="">
-						</div> 
-						<div class="col-sm-3" >
-							<img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/grupoAbierto/creyente.png" alt="" srcset="">
-						</div>
+
 					</div>
-					<div class="row d-flex justify-content-center text-center contEmpresas mt-3 mb-5">
-						<div class="col-sm-3" >
-							<img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/grupoAbierto/intellisite.png" alt="" srcset="">
-						</div>
-						<div class="col-sm-3" >
-							<img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/grupoAbierto/frisa.png" alt="" srcset="">
-						</div>
-						<div class="col-sm-3" >
-							<img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/grupoAbierto/mexplorer.png" alt="" srcset="">
-						</div> 
-						<div class="col-sm-3" >
-							<img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/grupoAbierto/picacho.png" alt="" srcset="">
-						</div>
-					</div>
+					<br>
 				</div>
-				<div class="row text-center  d-flex justify-content-center mt-5 mb-5">
-				  <div class="col-sm-6" >
-				  <p class="first-child">Perfeccionamos tu experiencia<br/><span class="text-orange">para que sea inolvidable</span> </p>
-				  </div>
+			<?php } ?>
+			<?php if($aux==3){ ?>
+				<div class="container-fluid section-unete loopProductos pt-5">
+					<!-- Control the column width, and how they should appear on different devices -->	
+					<div class="container">
+						<div class="row d-flex justify-content-center  content-icon3">
+							<div class="col-sm-6 content-img" >
+								<img src="<?php echo the_field('foto_horizontal'); ?>" alt="" srcset="" class="border-rad">
+							</div>
+							<div class="col-sm-6" >
+								<h3><?php the_title(); ?></h3>
+								<p class="descriptionProduct mt-5">
+									<?php echo $product->get_short_description(); ?>
+								</p>
+								<ul class="listProduct mt-3">
+									<li>3 de febrero</li>
+									<li>Duración:<?php echo get_post_meta($loop->post->ID , 'duracion', true); ?></li>
+									<li>Costo: $ <?php echo $product->get_price_html(); ?> MXN</li>
+									<li>Nivel técnico: <?php echo get_post_meta($loop->post->ID , 'nivel_tecnico', true); ?></li>
+								</ul>
+								<div class="col-sm-6 text-left d-flex justify-start" >
+									<a href="<?php echo get_permalink( $loop->post->ID ) ?>" class="btnReservar">Reservar</a>
+								</div>
+							</div>
+							
+						</div>
+
+					</div>
+					<br>
 				</div>
-			</div>
-			
-<div class="container-fluid content-form pt-5">
-	<div class="container">
-		<div class="row d-flex justify-content-center  content-icon3">
-			<div class="col-sm-6 content-img" >
-				<img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/contact.png" alt="" srcset="" class="border-rad">
-			</div>
-			<div class="col-sm-6" >
-				<h3>Contáctanos</h3>
-				<p class="descriptionProduct contacto mt-2">
-				Si tienes alguna duda o comentario, <span class="text-orange">escríbenos y pronto nos pondremos en contacto contigo.</span></p>
-				<br/>
-				<div class="content-frm">
-				<form action="" method="post">
-					<!-- Campo para Nombre Completo -->
-					<div class="mb-3 sty-form">
-						<input type="text" class="form-control required" id="name" placeholder="Nombre Completo*:">
-					</div>
-
-					<!-- Campo para Correo Electrónico -->
-					<div class="mb-3 sty-form">
-						<input type="email" class="form-control required" id="email" placeholder="Correo*:">
-					</div>
-
-					<div class="mb-3 sty-form">
-						<input type="text" class="form-control required" id="puesto" placeholder="Puesto*:">
-					</div>
-
-					<div class="mb-3 sty-form">
-						<input type="text" class="form-control required" id="empresa" placeholder="Empresa / Marca u Organización*:*:">
-					</div>
-
-					<!-- Campo para número -->
-					<div class="mb-3 sty-form">
-						<input type="tel" class="form-control required" id="numero" placeholder="Número de challengers*:">
-					</div>
-
-					<!-- Campo para Fecha -->
-					<div class="mb-3 sty-form d-flex justiy-content-start">
-						<div class="row">
-							<div class="col-sm-12">
-								<span class="datecustomField">Selecciona una fecha*:</span>
-							</div >
-						</div>
-						<div class="row">
-							<input type="tel" class="form-control required w-30" id="mes">
-							
-							<input type="tel" class="form-control required w-30" id="dia"/>
-							
-							<input type="tel" class="form-control required w-30 ultimo" id="anio"/>
-						</div>
-						<div class="row">
-						<span class="datecustomField">DD</span>
-						<span class="datecustomField">MM</span>
-						<span class="datecustomField">YYYY</span>
-						</div>
-					</div>
-
-					<!-- Campo para Mensaje -->
-					<div class="mb-3 sty-form">
-						<textarea class="form-control" id="message" placeholder="Cuéntanos a detalle tu idea::"></textarea>
-					</div>
-					<input type="submit" class="btn-env btnSubmit mt-4" value="Enviar">
-				</form>
-			</div>
-			</div>
-		</div>
-	</div>
-
-    
-  </div>
-</div>
+			<?php } 
+			$aux = ($aux <3)? $aux + 1 : 1; ?>
+    <?php endwhile; ?>
+    <?php wp_reset_query(); ?>
+	
+ 
  
  
 					
