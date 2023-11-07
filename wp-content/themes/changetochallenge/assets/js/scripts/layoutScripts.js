@@ -42,14 +42,14 @@ $(function(){
     nextArrow: $('#nextslideSingle'),
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 400,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
         }
       },
       {
-        breakpoint: 480,
+        breakpoint: 200,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1
@@ -58,3 +58,4 @@ $(function(){
     ]
   });
 });
+

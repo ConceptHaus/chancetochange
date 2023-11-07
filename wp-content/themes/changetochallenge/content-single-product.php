@@ -86,6 +86,28 @@ $product->get_reviews_allowed();
 $product->get_rating_counts();
 $product->get_average_rating();
 $product->get_review_count();
+
+
+global $post;
+$args = array( 'taxonomy' => 'product_cat',);
+$terms = wp_get_post_terms($post->ID,'product_cat', $args);
+ 
+$count = count($terms);
+if ($count > 0) {
+ 
+  foreach ($terms as $term) {
+		echo '<div class="woocommerce-get-product-category">';
+		echo $term->description;
+		echo '</div>';
+ 
+  }
+ 
+}
+
+$terms = get_terms( 'product_cat', $args );
+print_r($terms); exit;
+
+
  
 
 
@@ -115,60 +137,60 @@ $product->get_review_count();
 				<div class="col-sm-6" >
 					<div class="col-sm-12 detail-product" >
 						<p class="descriptionProduct">Conoce más sobre <br/> este challenge</p>
-						<hr class="hr-orange"/>
+						<hr class="hr-orange singleprod mb-5"/>
 						<?php if(get_field('challenge')) { ?>							
-							<div class="row">
-								<div class="col-sm-4">
+							<div class="row mt-4">
+								<div class="col-sm-6">
 									<p class="etiqueta">Challenge</p>
 								</div>
-								<div class="col-sm-8">
+								<div class="col-sm-6">
 									<p class="valor"><?php echo the_field('challenge'); ?></p>
 								</div>
 							</div>
 						<?php } ?>
 						<?php if(get_field('tipo_de_causa')) { ?>							
 							<div class="row">
-								<div class="col-sm-4">
+								<div class="col-sm-6">
 									<p class="etiqueta">Tipo de causa</p>
 								</div>
-								<div class="col-sm-8">
+								<div class="col-sm-6">
 									<p class="valor"><?php echo the_field('tipo_de_causa'); ?></p>
 								</div>
 							</div>
 						<?php } ?>
 						<?php if(get_field('duracion')) { ?>							
 							<div class="row">
-								<div class="col-sm-4">
+								<div class="col-sm-6">
 									<p class="etiqueta">Duración</p>
 								</div>
-								<div class="col-sm-8">
+								<div class="col-sm-6">
 									<p class="valor"><?php echo the_field('duracion'); ?></p>
 								</div>
 							</div>
 						<?php } ?>
 						<?php if(get_field('nivel_fisico')) { ?>							
 							<div class="row">
-								<div class="col-sm-4">
+								<div class="col-sm-6">
 									<p class="etiqueta">Nivel físico</p>
 								</div>
-								<div class="col-sm-8">
+								<div class="col-sm-6">
 									<p class="valor"><?php echo the_field('nivel_fisico'); ?></p>
 								</div>
 							</div>
 						<?php } ?>
 						<?php if(get_field('nivel_tecnico')) { ?>							
 							<div class="row">
-								<div class="col-sm-4">
+								<div class="col-sm-6">
 									<p class="etiqueta">Nivel técnico</p>
 								</div>
-								<div class="col-sm-8">
+								<div class="col-sm-6">
 									<p class="valor"><?php echo the_field('nivel_tecnico'); ?></p>
 								</div>
 							</div>
 						<?php } ?>
 						<?php if(get_field('punto_de_encuentro')) { ?>							
 							<div class="row">
-								<div class="col-sm-4">
+								<div class="col-sm-6">
 									<p class="etiqueta">Punto de encuentro</p>
 								</div>
 								<div class="col-sm-6">
@@ -178,36 +200,81 @@ $product->get_review_count();
 						<?php } ?>
 						<?php if(get_field('inicia_en')) { ?>							
 							<div class="row">
-								<div class="col-sm-4">
+								<div class="col-sm-6">
 									<p class="etiqueta">Inicia en</p>
 								</div>
-								<div class="col-sm-8">
+								<div class="col-sm-6">
 									<p class="valor"><?php echo the_field('inicia_en'); ?></p>
 								</div>
 							</div>
 						<?php } ?>
 						<?php if(get_field('termina_en')) { ?>							
 							<div class="row">
-								<div class="col-sm-4">
+								<div class="col-sm-6">
 									<p class="etiqueta">Termina en</p>
 								</div>
-								<div class="col-sm-8">
+								<div class="col-sm-6">
 									<p class="valor"><?php echo the_field('termina_en'); ?></p>
 								</div>
 							</div>
 						<?php } ?>
-						<hr class="hr-orange"/>
+						<?php if(get_field('nivel_fisico')) { ?>							
+							<div class="row mt-4">
+								<div class="col-sm-12">
+									<?php
+									switch(get_field('nivel_fisico')){
+										case 'Principiante':
+											echo '<p class="valorAste"><strong>* </strong>Entrenamiento físco básico</p>';
+											break;
+										case 'Intermedio*':
+											echo '<p class="valorAste"><strong>* </strong>Entrenamiento físco previo</p>';
+											break;
+										case 'Avanzado*':
+											echo '<p class="valorAste"><strong>* </strong>Se requiere entrenamiento físco avanzado</p>';
+											break;
+									}
+									?>
+								</div>
+							</div>
+						<?php } ?>
+
+						<?php if(get_field('nivel_tecnico')) { ?>							
+							<div class="row mt-4">
+								<div class="col-sm-12">
+									<?php
+									switch(get_field('nivel_tecnico')){
+										case 'Principiante':
+											echo '<p class="valorAste"><strong>** </strong>Entrenamiento técnico básico</p>';
+											break;
+										case 'Intermedio*':
+											echo '<p class="valorAste"><strong>** </strong>Entrenamiento técnico previo</p>';
+											break;
+										case 'Avanzado*':
+											echo '<p class="valorAste"><strong>** </strong>Se requiere entrenamiento técnico avanzado</p>';
+											break;
+									}
+									?>
+								</div>
+							</div>
+						<?php } ?>
+						<hr class="hr-orange singleprod mt-5 mb-5"/>
 						<?php if(get_field('incluye')) { ?>							
 							<div class="row">
-								<div class="col-sm-12">
-									<p class="etiqueta">Incluye: </p><p class="valor"><?php echo the_field('incluye'); ?></strong></p>
+								<div class="col-sm-6">
+									<p class="etiqueta">Incluye: </p>
+								</div>
+								<div class="col-sm-6">
+									<p class="valor"><?php echo the_field('incluye'); ?></p>
 								</div>
 							</div>
 						<?php } ?>
 						<?php if(get_field('se_recomienda_llevar')) { ?>							
 							<div class="row">
-								<div class="col-sm-12">
-									<p class="etiqueta">Se recomienda llevar: </p><p class="valor"><?php echo the_field('se_recomienda_llevar'); ?></p>
+								<div class="col-sm-6">
+									<p class="etiqueta">Se recomienda llevar: </p>
+								</div>
+								<div class="col-sm-6">
+									<p class="valor"><?php echo the_field('se_recomienda_llevar'); ?></p>
 								</div>
 							</div>
 						<?php } ?>
@@ -215,7 +282,7 @@ $product->get_review_count();
 												
 						<div class="row">
 							<div class="col-sm-12">
-								<h3><span>Costo: </span>$ <?php echo $product->get_price(); ?> mxn</h3>
+								<h3>Costo: <span>$ <?php echo $product->get_price(); ?> mxn</span></h3>
 								<?php if(get_field('se_recomienda_llevar')) { ?>	
 									<p class="valor"><?php echo the_field("nota_costo"); ?></p>
 								<?php } ?>
@@ -241,8 +308,8 @@ $product->get_review_count();
 		<br>
 	</div>
 
-	<section id="sub-one" class="info2 info mt-3 pt-5">
-		<div class="cont-section2  py-3 gen-cont botoneraTiposAventuras">
+	<section id="sub-one" class="info2 info mt-3 pt-5 ">
+		<div class="cont-section2  py-3 gen-cont botoneraTiposAventuras container">
 		
 			<div><a href="<?php echo esc_url( "/grupo-abierto" ); ?>" class="gen-btn active">Aventura abierta</a></div>
 			<div><a href="<?php echo esc_url( "/grupo-cerrado" ); ?>" class="gen-btn">Aventura privada</a></div>
@@ -255,7 +322,7 @@ $product->get_review_count();
 		<!-- Control the column width, and how they should appear on different devices -->
 		<div class="row text-center  d-flex justify-content-center mt-5">
 			<div class="col-sm-6" >
-			<p class="first-child">Otros <p class="text-orange">challenges</p> de interés</p>
+			<p class="first-child">Otros <strong class="text-orange">challenges</strong> de interés</p>
 			</div>
 		</div>
 		<br>
@@ -263,26 +330,27 @@ $product->get_review_count();
 		<div class="container pt-5 pb-5">
 			<div class="row">
 				<div class="col-12">
-					<div class="slideHome ">
+					<div class="slideProductoSingle ">
 						<div class="icons-contsSngle">		
 						<?php 
-			$args = array( 'post_type' => 'product', 'posts_per_page' => 15, 'product_cat' => 'empresarial', 'orderby' => 'rand', "limit" => 6 );
-			$loop = new WP_Query( $args );
-			$aux=1;
-			while ( $loop->have_posts() ) : $loop->the_post(); global $product; 
-			if( IDCURRENT !=  $loop->post->ID){
-		?>		
+							$args = array( 'post_type' => 'product', 'posts_per_page' => 15, 'product_cat' => 'empresarial', 'orderby' => 'rand', "limit" => 6 );
+							$loop = new WP_Query( $args );
+							$aux=1;
+							while ( $loop->have_posts() ) : $loop->the_post(); global $product; 
+							if( IDCURRENT !=  $loop->post->ID){
+						?>		
 							<div>
-								<div class="cards-fou tiposAventuras">
-									<img class="tiposAventuras"  src="<?php echo the_field('foto_horizontal'); ?>" alt="" srcset="">
-									<div class=""><h3><?php echo the_title(); ?></h3></div>
+								<div class="cards-fou tiposAventuras carouselsingle">
+									<img class=""  src="<?php echo the_field('foto_vertical'); ?>" alt="" srcset="">
+									<div class="contName"><h3><?php echo the_title(); ?></h3></div>
+									<a href="<?php echo get_permalink( $loop->post->ID ) ?>" class="btnReservar">Ver más</a>
 								</div><!-- end.cards-fou -->
 							</div>
 							
-		<?php
-			}
-			endwhile;
-		?>
+						<?php
+							}
+							endwhile;
+						?>
 						</div>
 					</div><!-- end.icons-conts -->
 					<a href="#" class="btnSlideProd bLeftP"  id="prevslideSingle"></a>

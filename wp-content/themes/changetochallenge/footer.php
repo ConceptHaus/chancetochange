@@ -15,14 +15,16 @@
 
 
 <!-- Footer -->
-<footer id="footer">
+<footer id="footer" class="pt-5 pb-3">
 		<div class="inner">
 			<div class="foo-cont">
 				<div>
 					<ul class="contact-foo">
 						<li>Escríbenos en:</li>
-						<li><img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/icon_whatsapp.png" alt="" srcset=""><a href="http://"> 55 7358 6711</a></li>
-						<li><img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/icon_email.png" alt="" srcset=""><a href="mailto:info@chancetochallenge.com"> info@chancetochallenge.com</a></li>
+						<li>	
+							<img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/footer/icon-whats.svg" alt="" srcset="">
+							<a class="ancordFooter" href="https://api.whatsapp.com/send/?phone=5573586711&text=Hola+necesito+informacion&type=phone_number&app_absent=0"> 55 7358 6711</a></li>
+						<li><img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/footer/icon-email.svg" alt="" srcset=""><a  class="ancordFooter" href="mailto:info@chancetochallenge.com"> info@chancetochallenge.com</a></li>
 					</ul>
 				</div>
 				<div>
@@ -33,12 +35,22 @@
 						<li>Síguenos en:</li>
 						<li>
 							<ul class="list-footer list-social d-flex">
-							<li><img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/icon_instagram.png"  /></li>
-							<li><img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/icon_facebook.png"  /></li>
-							<li><img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/icon_linkedin.png"  /></li>
+							<li>
+								<a href="https://www.instagram.com/chancetochallenge/" target="_blank" class="ancordFooter">	
+									<img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/footer/icon-ins.svg"  />
+								</a>
+							</li>
+							<li>
+								<a href="https://www.facebook.com/chancetochallenge" target="_blank" class="ancordFooter">
+									<img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/footer/icon-fb.svg"  />
+								</a>
+							</li>
+							<li><img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/footer/icon-link.svg"  /></li>
 						</ul>
 						</li>
-						<li><a class="aviso" href="#">Aviso de Privacidad</a></li>
+						<li>
+							<a class="aviso" href="<?php echo esc_url( "/privacidad" ); ?>">Aviso de Privacidad</a>
+						</li>
 					</ul>
 				</div>
 			</div>
