@@ -100,10 +100,10 @@
 
 
 				<div class="row text-center  d-flex justify-content-center mt-5">
-                  <div class="col-sm-6" >
+                  <div class="col-sm-6 " >
                   	<p class="first-child carouselAventuras">Elige el mes <br/><span class="text-orange">para tu Challenge </span></p>
 					  <div class="row text-center  d-flex justify-content-center">
-						<div class="col-sm-12 pt-2 mt-0 contentShowMenu ">
+						<div class="col-sm-12 pt-2 mt-5 contentShowMenu ">
 							<a class="gen-btn showAllMonth meses">Ver todos los meses</a>
 							<div class="contMenu contMenuMese">								
 								<ul>

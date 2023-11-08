@@ -1513,26 +1513,26 @@ width: 80%;
 					font-size: 20px;
 					font-family: 'Roboto', sans-serif;
 					font-weight: bold;
-					ul.nombres-mes{
-						text-align: center;
-						li{
-							margin: 2% 0%;
-							margin-left: 0% !important;							
-							span{
-								font-size: 17px;
-								font-family: 'Roboto', sans-serif;
-								font-weight: 200;
-							}
+					
+				}
+				.nombres-mes{
+					text-align: center;
+					margin-left: 0% !important;
+					li{
+						margin: 2% 0%;
+						margin-left: 0% !important;							
+						span{
+							font-size: 17px;
+							font-family: 'Roboto', sans-serif;
+							font-weight: 200;
 							&:hover{
 								background-color: $orangeC2C;
 								color: white;
+								cursor: pointer;
 							}
 						}
+						
 					}
-				}
-				&:hover{
-					background-color: $orangeC2C;
-					color: white;
 				}
 			}
 		}
@@ -1542,7 +1542,7 @@ width: 80%;
 .showAllMonth.meses{
 	background-color: $blueC2C;
 	border-radius: 25px;
-	margin-top: 5%;
+	margin-top: 8%;
 }
 
 /** loop productos */
@@ -1615,6 +1615,13 @@ width: 80%;
 }
 .border-rad{
 	border-radius: 30px;
+}
+
+.contentShowMenu .contMenuMese ul li ul li{
+	&:hover{
+		background-color: $orangeC2C;
+		color: white;
+	}
 }
 /*   end loop productos*/
 
