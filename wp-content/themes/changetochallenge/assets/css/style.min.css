@@ -648,10 +648,10 @@ h6 {
   line-height: 3.25rem;
   margin: 0;
   position: fixed;
-  text-transform: uppercase;
   top: 0;
   width: 100%;
   z-index: 10000;
+  font-family: "Roboto", sans-serif;
 }
 
 #header nav {

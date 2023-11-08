@@ -160,7 +160,7 @@
  if($aux == 1){		
 ?>
 		<!-- Control the column width, and how they should appear on different devices -->	
-		<div class="container mt-5">
+		<div class="container mt-5 pt-4">
 			<div class="row d-flex justify-content-center  content-icon3">
 				<div class="col-sm-6 content-img" >
 				<img src="<?php echo the_field('foto_horizontal'); ?>" alt="" srcset="" class="border-rad">
