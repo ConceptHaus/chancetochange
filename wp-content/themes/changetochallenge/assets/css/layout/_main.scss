@@ -1854,4 +1854,11 @@ width: 80%;
 		 }
 
 	}
+
+	#banner.major {
+		height: auto;
+		min-height: 0;
+		max-height: 110vh;
+		padding-top: 25vh;
+	  }
 }
