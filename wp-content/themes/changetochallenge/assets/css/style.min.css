@@ -1650,7 +1650,7 @@ p.question {
   border: 1px solid #8AB5D4;
   border-radius: 40px;
   padding: 2%;
-  margin: 0% 3%;
+  margin: 0% 1%;
   text-align: center;
   max-height: 550px;
   height: 550px;
@@ -1658,7 +1658,7 @@ p.question {
 }
 @media all and (min-width: 768px) {
   .buscando .col-sm-3, .buscando .contPorQue {
-    max-width: 20% !important;
+    max-width: 27% !important;
   }
 }
 .buscando .col-sm-3 .text-thr p, .buscando .contPorQue .text-thr p {
