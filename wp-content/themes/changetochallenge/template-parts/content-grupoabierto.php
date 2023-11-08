@@ -102,8 +102,44 @@
 				<div class="row text-center  d-flex justify-content-center mt-5">
                   <div class="col-sm-6" >
                   	<p class="first-child carouselAventuras">Elige el mes <br/><span class="text-orange">para tu Challenge </span></p>
-					<div class="mt-5">
-						<a href="#" class="gen-btn showAllMonth">Ver todos los meses</a>
+					  <div class="row text-center  d-flex justify-content-center">
+						<div class="col-sm-12 pt-2 mt-0 contentShowMenu meses">
+							<a class="gen-btn showAllMonth">Ver todos los meses</a>
+							<div class="contMenu contMenuMese">								
+								<ul>
+									<li>
+										<span class="text-orange">2023</span>
+										<br/>
+										<ul class="nombres-mes">
+											<li><span>Julio</span></li>
+											<li><span>Agosto</span></li>
+											<li><span>Septiembre</span></li>
+											<li><span>Octubre</span></li>
+											<li><span>Noviembre</span></li>
+											<li><span>Diciembre</span></li>
+										</ul>
+									</li>
+									<li>
+										<span class="text-orange">2024</span>
+										<br/>
+										<ul class="nombres-mes">
+											<li><span>Enero</span></li>
+											<li><span>Febrero</span></li>
+											<li><span>Marzo</span></li>
+											<li><span>Abril</span></li>
+											<li><span>Mayo</span></li>
+											<li><span>Junio</span></li>
+											<li><span>Julio</span></li>
+											<li><span>Agosto</span></li>
+											<li><span>Septiembre</span></li>
+											<li><span>Octubre</span></li>
+											<li><span>Noviembre</span></li>
+											<li><span>Diciembre</span></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
 					</div>
                   </div>
                 </div>
@@ -114,30 +150,7 @@
 
 	<div class="container-fluid section-unete loopProductos">
 
-<div class="row text-center  d-flex justify-content-center">
-	<div class="col-sm-12 pt-2 mt-0 contentShowMenu">
-		<a class="gen-btn showAllMonth">Ver todos los destinos</a>
-		<div class="contMenu">
-			
-		<ul>
-			<?php
-			  $categories = get_terms( array(
-				'taxonomy' => 'product_cat',
-				'hide_empty' => false,
-				'parent' => 18 // or 
-				//'child_of' => 17 // to target not only direct children
-			) );
-			
-			foreach($categories as $category) { 
-			
-				echo '<li><span><a href="' . get_category_link( $category->term_id ) . '" title="' . sprintf( __( "View all posts in %s" ), $category->name ) . '" ' . '>' . $category->name.'</a> </p></span></li>';
-			
-			}
-			?>
-			</ul>
-		</div>
-	</div>
-</div>
+
 
 <?php
  $args = array( 'post_type' => 'product', 'product_cat' => 'grupo-abierto', 'orderby' => 'rand' );
