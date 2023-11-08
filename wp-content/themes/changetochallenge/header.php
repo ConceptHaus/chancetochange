@@ -50,7 +50,7 @@
 	<script src="<?php echo get_template_directory_uri(''); ?>/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
 	<script>var siteURL = '<?php echo get_site_url(); ?>';</script>
 </head>
-<body class="is-preload">
+<body class="">
 
 <!-- Wrapper -->
 	<div id="wrapper">
