@@ -1477,13 +1477,6 @@ body.is-ie header.major > h1:after {
   width: calc(100% - 6rem);
 }
 
-@media screen and (max-width: 736px) {
-  #banner .inner {
-    /*max-width: 80% !important;*/
-    padding-bottom: 4rem;
-    margin: 0 auto;
-  }
-}
 #banner h1 {
   font-size: 3.25rem;
   text-align: start;
@@ -2964,6 +2957,18 @@ body.is-preload #banner > .inner {
 }
 
 /* end section privacy*/
+@media screen and (max-width: 736px) {
+  #banner .inner {
+    padding-bottom: 4rem;
+    margin-left: 15%;
+    padding-top: 5%;
+    max-width: 100% !important;
+  }
+  #banner .inner .content p {
+    font-size: 1rem;
+    padding-bottom: 10rem;
+  }
+}
 /* ==|====================
    Layout/Footer
    ======================= */
