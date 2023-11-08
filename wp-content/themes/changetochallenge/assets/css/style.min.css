@@ -1587,9 +1587,9 @@ body.is-ie header.major > h1:after {
 
 .section-unete p.first-child {
   margin-top: 3%;
-  font-size: 48px !important;
+  font-size: 48px;
   font-family: "AkzidenzGroteskBQ-Bold", sans-serif;
-  font-weight: bold !important;
+  font-weight: bold;
   word-wrap: break-word;
   color: var(--Blue-C2C);
   text-align: center;
@@ -1605,7 +1605,7 @@ body.is-ie header.major > h1:after {
 
 p.question {
   color: var(--Blue-C2C);
-  font-size: 63px !important;
+  font-size: 63px;
   font-family: "AkzidenzGroteskBQ-Bold", sans-serif;
   font-weight: 800 !important;
   word-wrap: break-word;
@@ -1645,7 +1645,7 @@ p.question {
   line-height: 1;
   text-align: center;
 }
-.buscando .col-sm-3 {
+.buscando .col-sm-3, .buscando .contPorQue {
   background-color: #F6F6F6;
   border: 1px solid #8AB5D4;
   border-radius: 40px;
@@ -1657,48 +1657,48 @@ p.question {
   position: relative;
 }
 @media all and (min-width: 768px) {
-  .buscando .col-sm-3 {
+  .buscando .col-sm-3, .buscando .contPorQue {
     max-width: 20% !important;
   }
 }
-.buscando .col-sm-3 .text-thr p {
+.buscando .col-sm-3 .text-thr p, .buscando .contPorQue .text-thr p {
   font-family: "Roboto", sans-serif;
   font-weight: lighter;
 }
-.buscando .col-sm-3 .text-thr:nth-child(1) {
+.buscando .col-sm-3 .text-thr:nth-child(1), .buscando .contPorQue .text-thr:nth-child(1) {
   font-size: 24px;
   font-weight: bold !important;
 }
-.buscando .col-sm-3 .text-thr:nth-child(2) {
+.buscando .col-sm-3 .text-thr:nth-child(2), .buscando .contPorQue .text-thr:nth-child(2) {
   font-size: 20px;
   margin-bottom: 4%;
 }
-.buscando .col-sm-3:nth-child(1):hover {
+.buscando .col-sm-3:nth-child(1):hover, .buscando .contPorQue:nth-child(1):hover {
   background-image: url("../img/images/fot-1_hover.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
-.buscando .col-sm-3:nth-child(2):hover {
+.buscando .col-sm-3:nth-child(2):hover, .buscando .contPorQue:nth-child(2):hover {
   background-image: url("../img/images/fot-2_hover.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
-.buscando .col-sm-3:nth-child(3):hover {
+.buscando .col-sm-3:nth-child(3):hover, .buscando .contPorQue:nth-child(3):hover {
   background-image: url("../img/images/fot-3_hover.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
-.buscando .col-sm-3:hover img {
+.buscando .col-sm-3:hover img, .buscando .contPorQue:hover img {
   display: none !important;
 }
-.buscando .col-sm-3:hover .text-thr p {
+.buscando .col-sm-3:hover .text-thr p, .buscando .contPorQue:hover .text-thr p {
   color: white !important;
 }
-.buscando .col-sm-3 img {
+.buscando .col-sm-3 img, .buscando .contPorQue img {
   border-radius: 25px;
   width: 100%;
 }
-.buscando .col-sm-3 a {
+.buscando .col-sm-3 a, .buscando .contPorQue a {
   border-radius: 25px;
   background-color: #1D3A6B;
   color: white !important;
@@ -1713,7 +1713,7 @@ p.question {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
-.buscando .col-sm-3 a:hover {
+.buscando .col-sm-3 a:hover, .buscando .contPorQue a:hover {
   cursor: pointer;
   background-color: #FF6900;
   color: white !important;
@@ -1723,7 +1723,7 @@ p.question {
 .section-pilares {
   background-color: #F6F6F6;
 }
-.section-pilares .col-sm-3 {
+.section-pilares .col-sm-3, .section-pilares .contPilares {
   border-radius: 25px;
   padding: 3%;
   margin: 0% 3%;
@@ -1732,12 +1732,12 @@ p.question {
   box-shadow: 10px 10px 17px -4px rgb(173, 163, 173);
   max-width: 20%;
 }
-.section-pilares .col-sm-3 p.desc {
+.section-pilares .col-sm-3 p.desc, .section-pilares .contPilares p.desc {
   font-size: 16px;
   font-family: "Akzidenz-Grotesk BQ", sans-serif;
   font-weight: 200;
 }
-.section-pilares .col-sm-3 span {
+.section-pilares .col-sm-3 span, .section-pilares .contPilares span {
   font-size: 24px;
   font-family: "Akzidenz-Grotesk BQ", sans-serif;
 }
@@ -2973,6 +2973,35 @@ body.is-preload #banner > .inner {
     min-height: 0;
     max-height: 110vh;
     padding-top: 25vh;
+  }
+  .section-unete p.first-child {
+    margin-top: 3%;
+    text-align: center;
+    line-height: 1.2;
+    font-size: 2rem;
+  }
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  p.question {
+    font-size: 2.9rem;
+    line-height: 1.2;
+  }
+  .contPilares {
+    max-width: 90% !important;
+    width: 90% !important;
+    padding: 10% !important;
+    margin: 10% !important;
+  }
+  .buscando p.question2, .quesMobi {
+    font-size: 2rem !important;
+    margin: 3% 0%;
+  }
+  .ContPorQue {
+    width: 90%;
+    max-width: 90%;
+    padding: 6%;
   }
 }
 /* ==|====================

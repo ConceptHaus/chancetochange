@@ -29,7 +29,7 @@
 
 <!-- One -->
 
-<div class="container-fluid section-unete">
+<div class="container-fluid section-unete d-none d-sm-block">
     <!-- Control the column width, and how they should appear on different devices -->
     <div class="row text-center  d-flex justify-content-center mt-5 pt-5">
       <div class="col-sm-6" >
@@ -59,6 +59,37 @@
     </div>
     <br>
 </div>
+
+<div class="container-fluid section-unete d-block d-sm-none ">
+    <!-- Control the column width, and how they should appear on different devices -->
+    <div class="row text-center  d-flex justify-content-center mt-5 pt-5">
+      <div class="col-sm-12" >
+      <p class="first-child">Viajar es estar siempre en contacto con <span class="text-orange">las mejores experiencias compartidas</span></p>
+      </div>
+    </div>
+    <div class="row text-center mt-5">
+      <div class="col-sm-12" >
+        <p class="question"><strong>¿Por qué viajar con <br/>Chance to Challenge?</strong></p>
+      </div>
+    </div>
+    <br>
+    
+    <div class="row d-flex justify-content-center text-center content-icon3">
+      <div class="col-12 col-md-4" >
+      <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/icon-map.png" alt="" srcset="">
+      <p><span>250+ </span>Aventuras<br /> completadas</p>
+      </div>
+      <div class="col-12 col-md-4" >
+      <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/icon-bot.png" alt="" srcset="">
+          <p><span>3,000+ <br /></span>Challengers</p>
+      </div>
+      <div class="col-12 col-md-4" >
+      <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/icon-plan.png" alt="" srcset="">
+          <p><span>20+ <br> </span>Destinos</p>
+      </div>
+    </div>
+    <br>
+</div>
    
 
 <div class="container-fluid section-pilares pt-5 pb-5">    
@@ -68,19 +99,19 @@
       </div>
     </div>
     <div class="row d-flex justify-content-center text-center content-icon3">
-      <div class="col-sm-3" >
+      <div class="col-12 col-md-4 contPilares" >
         <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/icon-pino.png" alt="" srcset="">
           <p>Empower</p>
           <span>Desafía tus límites</span>
           <p class="desc">Ofrecemos una variedad de destinos y aventuras organizadas para que disfrutes de actividades al aire libre y conozcas destinos increíbles.</p>
       </div>
-      <div class="col-sm-3" >
+      <div class="col-12 col-md-4 contPilares" >
       <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/icon-trans.png" alt="" srcset="">
         <p>Transform</p>
         <span>Viaja por una causa</span>
         <p class="desc">Viajando colaboras con una causa específica destinada a la ecología o impacto social en la comunidad del destino que visitarás.</p>
       </div>
-      <div class="col-sm-3" >
+      <div class="col-12 col-md-4 contPilares" >
       <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/icon-heal.png" alt="" srcset="">
         <p>Heal</p>
         <span>Conecta contigo</span>
@@ -93,7 +124,7 @@
 <div class="container-fluid section-unete  buscando pt-5 pb-5">    
     <div class="row text-center">
       <div class="col-sm-12" >
-        <p class="question"><strong>Porque viajar sin sentido... <br><span class="text-orange">No tiene sentido </span></strong></p>
+        <p class="question quesMobi"><strong>Porque viajar sin sentido... <br><span class="text-orange">No tiene sentido </span></strong></p>
       </div>
     </div>
     <div class="row text-center">
@@ -103,7 +134,7 @@
     </div>
     
     <div class="row d-flex justify-content-center text-center content-icon3">
-      <div class="col-sm-3" >
+      <div class="col-12 col-md-4 ContPorQue" >
         <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/fot-1.png" alt="" srcset="">
         <div class="text-thr">
           <p>Aventura con Challengers como tú</p>
@@ -111,7 +142,7 @@
         </div>
         <a href="<?php echo esc_url( "/grupo-abierto" ); ?>">Conocer más</a>
       </div>
-      <div class="col-sm-3" >
+      <div class="col-12 col-md-4 ContPorQue" >
         <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/fot-2.png" alt="" srcset="">
         <div class="text-thr">
           <p>Aventura organizada especialmente para tu grupo</p>
@@ -119,7 +150,7 @@
         </div>
         <a href="<?php echo esc_url( "/grupo-cerrado" ); ?>">Conocer más</a>
       </div>
-      <div class="col-sm-3" >
+      <div class="col-12 col-md-4 ContPorQue" >
       <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/fot-3.png" alt="" srcset="">
         <div class="text-thr">
           <p>Aventuras enfocadas en team building empresarial</p>
