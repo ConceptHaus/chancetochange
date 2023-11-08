@@ -2968,6 +2968,12 @@ body.is-preload #banner > .inner {
     font-size: 1rem;
     padding-bottom: 10rem;
   }
+  #banner.major {
+    height: auto;
+    min-height: 0;
+    max-height: 110vh;
+    padding-top: 25vh;
+  }
 }
 /* ==|====================
    Layout/Footer
