@@ -134,7 +134,7 @@
     </div>
     
     <div class="row d-flex justify-content-center text-center content-icon3">
-      <div class="col-12 col-md-4 ContPorQue" >
+      <div class="col-12 col-md-4 contPorQue" >
         <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/fot-1.png" alt="" srcset="">
         <div class="text-thr">
           <p>Aventura con Challengers como tú</p>
@@ -142,7 +142,7 @@
         </div>
         <a href="<?php echo esc_url( "/grupo-abierto" ); ?>">Conocer más</a>
       </div>
-      <div class="col-12 col-md-4 ContPorQue" >
+      <div class="col-12 col-md-4 contPorQue" >
         <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/fot-2.png" alt="" srcset="">
         <div class="text-thr">
           <p>Aventura organizada especialmente para tu grupo</p>
@@ -150,7 +150,7 @@
         </div>
         <a href="<?php echo esc_url( "/grupo-cerrado" ); ?>">Conocer más</a>
       </div>
-      <div class="col-12 col-md-4 ContPorQue" >
+      <div class="col-12 col-md-4 contPorQue" >
       <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/fot-3.png" alt="" srcset="">
         <div class="text-thr">
           <p>Aventuras enfocadas en team building empresarial</p>
