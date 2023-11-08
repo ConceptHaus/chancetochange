@@ -2668,6 +2668,10 @@ body.is-preload #banner > .inner {
   background-color: #FF6900;
   color: white;
 }
+.contentShowMenu .contMenuMese ul li:hover {
+  background-color: #FF6900;
+  color: white;
+}
 
 .showAllMonth.meses {
   background-color: #1D3A6B;
