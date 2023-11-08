@@ -546,9 +546,9 @@ input, select, textarea {
 	.section-unete{
 		p.first-child{
 			margin-top: 3%;
-			font-size: 48px !important;
+			font-size: 48px;
 			font-family: 'AkzidenzGroteskBQ-Bold', sans-serif; 
-			font-weight: bold !important;
+			font-weight: bold ;
 			word-wrap: break-word;
 			color:var(--Blue-C2C);
 			text-align: center;
@@ -567,7 +567,7 @@ input, select, textarea {
 
 	p.question{
 		color: var(--Blue-C2C);
-		font-size: 63px !important;
+		font-size: 63px ;
 		font-family: 'AkzidenzGroteskBQ-Bold', sans-serif; 
 		font-weight: 800 !important;
 		word-wrap: break-word;
@@ -607,7 +607,7 @@ input, select, textarea {
 			line-height: 1;
 			text-align: center;
 		}
-		.col-sm-3{
+		.col-sm-3, .contPorQue{
 			background-color: $grayBgsC2C;
 			border: 1px solid $lighBlueC2C;
 			border-radius: 40px;
@@ -706,7 +706,7 @@ input, select, textarea {
 /*  section nuestros pilares */
 .section-pilares{
 	background-color: $grayBgsC2C;
-	.col-sm-3{
+	.col-sm-3, .contPilares{
 		border-radius: 25px;		
 		padding: 3%;
 		margin: 0% 3%;
@@ -1860,5 +1860,40 @@ width: 80%;
 		min-height: 0;
 		max-height: 110vh;
 		padding-top: 25vh;
-	  }
+	}
+
+	.section-unete p.first-child{ 
+		margin-top: 3%; 
+		text-align: center;
+		line-height: 1.2;
+		font-size: 2rem;
+	}
+
+	body{
+		max-width: 100%;
+  		overflow-x: hidden;
+	}
+
+	p.question{
+		font-size: 2.9rem;
+		line-height: 1.2;
+	}
+
+	.contPilares{
+		max-width: 90% !important;
+		width: 90% !important;
+		padding: 10% !important;
+		margin: 10% !important;
+	}
+
+	.buscando p.question2, .quesMobi{
+		font-size: 2rem !important;
+		margin: 3% 0%;
+	}
+
+	.ContPorQue{
+		width: 90%;
+		max-width: 90%;
+		padding: 6%;
+	}
 }
