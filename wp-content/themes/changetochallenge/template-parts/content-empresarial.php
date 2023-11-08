@@ -101,8 +101,29 @@
 					<div class="row text-center  d-flex justify-content-center mt-5">
 						<div class="col-sm-12" >
 							<p class="first-child carouselAventuras">Aventuras enfocadas en <br /><span class="text-orange">team building empresarial y activaciones de marca</span></p>
-							<div class="mt-5">
-								<a href="#" class="gen-btn showAllMonth">Ver todos los destinos</a>
+							<div class="row text-center  d-flex justify-content-center">
+								<div class="col-sm-12 pt-2 mt-0 contentShowMenu">
+									<a class="gen-btn showAllMonth">Ver todos los destinos</a>
+									<div class="contMenu">
+										
+									<ul>
+										<?php
+										$categories = get_terms( array(
+											'taxonomy' => 'product_cat',
+											'hide_empty' => false,
+											'parent' => 18 // or 
+											//'child_of' => 17 // to target not only direct children
+										) );
+										
+										foreach($categories as $category) { 
+										
+											echo '<li><span><a href="' . get_category_link( $category->term_id ) . '" title="' . sprintf( __( "View all posts in %s" ), $category->name ) . '" ' . '>' . $category->name.'</a> </p></span></li>';
+										
+										}
+										?>
+										</ul>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
