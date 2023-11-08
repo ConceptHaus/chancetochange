@@ -1,0 +1,16 @@
+2023-11-07T21:50:34+00:00 CRITICAL Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, WP_Query given in /home/forge/c2c8.concepthaus.uk/wp-content/themes/changetochallenge/template-parts/content-grupocerrado.php:142
+Stack trace:
+#0 /home/forge/c2c8.concepthaus.uk/wp-includes/template-loader.php(106): include()
+#1 /home/forge/c2c8.concepthaus.uk/wp-blog-header.php(19): require_once('...')
+#2 /home/forge/c2c8.concepthaus.uk/index.php(17): require('...')
+#3 {main}
+  thrown in /home/forge/c2c8.concepthaus.uk/wp-content/themes/changetochallenge/template-parts/content-grupocerrado.php on line 142
+
+2023-11-07T21:50:46+00:00 CRITICAL Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, WP_Query given in /home/forge/c2c8.concepthaus.uk/wp-content/themes/changetochallenge/template-parts/content-grupocerrado.php:142
+Stack trace:
+#0 /home/forge/c2c8.concepthaus.uk/wp-includes/template-loader.php(106): include()
+#1 /home/forge/c2c8.concepthaus.uk/wp-blog-header.php(19): require_once('...')
+#2 /home/forge/c2c8.concepthaus.uk/index.php(17): require('...')
+#3 {main}
+  thrown in /home/forge/c2c8.concepthaus.uk/wp-content/themes/changetochallenge/template-parts/content-grupocerrado.php on line 142
+
