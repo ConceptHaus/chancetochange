@@ -1483,9 +1483,63 @@ width: 80%;
 				}
 			}			
 		}
+		ul.nombres-mes{
+			li{
+				span{
+					font-family: 'AkzidenzGroteskBQ', sans-serif; 
+					font-weight: lighter;
+					word-wrap: break-word;
+					font-size: 15px;
+				}
+			}
+		}
+	}
+
+	.contMenuMese{
+		left: 33% ;
+		width: 34%;
+		height: 250px;
+		max-height: 250px;
+		overflow-y: scroll;
+		text-align: center;
+		ul{
+			text-align: center;
+			li{
+				margin: 5% 0%;
+				margin-left: 0% !important;				
+				text-align: center;
+				span.text-orange{
+					margin: 3% 0%;
+					font-size: 20px;
+					font-family: 'Roboto', sans-serif;
+					font-weight: bold;
+					ul.nombres-mes{
+						text-align: center;
+						li{
+							margin: 2% 0%;
+							margin-left: 0% !important;							
+							span{
+								font-size: 17px;
+								font-family: 'Roboto', sans-serif;
+								font-weight: 200;
+							}
+							&:hover{
+								background-color: $orangeC2C;
+								color: white;
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 }
 
+.contentShowMenu.meses{
+	background-color: $blueC2C;
+	border-radius: 25px;
+	margin-top: 5%;
+}
 
 /** loop productos */
 .loopProductos, .content-form{
@@ -1594,7 +1648,7 @@ width: 80%;
 			}
 			&::placeholder{
 				font-family: 'Roboto', sans-serif;
-			font-size: 16px;
+				font-size: 16px;
 
 			}
 			&.w-30{
