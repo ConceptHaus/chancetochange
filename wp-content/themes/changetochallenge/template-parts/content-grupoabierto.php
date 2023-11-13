@@ -63,8 +63,8 @@
 			<div class="container-fluid section-unete ">
                 <!-- Control the column width, and how they should appear on different devices -->
                 <div class="row text-center  d-flex justify-content-center mt-5">
-                  <div class="col-sm-6" >
-                  <p class="first-child carouselAventuras">Descubre nuestras próximas fechas <span class="text-orange"> y súmate a la aventura</span></p>
+                  <div class="col-sm-10" >
+                  <p class="first-child carouselAventuras">Descubre nuestras próximas fechas<br/> <span class="text-orange"> y súmate a la aventura</span></p>
                   </div>
                 </div>
                 <br>

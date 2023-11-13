@@ -69,7 +69,7 @@
 		<ul class="links-max">
 					<li><a href="#" class="cont-ave cont-ave-desktop">Tipos de<br>aventura<img src="images/right-arrow-icon.png" alt=""></a> </li>
 					<li><a href="#">Tienda</a></li>
-					<li><a href="#">Es/EN</a></li>
+					<li><a href="#">ES/EN</a></li>
 				</ul>
 			<nav class="menu-min">
 				<a href="#menu"><img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/menu.png" alt="menu"></a>

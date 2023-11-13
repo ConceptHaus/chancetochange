@@ -642,7 +642,7 @@ h6 {
   background-color: var(--Blue-C2C);
   cursor: default;
   font-weight: 600;
-  height: 4rem;
+  height: 5rem;
   left: 0;
   letter-spacing: 0.25rem;
   line-height: 3.25rem;
@@ -684,6 +684,8 @@ h6 {
   width: auto;
   text-decoration: none;
   vertical-align: middle;
+  max-width: 80%;
+  margin-left: 1%;
 }
 
 .logo-mob {
@@ -994,6 +996,10 @@ nav a {
 /* ==|====================
    Layout/Main
    ======================= */
+body {
+  overflow-x: hidden !important;
+}
+
 main {
   width: 100%;
   height: auto;
@@ -1596,10 +1602,10 @@ body.is-ie header.major > h1:after {
   line-height: 1;
 }
 .section-unete p.carouselAventuras {
-  font-size: 64px !important;
+  font-size: 50px !important;
 }
 .section-unete p.carouselAventuras.cerrado {
-  font-size: 64px;
+  font-size: 50px;
   font-weight: lighter;
 }
 
@@ -1632,7 +1638,7 @@ p.question {
   font-family: "AkzidenzGroteskBQ-Italic", sans-serif;
 }
 .content-icon3 p.tipoaventura {
-  font-size: 30px;
+  font-size: 20px;
   line-height: initial;
 }
 
@@ -1951,7 +1957,7 @@ p.question {
 }
 
 .cards-fou img {
-  width: 90%;
+  width: 70%;
   border-radius: 15px;
   padding: 0;
 }
@@ -2448,7 +2454,7 @@ body.is-preload #banner > .inner {
 }
 
 .cards-fou img {
-  width: 90%;
+  width: 70%;
   border-radius: 15px;
   padding: 0;
 }
@@ -3008,6 +3014,9 @@ body.is-preload #banner > .inner {
     max-width: 90%;
     padding: 6%;
   }
+  .content-form h3 {
+    font-size: 1.2rem;
+  }
 }
 .pcorrect {
   font-size: 25px;
@@ -3017,6 +3026,20 @@ body.is-preload #banner > .inner {
 .question2 {
   font-size: 0.85rem;
   margin-top: 4%;
+}
+
+.btnSlideProd.bLeftP::before {
+  background-image: url("../img/images/right-arrow.svg") !important;
+  background-position-y: center;
+  background-position-x: center;
+  margin-left: 100%;
+}
+
+.btnSlideProd.nRightP::after {
+  background-image: url("../img/images/left-arrow.svg") !important;
+  background-position-y: center;
+  background-position-x: center;
+  margin-left: -100%;
 }
 
 /* ==|====================
