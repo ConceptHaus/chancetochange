@@ -1652,13 +1652,14 @@ p.question {
   padding: 2%;
   margin: 0% 1%;
   text-align: center;
-  max-height: 550px;
-  height: 550px;
+  max-height: 300px;
+  max-height: 500px;
+  height: 500px;
   position: relative;
 }
 @media all and (min-width: 768px) {
   .buscando .col-sm-3, .buscando .contPorQue {
-    max-width: 27% !important;
+    max-width: 30% !important;
   }
 }
 .buscando .col-sm-3 .text-thr p, .buscando .contPorQue .text-thr p {
@@ -1672,6 +1673,10 @@ p.question {
 .buscando .col-sm-3 .text-thr:nth-child(2), .buscando .contPorQue .text-thr:nth-child(2) {
   font-size: 20px;
   margin-bottom: 4%;
+}
+.buscando .col-sm-3:nth-child(1), .buscando .contPorQue:nth-child(1) {
+  /*		transition: 2s ease all;
+        background-blend-mode:multiply;*/
 }
 .buscando .col-sm-3:nth-child(1):hover, .buscando .contPorQue:nth-child(1):hover {
   background-image: url("../img/images/fot-1_hover.png");
@@ -1730,7 +1735,7 @@ p.question {
   background-color: white;
   -webkit-box-shadow: 10px 10px 17px -4px rgb(173, 163, 173);
   box-shadow: 10px 10px 17px -4px rgb(173, 163, 173);
-  max-width: 27%;
+  max-width: 30%;
 }
 .section-pilares .col-sm-3 p.desc, .section-pilares .contPilares p.desc {
   font-size: 16px;
@@ -3004,6 +3009,16 @@ body.is-preload #banner > .inner {
     padding: 6%;
   }
 }
+.pcorrect {
+  font-size: 25px;
+  line-height: 1;
+}
+
+.question2 {
+  font-size: 0.85rem;
+  margin-top: 4%;
+}
+
 /* ==|====================
    Layout/Footer
    ======================= */

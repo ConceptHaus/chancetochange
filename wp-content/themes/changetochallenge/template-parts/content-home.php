@@ -46,15 +46,15 @@
     <div class="row d-flex justify-content-center text-center content-icon3">
       <div class="col-sm-4" >
       <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/icon-map.png" alt="" srcset="">
-      <p><span>250+ </span>Aventuras<br /> completadas</p>
+      <p class="pcorrect"><span>250+ </span>Aventuras<br /> completadas</p>
       </div>
       <div class="col-sm-4" >
       <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/icon-bot.png" alt="" srcset="">
-          <p><span>3,000+ <br /></span>Challengers</p>
+          <p class="pcorrect"><span>3,000+ <br /></span>Challengers</p>
       </div>
       <div class="col-sm-4" >
       <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/icon-plan.png" alt="" srcset="">
-          <p><span>20+ <br> </span>Destinos</p>
+          <p class="pcorrect"><span>20+ <br> </span>Destinos</p>
       </div>
     </div>
     <br>
@@ -227,7 +227,7 @@
 
 <div class="container-fluid">
 <div class="row d-flex justify-content-center pt-5 pb-5">
-  <div class="col-sm-3">
+  <div class="col-sm-4">
     <div class="card one">
       <div class="card-body">
         <h5 class="card-title">Bosques sustentables</h5>
@@ -237,7 +237,7 @@
       </div>
     </div>
   </div>
-  <div class="col-sm-3">
+  <div class="col-sm-4">
     <div class="card two">
       <div class="card-body">
         <h5 class="card-title">Desarrollo de <br/>comunidades sustentables</h5>
@@ -247,7 +247,7 @@
       </div>
     </div>
   </div>
-  <div class="col-sm-3">
+  <div class="col-sm-4">
     <div class="card three">
       <div class="card-body">
         <h5 class="card-title">Proyectos hidrológicos</h5>

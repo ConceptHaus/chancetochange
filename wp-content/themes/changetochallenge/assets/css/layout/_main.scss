@@ -386,6 +386,7 @@ input, select, textarea {
 		max-height: 32rem;
 		min-height: 22rem;
 	}
+
 	#bannerTiposAventuras{
 		align-items: center;
 		background-image: url("../img/slider/banner_tipos_aventuras.png");
@@ -614,12 +615,13 @@ input, select, textarea {
 			padding: 2%;
 			margin: 0% 1%;
 			text-align: center;
+			max-height: 300px;
 			@media all and (min-width: 768px) {
-				max-width: 27% !important;
+				max-width: 30% !important;
 			 }
 			 			
-			max-height: 550px;
-			height: 550px;
+			max-height: 500px;
+			height: 500px;
   			position: relative;	
 			
 			.text-thr{
@@ -638,10 +640,13 @@ input, select, textarea {
 			}
 			
 			&:nth-child(1){
+		/*		transition: 2s ease all;
+        background-blend-mode:multiply;*/
 				&:hover{
 					background-image: url('../img/images/fot-1_hover.png');
 					background-repeat: no-repeat;
 					background-size: cover;
+					
 				}
 			}
 
@@ -714,7 +719,7 @@ input, select, textarea {
 		-webkit-box-shadow: 10px 10px 17px -4px rgba(173,163,173,1);
 		-moz-box-shadow: 10px 10px 17px -4px rgba(173,163,173,1);
 		box-shadow: 10px 10px 17px -4px rgba(173,163,173,1);
-		max-width: 27%;
+		max-width: 30%;
 		p.desc{
 			font-size: 16px;
 			font-family: 'Akzidenz-Grotesk BQ', sans-serif; 
@@ -1896,4 +1901,16 @@ width: 80%;
 		max-width: 90%;
 		padding: 6%;
 	}
+
+	
+}
+
+.pcorrect{
+	font-size: 25px;
+	  line-height: 1;
+}
+
+.question2{
+	font-size: .85rem;
+	margin-top: 4%;
 }
