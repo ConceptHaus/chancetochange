@@ -1602,10 +1602,10 @@ body.is-ie header.major > h1:after {
   line-height: 1;
 }
 .section-unete p.carouselAventuras {
-  font-size: 64px !important;
+  font-size: 50px !important;
 }
 .section-unete p.carouselAventuras.cerrado {
-  font-size: 64px;
+  font-size: 50px;
   font-weight: lighter;
 }
 
@@ -1638,7 +1638,7 @@ p.question {
   font-family: "AkzidenzGroteskBQ-Italic", sans-serif;
 }
 .content-icon3 p.tipoaventura {
-  font-size: 30px;
+  font-size: 20px;
   line-height: initial;
 }
 
