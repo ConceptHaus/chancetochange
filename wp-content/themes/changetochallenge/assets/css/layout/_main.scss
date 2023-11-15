@@ -550,7 +550,7 @@ input, select, textarea {
 		p.first-child{
 			margin-top: 3%;
 			font-size: 48px;
-			font-family: 'AkzidenzGroteskBQ-Bold', sans-serif; 
+			font-family: 'AkzidenzGrotesk-BQ', sans-serif; 
 			font-weight: bold ;
 			word-wrap: break-word;
 			color:var(--Blue-C2C);
@@ -570,9 +570,9 @@ input, select, textarea {
 
 	p.question{
 		color: var(--Blue-C2C);
-		font-size: 63px ;
-		font-family: 'AkzidenzGroteskBQ-Bold', sans-serif; 
-		font-weight: 800 !important;
+		font-size: 3.5rem ;
+		font-family: 'AkzidenzGrotesk-BQ', sans-serif; 
+		font-weight: bold !important;
 		word-wrap: break-word;
 		line-height: 1;
 		text-align: center;
@@ -630,6 +630,9 @@ input, select, textarea {
 				p{
 					font-family: 'Roboto', sans-serif;
 					font-weight: lighter;
+					font-size: 1.2rem;
+					font-weight: bold;
+					color: $grayC2C;
 				}
 				&:nth-child(1){
 					font-size: 24px;
@@ -691,7 +694,7 @@ input, select, textarea {
 				color: white !important;
 				text-decoration: none;
 				padding: 3% 8%;
-				font-size: 20px;
+				font-size: 1rem;
 				font-family: 'Roboto', sans-serif;
 				position: absolute;
 				display: block;
@@ -716,16 +719,20 @@ input, select, textarea {
 	.col-sm-3, .contPilares{
 		border-radius: 25px;		
 		padding: 3%;
-		margin: 0% 1%;
+		margin: 0% 2%;
 		background-color: white;
 		-webkit-box-shadow: 10px 10px 17px -4px rgba(173,163,173,1);
 		-moz-box-shadow: 10px 10px 17px -4px rgba(173,163,173,1);
 		box-shadow: 10px 10px 17px -4px rgba(173,163,173,1);
-		max-width: 30%;
+		max-width: 25%;
+		p{
+			color: $blueC2C;
+		}
 		p.desc{
 			font-size: 16px;
 			font-family: 'Akzidenz-Grotesk BQ', sans-serif; 
-			font-weight: 200;
+			font-weight: lighter;
+			color: $grayC2C;
 		}
 		span{
 			font-size: 24px;
@@ -929,8 +936,8 @@ input, select, textarea {
 
 	.card{
 		border-radius: 40px;
-		min-height: 550px;
-		height: 550px;
+		min-height: 470px;
+		height: 470px;
 		border: none;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -1174,7 +1181,7 @@ input, select, textarea {
 	}
 	
 		#banner.major {
-			height: 75vh;
+			height: 100vh;
 			min-height: 30rem;
 			max-height: 50rem;
 		}

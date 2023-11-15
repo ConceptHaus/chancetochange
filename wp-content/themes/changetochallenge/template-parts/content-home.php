@@ -29,16 +29,16 @@
 
 <!-- One -->
 
-<div class="container-fluid section-unete d-none d-sm-block">
+<div class="container-fluid section-unete">
     <!-- Control the column width, and how they should appear on different devices -->
     <div class="row text-center  d-flex justify-content-center mt-5 pt-5">
-      <div class="col-sm-6" >
+      <div class="col-sm-9" >
       <p class="first-child">¡Únete a nosotros en estas aventuras y juntos dejaremos <span class="text-orange">nuestro mundo como un lugar mejor!</span></p>
       </div>
     </div>
     <div class="row text-center mt-5">
       <div class="col-sm-12" >
-        <p class="question"><strong>¿Por qué viajar con <br/>Chance to Challenge?</strong></p>
+        <p class="question">¿Por qué viajar con <br/>Chance to Challenge?</p>
       </div>
     </div>
     <br>
@@ -59,43 +59,12 @@
     </div>
     <br>
 </div>
-
-<div class="container-fluid section-unete d-block d-sm-none ">
-    <!-- Control the column width, and how they should appear on different devices -->
-    <div class="row text-center  d-flex justify-content-center mt-5 pt-5">
-      <div class="col-sm-12" >
-      <p class="first-child">Viajar es estar siempre en contacto con <span class="text-orange">las mejores experiencias compartidas</span></p>
-      </div>
-    </div>
-    <div class="row text-center mt-5">
-      <div class="col-sm-12" >
-        <p class="question"><strong>¿Por qué viajar con <br/>Chance to Challenge?</strong></p>
-      </div>
-    </div>
-    <br>
-    
-    <div class="row d-flex justify-content-center text-center content-icon3">
-      <div class="col-12 col-md-4" >
-      <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/icon-map.png" alt="" srcset="">
-      <p><span>250+ </span>Aventuras<br /> completadas</p>
-      </div>
-      <div class="col-12 col-md-4" >
-      <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/icon-bot.png" alt="" srcset="">
-          <p><span>3,000+ <br /></span>Challengers</p>
-      </div>
-      <div class="col-12 col-md-4" >
-      <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/icon-plan.png" alt="" srcset="">
-          <p><span>20+ <br> </span>Destinos</p>
-      </div>
-    </div>
-    <br>
-</div>
    
 
 <div class="container-fluid section-pilares pt-5 pb-5">    
     <div class="row text-center">
       <div class="col-sm-12" >
-        <p class="question"><strong>Nuestros Pilares</strong></p>
+        <p class="question">Nuestros Pilares</p>
       </div>
     </div>
     <div class="row d-flex justify-content-center text-center content-icon3">
@@ -124,12 +93,12 @@
 <div class="container-fluid section-unete  buscando pt-5 pb-5">    
     <div class="row text-center">
       <div class="col-sm-12" >
-        <p class="question quesMobi"><strong>Porque viajar sin sentido... <br><span class="text-orange">No tiene sentido </span></strong></p>
+        <p class="question quesMobi">Porque viajar sin sentido... <br><span class="text-orange">No tiene sentido </span></p>
       </div>
     </div>
-    <div class="row text-center">
-      <div class="col-sm-12" >
-        <p class="question2"><strong>¿Qué tipo de aventura estás buscando?</span></strong></p>
+    <div class="row text-center d-flex justify-content-center">
+      <div class="col-sm-6" >
+        <p class="question2">¿Qué tipo de aventura <br/> estás buscando?</span></p>
       </div>
     </div>
     
