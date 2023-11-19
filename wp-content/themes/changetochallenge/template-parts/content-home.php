@@ -245,7 +245,7 @@
 				<form action="" method="post">
 					<!-- Campo para Nombre Completo -->
 					<div class="mb-3 sty-form">
-						<input type="text" class="form-control required" id="name" placeholder="Nombre Completo*:">
+						<input type="text" class="form-control required" id="name" placeholder="Nombre completo*:">
 					</div>
 
 					<!-- Campo para Correo Electrónico -->
@@ -260,7 +260,7 @@
 
 					<!-- Campo para Mensaje -->
 					<div class="mb-3 sty-form">
-						<textarea class="form-control" id="message" placeholder="Dejanos tu mensaje:"></textarea>
+						<textarea class="form-control" id="message" placeholder="Déjanos tu mensaje:"></textarea>
 					</div>
 					<input type="submit" class="btn-env btnSubmit mt-4" value="Enviar">
 				</form>
