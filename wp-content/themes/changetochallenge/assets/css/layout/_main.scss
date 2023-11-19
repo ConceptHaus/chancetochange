@@ -941,13 +941,14 @@ input, select, textarea {
 		border: none;
 		background-repeat: no-repeat;
 		background-size: cover;
+		
 		&.one{
 			background-image: url('../img/images/five-1.png');
 			&:hover{
 				background-image: url('../img/images/five-1_hover.png');
 			}
 		}
-		&.two{
+		&.two{ 
 			background-image: url('../img/images/five-2.png');			
 			&:hover{
 				background-image: url('../img/images/five-2_hover.png');
@@ -964,7 +965,7 @@ input, select, textarea {
 				display: block !important;				
 			}
 			.card-title{
-				background-color: inherit;
+				background-color: none !important;
 			}
 		}
 		.card-body{
@@ -974,7 +975,7 @@ input, select, textarea {
 				color: white;
 				font-family: 'Akzidenz-Grotesk BQ', sans-serif;
 				font-weight: bold;
-				font-size: 24px;
+				font-size: 1.2rem;
 				width: 100%;
 				padding: 4% 0%;
 				text-align: center;
@@ -984,18 +985,24 @@ input, select, textarea {
 				height: 80px;
 				min-height: 80px;
 				max-height: 200px;
+				
 			}
 			.text-hover{
 				display: none;	
 				color: white;
 				text-align: center;
 				font-family: 'Akzidenz-Grotesk BQ', sans-serif; 
-				font-size: 16px !important;
+				font-size: 14px !important;
 				font-weight: lighter;
 				position: relative;
 				top: 15%;
 				max-width: 80%;
 				margin-left: 10%;			
+			}
+			&:hover{
+				.card-title{
+					background-color: inherit;
+				}
 			}
 		}
 	}

@@ -345,3 +345,25 @@ nav a{
     color: white !important;
   }
 }
+
+.content-menu-des{
+  position: absolute;
+  background-color: $orangeC2C;
+  top: 100%;
+  right: 5%;
+  padding: 1% 3%;
+  border-radius: 0% 0% 25px 25px;
+  display: none;
+
+  ol{
+    color: white;
+    li{
+      a{
+        &:hover{
+          color: $col12 !important;
+        }
+      }
+    }
+  }
+
+}

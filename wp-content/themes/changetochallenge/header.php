@@ -59,23 +59,41 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'changetochallenge' ); ?></a>
 
-
+	<script type="text/javascript">
+		function showHide() {
+			var x = document.getElementById("menuDesk");
+			if (x.style.display === "none") {
+				x.style.display = "block";
+			} else {
+				x.style.display = "none";
+			}
+		}
+	</script>
 	
 	<!-- Header -->
 	<header id="header">
 		<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo logo1"><img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/header/C2C-blanco-RGB 1.png" alt=""></a>
 		<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo logo-mob"><img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/header/C2C-B-blanco-mob.png" alt=""></a>
 		<nav>
-		<ul class="links-max">
-					<li><a href="#" class="cont-ave cont-ave-desktop">Tipos de<br>aventura<img src="images/right-arrow-icon.png" alt=""></a> </li>
-					<li><a href="#">Tienda</a></li>
-					<li><a href="#">ES/EN</a></li>
-				</ul>
+			<ul class="links-max">
+				<li>
+					<a class="cont-ave opcDesk" onclick="showHide()">Tipos de<br>aventura</a> 
+					<div id="menuDesk" class="content-menu-des">
+						<ol>
+							<li><a href="<?php echo esc_url( "/grupo-abierto" ); ?>">Grupo abierto</a></li>
+							<li><a href="<?php echo esc_url( "/grupo-cerrado" ); ?>">Grupo cerrado</a></li>
+							<li><a href="<?php echo esc_url( "/empresarial" ); ?>">Building empresarial</a></li>
+						</ol>
+					</div>
+				</li>
+				<li><a href="#">Tienda</a></li>
+				<li><a href="#">ES/EN</a></li>
+			</ul>
+			
 			<nav class="menu-min">
 				<a href="#menu"><img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/menu.png" alt="menu"></a>
 			</nav>
 		</nav>
-
 	</header>
 	<nav id="menu">
 		<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo"><img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/C2C-blue-RGB.png" class="logo-mob" alt=""></a>

@@ -196,7 +196,7 @@
 
 <div class="container-fluid">
 <div class="row d-flex justify-content-center pt-5 pb-5">
-  <div class="col-sm-4">
+  <div class="col-sm-4 w-30">
     <div class="card one">
       <div class="card-body">
         <h5 class="card-title">Bosques sustentables</h5>
@@ -206,7 +206,7 @@
       </div>
     </div>
   </div>
-  <div class="col-sm-4">
+  <div class="col-sm-4 w-30">
     <div class="card two">
       <div class="card-body">
         <h5 class="card-title">Desarrollo de <br/>comunidades sustentables</h5>
@@ -216,7 +216,7 @@
       </div>
     </div>
   </div>
-  <div class="col-sm-4">
+  <div class="col-sm-4 w-30">
     <div class="card three">
       <div class="card-body">
         <h5 class="card-title">Proyectos hidrológicos</h5>
