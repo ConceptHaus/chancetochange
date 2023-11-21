@@ -1590,7 +1590,8 @@ width: 80%;
 		word-wrap: break-word;
 		text-align: left;
 		&.contacto{
-			font-size: 34px;
+			font-size: 1.75rem;
+  			line-height: initial;
 			span{
 				font-family: 'Akzidenz-Grotesk BQ', sans-serif;
 				font-weight:bold;
@@ -1653,6 +1654,7 @@ width: 80%;
 		vertical-align: middle;
 		img{
 			margin: 3% 3%;
+			width: 70%;
 		}
 	}
 }

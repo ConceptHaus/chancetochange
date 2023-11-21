@@ -2734,7 +2734,8 @@ body.is-preload #banner > .inner {
   text-align: left;
 }
 .loopProductos p.descriptionProduct.contacto, .content-form p.descriptionProduct.contacto {
-  font-size: 34px;
+  font-size: 1.75rem;
+  line-height: initial;
 }
 .loopProductos p.descriptionProduct.contacto span, .content-form p.descriptionProduct.contacto span {
   font-family: "Akzidenz-Grotesk BQ", sans-serif;
@@ -2792,6 +2793,7 @@ body.is-preload #banner > .inner {
 }
 .contEmpresas .col-sm-3 img {
   margin: 3% 3%;
+  width: 70%;
 }
 
 .content-form {
