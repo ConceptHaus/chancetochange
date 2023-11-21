@@ -338,7 +338,7 @@
 
 					<!-- Campo para Mensaje -->
 					<div class="mb-3 sty-form">
-						<textarea class="form-control" id="message" placeholder="Cuéntanos a detalle tu idea::"></textarea>
+						<textarea class="form-control" id="message" placeholder="Cuéntanos a detalle tu idea:"></textarea>
 					</div>
 					<input type="submit" class="btn-env btnSubmit mt-4" value="Enviar">
 				</form>
