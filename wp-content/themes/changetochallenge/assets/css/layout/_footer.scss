@@ -16,7 +16,7 @@
 .list-social{ 
   margin: 3% 0%;
   li{
-    margin: 0 2%;
+    margin: 0 5%;
     img{
       width: 30px;
     }
@@ -46,13 +46,12 @@
   text-decoration: none;
 }
 
-.contact-foo img{ height: 1.2rem; width: auto;}
 .aviso{
   color: white;
     font-size: .8rem;
     font-family: 'Akzidenz-Grotesk BQ', sans-serif; 
     font-weight: 500;
-    text-decoration: underline;
+    text-decoration: underline !important;
     word-wrap: break-word;
     padding-left: 0% !important;
     &:hover{
@@ -83,17 +82,40 @@
 }
 
 .iconmailFooter{
-  width: 30px;
-  height: 40px;
+  width: 30px !important;
+  height: 40px !important;
   vertical-align: middle;
+  margin-right: 10px;
 }
 
 .iconwhatsFooter{
-  width: 40px;
-  height: 40px;
+  width: 30px !important;
+  height: 30px !important;
   vertical-align: middle;
+  margin-right: 2%;
+
 }
 
 .ir-arriba{
   cursor: pointer;
+}
+
+.contact-foo{
+  li{
+    &:nth-child(1){
+      margin-left: 16%;
+    }
+  }
+}
+
+.list-social{
+  li{
+    
+      img{
+        width: 60px;
+        height: 60px;
+        margin:  0% 5%;
+      }
+    }
+  
 }

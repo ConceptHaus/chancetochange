@@ -82,15 +82,15 @@
   }
   &.bLeftP {
     left: -7px; @include transform(translateY(-50%));
-    &:before {
+  /*  &:before {
       content: '\ea5a';
-    }
+    }*/
   }
   &.nRightP {
     right: -7px; @include transform(translateY(-50%));
-    &:after {
+  /*  &:after {
       content: '\ea5c';
-    }
+    }*/
   }
   &.slick-disabled {
     opacity: 0.45; cursor: none; pointer-events: none;

@@ -1453,6 +1453,15 @@ width: 80%;
 		height: 390px !important;
 		border-radius: 30px !important;
 	}
+	img.tiposAventuras.tiposCustom{
+		max-width: 450px !important;
+		width: 450px !important;
+		min-width: 450px !important;
+		min-height: 390px !important;
+		max-height: 390px !important;
+		height: 390px !important;
+		border-radius: 30px !important;
+	}
 }
 
 .showAllMonth{
@@ -1949,4 +1958,28 @@ width: 80%;
 	 background-position-y: center;
   background-position-x: center;
   margin-left: -100%;
+}
+
+
+.contentInputsCustom{
+	.col-sm-4{
+		position: relative;
+		span.datecustomField{
+			position: absolute;
+			left: 23%;
+		}
+	}
+}
+
+.btnSlideProd {
+	&.bLeftP {
+	  &:before {
+		background-image: url("../img/images/right-arrow.svg") !important;
+	  }
+	}
+	&.nRightP {
+	  &:after {
+		background-image: url("../img/images/right-arrow.svg") !important;
+	  }
+	}
 }
