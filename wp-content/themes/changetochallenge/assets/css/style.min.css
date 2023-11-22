@@ -1011,6 +1011,12 @@ nav a {
   color: #1a1a1a !important;
 }
 
+@media only screen and (max-width: 900px) {
+  .logo.logo-mob {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
 /* ==|====================
    Layout/Nav
    ======================= */

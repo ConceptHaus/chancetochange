@@ -194,7 +194,7 @@
 </section>
 
 
-<div class="container-fluid">
+<div class="container">
 <div class="row d-flex justify-content-center pt-5 pb-5">
   <div class="col-sm-4 w-30">
     <div class="card one">
