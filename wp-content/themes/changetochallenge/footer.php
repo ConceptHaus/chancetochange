@@ -20,9 +20,9 @@
 			<div class="foo-cont">
 				<div>
 					<ul class="contact-foo">
-						<li>Escríbenos en:</li>
+						<li class="">Escríbenos en:</li>
 						<li>	
-							<img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/footer/icon-whats.svg" alt="" srcset="">
+							<img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/footer/icon-whats.svg" alt="" srcset="" class="iconwhatsFooter">
 							<a class="ancordFooter" href="https://api.whatsapp.com/send/?phone=5573586711&text=Hola+necesito+informacion&type=phone_number&app_absent=0" class="iconwhatsFooter"> 55 7358 6711</a></li>
 						<li><img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/footer/icon-email.svg" alt="" class="iconmailFooter"><a  class="ancordFooter" href="mailto:info@chancetochallenge.com"> info@chancetochallenge.com</a></li>
 					</ul>

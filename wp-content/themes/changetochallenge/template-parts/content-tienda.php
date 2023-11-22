@@ -1,6 +1,6 @@
 <?php
 /**
- * Template name: empresarial
+ * Template name: tienda
  
  * Template part for displaying posts
  *
