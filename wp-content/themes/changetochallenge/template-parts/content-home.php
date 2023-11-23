@@ -12,7 +12,7 @@
  get_header();
 ?>  
 <!-- Banner -->
-<section id="banner" class="major">
+  <section id="banner" class="major">
 		<div class="inner">
 			<header class="major">
 				<h1>Be a challenger</h1>
@@ -23,72 +23,95 @@
 		</div>
 	</section>
 	<!-- Main -->
-  <div id="main">
-
-
-
-<!-- One -->
-
-<div class="container-fluid section-unete">
-    <!-- Control the column width, and how they should appear on different devices -->
-    <div class="row text-center  d-flex justify-content-center mt-5 pt-5">
-      <div class="col-sm-9" >
-      <p class="first-child">¡Únete a nosotros en estas aventuras y juntos dejaremos <span class="text-orange">nuestro mundo como un lugar mejor!</span></p>
+<div id="main"><!-- One -->
+<section class="section-unete">
+    <div class="container-fluid text-center mb-4">
+      <div class="row justify-content-center">
+        <div class="col-sm-9" >
+        <p class="first-child">¡Únete a nosotros en estas aventuras y juntos dejaremos <span class="text-orange">nuestro mundo como un lugar mejor!</span></p>
+        </div>
+      </div>
+      <div class="row text-center mt-3">
+        <div class="col-sm-12">
+          <p class="question">¿Por qué viajar con <br/>Chance to Challenge?</p>
+        </div>
       </div>
     </div>
-    <div class="row text-center mt-5">
-      <div class="col-sm-12" >
-        <p class="question">¿Por qué viajar con <br/>Chance to Challenge?</p>
+    <div class="container">
+      <div class="row justify-content-center content-icon3">
+        <div class="col-12">
+          <div class="ctSlideItems">
+            <div class="slideItemsPoints">
+  
+              <div>
+                <div class="ctSlideItems--img">
+                  <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/icon-map.png" alt="">
+                  <p class="pcorrect"><span>250+ </span>Aventuras<br /> completadas</p>
+                </div>
+              </div>
+              <div>
+                <div class="ctSlideItems--img">
+                  <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/icon-bot.png" alt="" srcset="">
+                  <p class="pcorrect"><span>3,000+ <br /></span>Challengers</p>
+                </div>
+              </div>
+              <div>
+                <div class="ctSlideItems--img">
+                  <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/icon-plan.png" alt="" srcset="">
+                  <p class="pcorrect"><span>20+ <br> </span>Destinos</p>
+                </div>
+              </div>
+  
+            </div><!-- end.slideItemsPoints -->
+          </div><!-- end.ctSlideItems -->
+        </div><!-- end.col-12 -->
       </div>
     </div>
-    <br>
-    
-    <div class="row d-flex justify-content-center text-center content-icon3">
-      <div class="col-sm-4" >
-      <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/icon-map.png" alt="" srcset="">
-      <p class="pcorrect"><span>250+ </span>Aventuras<br /> completadas</p>
-      </div>
-      <div class="col-sm-4" >
-      <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/icon-bot.png" alt="" srcset="">
-          <p class="pcorrect"><span>3,000+ <br /></span>Challengers</p>
-      </div>
-      <div class="col-sm-4" >
-      <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/icon-plan.png" alt="" srcset="">
-          <p class="pcorrect"><span>20+ <br> </span>Destinos</p>
-      </div>
-    </div>
-    <br>
-</div>
+</section>
    
-
-<div class="container-fluid section-pilares pt-5 pb-5">    
-    <div class="row text-center">
-      <div class="col-sm-12" >
-        <p class="question">Nuestros Pilares</p>
+<section class="section-pilares">
+    <div class="container pt-5 pb-5">    
+      <div class="row text-center">
+        <div class="col-sm-12" >
+          <p class="question">Nuestros Pilares</p>
+        </div>
       </div>
-    </div>
-    <div class="row d-flex justify-content-center text-center content-icon3">
-      <div class="col-12 col-md-4 contPilares" >
-        <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/icon-pino.png" alt="" srcset="">
-          <p>Empower</p>
-          <span>Desafía tus límites</span>
-          <p class="desc">Ofrecemos una variedad de destinos y aventuras organizadas para que disfrutes de actividades al aire libre y conozcas destinos increíbles.</p>
-      </div>
-      <div class="col-12 col-md-4 contPilares" >
-      <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/icon-trans.png" alt="" srcset="">
-        <p>Transform</p>
-        <span>Viaja por una causa</span>
-        <p class="desc">Viajando colaboras con una causa específica destinada a la ecología o impacto social en la comunidad del destino que visitarás.</p>
-      </div>
-      <div class="col-12 col-md-4 contPilares" >
-      <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/icon-heal.png" alt="" srcset="">
-        <p>Heal</p>
-        <span>Conecta contigo</span>
-        <p class="desc">Viaja a destinos increíbles y libera tu espíritu salvaje. En tu aventura conocerás amigos nuevos y estarás siempre acompañado por una guía.</p>
-      </div>
-    </div>
-    <br>
-</div>
+      <div class="row justify-content-center text-center content-icon3">
+        <div class="col-12">
+          <div class="ctItemslidePil">
+            <div class="slideItemsPils">
+              <div>
+                <div class="contPilares">
+                  <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/icon-pino.png" alt="" srcset="">
+                  <p>Empower</p>
+                  <span>Desafía tus límites</span>
+                  <p class="desc">Ofrecemos una variedad de destinos y aventuras organizadas para que disfrutes de actividades al aire libre y conozcas destinos increíbles.</p>
+                </div>
+              </div>
+              <div>
+                <div class="contPilares">
+                  <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/icon-trans.png" alt="" srcset="">
+                  <p>Transform</p>
+                  <span>Viaja por una causa</span>
+                  <p class="desc">Viajando colaboras con una causa específica destinada a la ecología o impacto social en la comunidad del destino que visitarás.</p>
+                </div>
+              </div>
+              <div>
+                <div class="contPilares">
+                  <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/icon-heal.png" alt="" srcset="">
+                  <p>Heal</p>
+                  <span>Conecta contigo</span>
+                  <p class="desc">Viaja a destinos increíbles y libera tu espíritu salvaje. En tu aventura conocerás amigos nuevos y estarás siempre acompañado por una guía.</p>
+                </div>
+              </div>
+            </div><!-- end.slideItemsPils -->
+            <a href="#" class="btnSlideProd bLeftP" id="prevslidePils"></a>
+            <a href="#" class="btnSlideProd nRightP" id="nextslidePils"></a>
+          </div><!-- end.ctItemslidePil -->
+        </div><!-- end.col-* -->
+      </div><!-- end.row -->
+    </div><!-- end.container -->
+</section><!-- end.section-pilares -->
 
 <div class="container-fluid section-unete  buscando pt-5 pb-5">    
     <div class="row text-center">
