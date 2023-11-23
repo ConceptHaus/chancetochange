@@ -113,46 +113,49 @@
     </div><!-- end.container -->
 </section><!-- end.section-pilares -->
 
-<div class="container-fluid section-unete  buscando pt-5 pb-5">    
-    <div class="row text-center">
-      <div class="col-sm-12" >
-        <p class="question quesMobi">Porque viajar sin sentido... <br><span class="text-orange">No tiene sentido </span></p>
+<section class="section-unete buscando">
+    <div class="container-fluid pt-5 pb-5">    
+      <div class="row text-center">
+        <div class="col-sm-12" >
+          <p class="question quesMobi">Porque viajar sin sentido... <br><span class="text-orange">No tiene sentido </span></p>
+        </div>
       </div>
-    </div>
-    <div class="row text-center d-flex justify-content-center">
-      <div class="col-sm-6" >
-        <p class="question2">¿Qué tipo de aventura <br/> estás buscando?</span></p>
+      <div class="row text-center d-flex justify-content-center">
+        <div class="col-sm-6" >
+          <p class="question2">¿Qué tipo de aventura <br/> estás buscando?</span></p>
+        </div>
       </div>
     </div>
     
-    <div class="row d-flex justify-content-center text-center content-icon3">
-      <div class="col-12 col-md-4 contPorQue" >
-        <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/fot-1.png" alt="" srcset="">
-        <div class="text-thr">
-          <p>Aventura con Challengers como tú</p>
-          <p class="des">Elige una de nuestras próximas fechas y súmate a la aventura</p>
+    <div class="container"> 
+      <div class="row d-flex justify-content-center text-center content-icon3">
+        <div class="col-12 col-md-4 contPorQue" >
+          <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/fot-1.png" alt="" srcset="">
+          <div class="text-thr">
+            <p>Aventura con Challengers como tú</p>
+            <p class="des">Elige una de nuestras próximas fechas y súmate a la aventura</p>
+          </div>
+          <a href="<?php echo esc_url( "/grupo-abierto" ); ?>">Conocer más</a>
         </div>
-        <a href="<?php echo esc_url( "/grupo-abierto" ); ?>">Conocer más</a>
-      </div>
-      <div class="col-12 col-md-4 contPorQue" >
-        <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/fot-2.png" alt="" srcset="">
-        <div class="text-thr">
-          <p>Aventura organizada especialmente para tu grupo</p>
-          <p class="des">Personalizada e ideal para grupos a partir de 8 personas</p>
+        <div class="col-12 col-md-4 contPorQue" >
+          <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/fot-2.png" alt="" srcset="">
+          <div class="text-thr">
+            <p>Aventura organizada especialmente para tu grupo</p>
+            <p class="des">Personalizada e ideal para grupos a partir de 8 personas</p>
+          </div>
+          <a href="<?php echo esc_url( "/grupo-cerrado" ); ?>">Conocer más</a>
         </div>
-        <a href="<?php echo esc_url( "/grupo-cerrado" ); ?>">Conocer más</a>
-      </div>
-      <div class="col-12 col-md-4 contPorQue" >
-      <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/fot-3.png" alt="" srcset="">
-        <div class="text-thr">
-          <p>Aventuras enfocadas en team building empresarial</p>
-          <p class="des"> Conecta con la naturaleza y crea lazos inquebrantables</p>
+        <div class="col-12 col-md-4 contPorQue" >
+        <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/fot-3.png" alt="" srcset="">
+          <div class="text-thr">
+            <p>Aventuras enfocadas en team building empresarial</p>
+            <p class="des"> Conecta con la naturaleza y crea lazos inquebrantables</p>
+          </div>
+          <a href="<?php echo esc_url( "/empresarial" ); ?>">Conocer más</a>
         </div>
-        <a href="<?php echo esc_url( "/empresarial" ); ?>">Conocer más</a>
       </div>
-    </div>
-    <br>
-</div>
+  </div>
+</section>
  
 
 <section id="sub-two" class="info2 info">
@@ -217,7 +220,7 @@
 </section>
 
 
-<div class="container">
+<div class="container-fluid">
 <div class="row d-flex justify-content-center pt-5 pb-5">
   <div class="col-sm-4 w-30">
     <div class="card one">
