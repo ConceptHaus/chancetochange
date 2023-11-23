@@ -26,7 +26,7 @@
   letter-spacing: 0.25rem;
   line-height: 3.25rem;
   margin: 0;
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
   z-index: 10000;
@@ -369,4 +369,11 @@ nav a{
     }
   }
 
+}
+
+@media only screen and (max-width : 900px) {
+  .logo.logo-mob{
+    width: 100% !important;
+    height: 100% !important;
+  }
 }

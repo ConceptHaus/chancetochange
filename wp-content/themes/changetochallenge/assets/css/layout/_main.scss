@@ -506,6 +506,11 @@ input, select, textarea {
 		justify-content: center;
 		flex-direction: column;
 		align-items: center;
+		width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    position: relative;
 	}
 	.info{
 		width: 80%;
@@ -548,19 +553,12 @@ input, select, textarea {
 
 	.section-unete{
 		p.first-child{
-			margin-top: 3%;
-			font-size: 48px;
-			font-family: 'AkzidenzGrotesk-BQ', sans-serif; 
-			font-weight: bold ;
-			word-wrap: break-word;
-			color:var(--Blue-C2C);
-			text-align: center;
-			line-height: 1;
+			margin-top: 3%; font-size: 48px; font-family: 'AkzidenzGrotesk-BQ', sans-serif; font-weight: bold; word-wrap: break-word; color:var(--Blue-C2C); text-align: center; line-height: 1; @include fluid-type(16px, 48px, 320px, 1200px);
 		}
 		p.carouselAventuras{
-			font-size: 50px !important;
+			@include fluid-type(20px, 50px, 320px, 1200px);
 			&.cerrado{
-				font-size: 50px;
+				@include fluid-type(20px, 48px, 320px, 1200px);
 				font-weight: lighter;
 			}
 		}
@@ -715,15 +713,15 @@ input, select, textarea {
 
 /*  section nuestros pilares */
 .section-pilares{
-	background-color: $grayBgsC2C;
+	background-color: $grayBgsC2C; width: 100%; height: auto; padding: 0; margin: 0; position: relative; overflow: hidden; box-sizing: border-box;
 	.col-sm-3, .contPilares{
 		border-radius: 25px;		
 		padding: 3%;
 		margin: 0% 2%;
 		background-color: white;
-		-webkit-box-shadow: 10px 10px 17px -4px rgba(173,163,173,1);
-		-moz-box-shadow: 10px 10px 17px -4px rgba(173,163,173,1);
-		box-shadow: 10px 10px 17px -4px rgba(173,163,173,1);
+		-webkit-box-shadow: 4px 5px 10px -4px rgba(173,163,173,1);
+		-moz-box-shadow: 4px 5px 10px -4px rgba(173,163,173,1);
+		box-shadow: 4px 5px 10px -4px rgba(173,163,173,1);
 		max-width: 25%;
 		p{
 			color: $blueC2C;
@@ -1898,7 +1896,6 @@ width: 80%;
 		margin-top: 3%; 
 		text-align: center;
 		line-height: 1.2;
-		font-size: 2rem;
 	}
 
 	body{
@@ -1907,16 +1904,16 @@ width: 80%;
 	}
 
 	p.question{
-		font-size: 2.9rem;
+		@include fluid-type(20px, 47px, 320px, 1200px);
 		line-height: 1.2;
 	}
 
-	.contPilares{
-		max-width: 90% !important;
-		width: 90% !important;
-		padding: 10% !important;
-		margin: 10% !important;
-	}
+	// .contPilares{
+	// 	max-width: 90% !important;
+	// 	width: 90% !important;
+	// 	padding: 10% !important;
+	// 	margin: 10% !important;
+	// }
 
 	.buscando p.question2, .quesMobi{
 		font-size: 2rem !important;
@@ -1945,22 +1942,6 @@ width: 80%;
 	font-size: .85rem;
 	margin-top: 4%;
 }
-
-
-.btnSlideProd.bLeftP::before {
-	background-image: url("../img/images/right-arrow.svg") !important ; 
-	background-position-y: center;
-  background-position-x: center;
-  margin-left: 100%;
-}
-.btnSlideProd.nRightP::after {
-	 background-image: url("../img/images/left-arrow.svg") !important; 
-	 background-position-y: center;
-  background-position-x: center;
-  margin-left: -100%;
-}
-
-
 .contentInputsCustom{
 	.col-sm-4{
 		position: relative;
@@ -1971,15 +1952,87 @@ width: 80%;
 	}
 }
 
-.btnSlideProd {
-	&.bLeftP {
-	  &:before {
-		background-image: url("../img/images/right-arrow.svg") !important;
-	  }
+// Estilos nuevos
+// .container {
+// 	@media all and (min-width: 1400px) {
+// 		max-width: 1320px;
+// 	}
+// 	@media all and (min-width: 1200px) {
+// 		max-width: 1140px;
+// 	}
+// 	@media all and (min-width: 992px) {
+// 		max-width: 960px;
+// 	}
+// 	@media all and (min-width: 768px) {
+// 		max-width: 720px;
+// 	}
+// 	@media all and (min-width: 576px) {
+// 		max-width: 540px;
+// 	}
+// }
+.section-unete {
+	width: 100%;  height: auto; padding: 50px 0; margin: 0 auto; position: relative; overflow: hidden; box-sizing: border-box;
+}
+.ctSlideItems {
+	width: 100%; height: auto; padding: 0; margin: 0 auto; position: relative; overflow: hidden;
+	&--img {
+		width: 100%; height: auto; padding: 0; margin: 0 auto; position: relative;
+		& img {
+			width: 100%; max-width: 140px; height: auto; padding: 0; margin: 0 auto 20px; display: block;
+		}
+		& p {
+			text-align: center; margin: 0; padding: 0;
+		}
 	}
-	&.nRightP {
-	  &:after {
-		background-image: url("../img/images/right-arrow.svg") !important;
-	  }
+}
+.ctItemslidePil {
+	width: 100%; height: auto; padding: 0; margin: 0 auto; position: relative;
+	& .slick-slide {
+		padding: 30px; box-sizing: border-box;
+	}
+	& .contPilares {
+		width: 100%; margin: 0 auto; max-width: 320px; padding: 20px 20px; box-sizing: border-box;
+		& img {
+			width: 100%; max-width: 140px; margin: 0 auto 10px; padding: 0;
+		}
+	}
+	.btnSlideProd {
+		display: block;
+		@media all and (min-width: 992px) {
+			display: none;
+		}
+	}
+}
+.ctSlideAven {
+	width: 100%; height: auto; padding: 0; margin: 0 auto; position: relative;
+	& .slick-slide {
+		padding: 20px; box-sizing: border-box;
+	}
+	& .contPorQue {
+		width: 100%; margin: 0 auto; max-width: 320px!important; padding: 20px 20px; box-sizing: border-box;
+	}
+	.btnSlideProd {
+		display: block;
+		@media all and (min-width: 992px) {
+			display: none;
+		}
+	}
+}
+.secServicios {
+	width: 100%; height: auto; padding: 50px 0; margin: 0 auto; position: relative; overflow: hidden; box-sizing: border-box;
+	& .slick-slide {
+		padding: 20px; box-sizing: border-box;
+	}
+	& .card {
+		width: 100%; min-width: 260px;
+		@media all and (min-width: 768px) {
+			min-width: 320px;
+		}
+	}
+	& .btnSlideProd {
+		display: block;
+		@media all and (min-width: 992px) {
+			display: none;
+		}
 	}
 }
