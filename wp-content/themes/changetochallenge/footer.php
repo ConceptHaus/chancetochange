@@ -18,7 +18,12 @@
 <footer id="footer" class="pt-5 pb-3">
 		<div class="inner">
 			<div class="foo-cont">
-				<div>
+				<div class="logoFoot">
+					<a class="ir-arriba" javascript:void(0)>
+						<img src="/wp-content/uploads/assets/logo_white_footer.png" alt="" srcset="">
+					</a>
+				</div>
+				<div class="contactFoot">
 					<ul class="contact-foo">
 						<li class="">Escríbenos en:</li>
 						<li>	
@@ -27,12 +32,7 @@
 						<li><img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/footer/icon-email.svg" alt="" class="iconmailFooter"><a  class="ancordFooter" href="mailto:info@chancetochallenge.com"> info@chancetochallenge.com</a></li>
 					</ul>
 				</div>
-				<div>
-					<a class="ir-arriba"  javascript:void(0)>
-						<img src="/wp-content/uploads/assets/logo_white_footer.png" alt="" srcset="">
-					</a>
-				</div>
-				<div>
+				<div class="socialFoot">
 					<ul class="contact-foo">
 						<li>Síguenos en:</li>
 						<li>

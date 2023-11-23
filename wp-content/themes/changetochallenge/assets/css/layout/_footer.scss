@@ -31,8 +31,25 @@
 }
 .foo-cont{
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  align-items: center; flex-direction: column;
+  @media all and (min-width: 656px) {
+    flex-direction: row; justify-content: space-around;
+  }
+}
+.logoFoot {
+  @media all and (min-width: 656px) {
+    order: 2;
+  }
+}
+.contactFoot {
+  @media all and (min-width: 656px) {
+    order: 1;
+  }
+}
+.socialFoot {
+  @media all and (min-width: 656px) {
+    order: 3;
+  }
 }
 .contact-foo, .contact-foo a{
   color: white;

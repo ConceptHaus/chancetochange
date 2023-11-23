@@ -2003,3 +2003,36 @@ width: 80%;
 		}
 	}
 }
+.ctSlideAven {
+	width: 100%; height: auto; padding: 0; margin: 0 auto; position: relative;
+	& .slick-slide {
+		padding: 20px; box-sizing: border-box;
+	}
+	& .contPorQue {
+		width: 100%; margin: 0 auto; max-width: 320px!important; padding: 20px 20px; box-sizing: border-box;
+	}
+	.btnSlideProd {
+		display: block;
+		@media all and (min-width: 992px) {
+			display: none;
+		}
+	}
+}
+.secServicios {
+	width: 100%; height: auto; padding: 50px 0; margin: 0 auto; position: relative; overflow: hidden; box-sizing: border-box;
+	& .slick-slide {
+		padding: 20px; box-sizing: border-box;
+	}
+	& .card {
+		width: 100%; min-width: 260px;
+		@media all and (min-width: 768px) {
+			min-width: 320px;
+		}
+	}
+	& .btnSlideProd {
+		display: block;
+		@media all and (min-width: 992px) {
+			display: none;
+		}
+	}
+}

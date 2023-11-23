@@ -128,31 +128,45 @@
     </div>
     
     <div class="container"> 
-      <div class="row d-flex justify-content-center text-center content-icon3">
-        <div class="col-12 col-md-4 contPorQue" >
-          <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/fot-1.png" alt="" srcset="">
-          <div class="text-thr">
-            <p>Aventura con Challengers como tú</p>
-            <p class="des">Elige una de nuestras próximas fechas y súmate a la aventura</p>
-          </div>
-          <a href="<?php echo esc_url( "/grupo-abierto" ); ?>">Conocer más</a>
-        </div>
-        <div class="col-12 col-md-4 contPorQue" >
-          <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/fot-2.png" alt="" srcset="">
-          <div class="text-thr">
-            <p>Aventura organizada especialmente para tu grupo</p>
-            <p class="des">Personalizada e ideal para grupos a partir de 8 personas</p>
-          </div>
-          <a href="<?php echo esc_url( "/grupo-cerrado" ); ?>">Conocer más</a>
-        </div>
-        <div class="col-12 col-md-4 contPorQue" >
-        <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/fot-3.png" alt="" srcset="">
-          <div class="text-thr">
-            <p>Aventuras enfocadas en team building empresarial</p>
-            <p class="des"> Conecta con la naturaleza y crea lazos inquebrantables</p>
-          </div>
-          <a href="<?php echo esc_url( "/empresarial" ); ?>">Conocer más</a>
-        </div>
+      <div class="row justify-content-center text-center content-icon3">
+        <div class="col-12">
+          <div class="ctSlideAven">
+            <div class="slideItemsAdven">
+              <div>
+                <div class="contPorQue">
+                  <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/fot-1.png" alt="" srcset="">
+                  <div class="text-thr">
+                    <p>Aventura con Challengers como tú</p>
+                    <p class="des">Elige una de nuestras próximas fechas y súmate a la aventura</p>
+                  </div>
+                  <a href="<?php echo esc_url( "/grupo-abierto" ); ?>">Conocer más</a>
+                </div>
+              </div>
+              <div>
+                <div class="contPorQue">
+                  <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/fot-2.png" alt="" srcset="">
+                  <div class="text-thr">
+                    <p>Aventura organizada especialmente para tu grupo</p>
+                    <p class="des">Personalizada e ideal para grupos a partir de 8 personas</p>
+                  </div>
+                  <a href="<?php echo esc_url( "/grupo-cerrado" ); ?>">Conocer más</a>
+                </div>
+              </div>
+              <div>
+                <div class="contPorQue">
+                  <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/fot-3.png" alt="" srcset="">
+                  <div class="text-thr">
+                    <p>Aventuras enfocadas en team building empresarial</p>
+                    <p class="des"> Conecta con la naturaleza y crea lazos inquebrantables</p>
+                  </div>
+                  <a href="<?php echo esc_url( "/empresarial" ); ?>">Conocer más</a>
+                </div>
+              </div>
+            </div><!-- end.slideItemsAdven -->
+            <a href="#" class="btnSlideProd bLeftP" id="prevslideAdven"></a>
+            <a href="#" class="btnSlideProd nRightP" id="nextslideAdven"></a>
+          </div><!-- end.ctSlideAven -->
+        </div><!-- end.row -->
       </div>
   </div>
 </section>
@@ -220,41 +234,50 @@
 </section>
 
 
-<div class="container-fluid">
-<div class="row d-flex justify-content-center pt-5 pb-5">
-  <div class="col-sm-4 w-30">
-    <div class="card one">
-      <div class="card-body">
-        <h5 class="card-title">Bosques sustentables</h5>
-        <div class="text-hover">
-          <p class="card-text">Un uso sostenible de los bosques implica utilizarlos y cuidarlos de manera que se puedan satisfacer las necesidades y al mismo tiempo protegerlos para el futuro. Los métodos sostenibles no son los mismos en todos los lugares. Cada comunidad debe averiguar el más adecuado para sí misma y para la preservación del bosque. Apoyamos organizaciones que trabajan bajo este principio.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-4 w-30">
-    <div class="card two">
-      <div class="card-body">
-        <h5 class="card-title">Desarrollo de <br/>comunidades sustentables</h5>
-        <div class="text-hover">
-          <p class="card-text">Consideramos que un desarrollo económico ambientalmente sostenible es garantía de que, esforzándose por satisfacer la demanda actual, se dejará en patrimonio un ambiente sano y recursos naturales suficientes para hacer frente a las necesidades de generaciones futuras.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-4 w-30">
-    <div class="card three">
-      <div class="card-body">
-        <h5 class="card-title">Proyectos hidrológicos</h5>
-        <div class="text-hover">
-          <p class="card-text">Consideramos que un desarrollo económico ambientalmente sostenible es garantía de que, esforzándose por satisfacer la demanda actual, se dejará en patrimonio un ambiente sano y recursos naturales suficientes para hacer frente a las necesidades de generaciones futuras.
-</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
+<section class="secServicios">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12">
+        <div class="ctServs">
+          <div class="slideServiciosHome">
+            <div>
+              <div class="card one">
+                <div class="card-body">
+                  <h5 class="card-title">Bosques sustentables</h5>
+                  <div class="text-hover">
+                    <p class="card-text">Un uso sostenible de los bosques implica utilizarlos y cuidarlos de manera que se puedan satisfacer las necesidades y al mismo tiempo protegerlos para el futuro. Los métodos sostenibles no son los mismos en todos los lugares. Cada comunidad debe averiguar el más adecuado para sí misma y para la preservación del bosque. Apoyamos organizaciones que trabajan bajo este principio.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="card two">
+                <div class="card-body">
+                  <h5 class="card-title">Desarrollo de <br/>comunidades sustentables</h5>
+                  <div class="text-hover">
+                    <p class="card-text">Consideramos que un desarrollo económico ambientalmente sostenible es garantía de que, esforzándose por satisfacer la demanda actual, se dejará en patrimonio un ambiente sano y recursos naturales suficientes para hacer frente a las necesidades de generaciones futuras.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="card three">
+                <div class="card-body">
+                  <h5 class="card-title">Proyectos hidrológicos</h5>
+                  <div class="text-hover">
+                    <p class="card-text">Consideramos que un desarrollo económico ambientalmente sostenible es garantía de que, esforzándose por satisfacer la demanda actual, se dejará en patrimonio un ambiente sano y recursos naturales suficientes para hacer frente a las necesidades de generaciones futuras.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- end.slideServiciosHome -->
+          <a href="#" class="btnSlideProd bLeftP" id="prevslideServ"></a>
+          <a href="#" class="btnSlideProd nRightP" id="nextslideServ"></a>
+        </div><!-- end.ctServs -->
+      </div><!-- end.col-12 -->
+    </div><!-- end.secServicios -->
+  </div><!-- end.container -->
+</section><!-- end.secServicios -->
 
 <div class="container-fluid content-form pt-5 pb-5">
 	<div class="container">
