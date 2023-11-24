@@ -42,23 +42,43 @@
                   </div>
                 </div>
                 <br>
+
+				<div class="container">
+					<div class="row justify-content-center content-icon3">
+						<div class="col-12">
+						<div class="ctSlideItems">
+							<div class="slideItemsPoints">
+				
+							<div>
+								<div class="ctSlideItems--img">
+								<img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/grupoAbierto/icon-reserva.png" alt="">
+								<p class="pcorrect">Revisa las fechas que tenemos disponibles</p>
+								</div>
+							</div>
+							<div>
+								<div class="ctSlideItems--img">
+								<img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/grupoAbierto/icon-elige.png" alt="" srcset="">
+								<p class="pcorrect">Elige tu aventura</p>
+								</div>
+							</div>
+							<div>
+								<div class="ctSlideItems--img">
+								<img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/grupoAbierto/icon-inscribete.png" alt="" srcset="">
+								<p class="pcorrect">Inscríbete</p>
+								</div>
+							</div>
+						
+							</div><!-- end.slideItemsPoints -->
+						</div><!-- end.ctSlideItems -->
+						</div><!-- end.col-12 -->
+					</div>
+					</div>
                 
-                <div class="row d-flex justify-content-center text-center content-icon3">
-                  <div class="col-sm-4" >
-                  <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/grupoAbierto/icon-reserva.png" alt="" srcset="">
-                  <p class="tipoaventura">Revisa las fechas que tenemos disponibles</p>
-                  </div>
-                  <div class="col-sm-4" >
-                  <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/grupoAbierto/icon-elige.png" alt="" srcset="">
-                      <p class="tipoaventura">Elige tu aventura</p>
-                  </div>
-                  <div class="col-sm-4" >
-                  <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/grupoAbierto/icon-inscribete.png" alt="" srcset="">
-                      <p class="tipoaventura">Inscríbete</p>
-                  </div>
-                </div>
+                
                 <br>
             </div>
+
+
 
 			<div class="container-fluid section-unete ">
                 <!-- Control the column width, and how they should appear on different devices -->
@@ -68,35 +88,43 @@
                   </div>
                 </div>
                 <br>
-
-				<div class="container pt-5 pb-5">
-				<div class="row">
-					<div class="col-12">
-					<div class="slideHome ">
-						<div class="icons-conts">
 				
-						<div>
-							<div class="cards-fou tiposAventuras">
-							<img class="tiposAventuras"  src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/grupoAbierto/image-1.png" alt="" srcset="">
-							</div><!-- end.cards-fou -->
-						</div>
-						<div>
-							<div class="cards-fou tiposAventuras">
-							<img class="tiposAventuras" src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/grupoAbierto/image-2.png" alt="" srcset="">
-							</div><!-- end.cards-fou -->
-						</div>
-						<div>
-							<div class="cards-fou tiposAventuras">
-							<img class="tiposAventuras"  src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/grupoAbierto/image-3.png" alt="" srcset="">
-							</div><!-- end.cards-fou -->
-						</div>
-						
-						</div><!-- end.icons-conts -->
-						<a href="#" class="btnSlideProd bLeftP" id="prevslideHome"></a>
-						<a href="#" class="btnSlideProd nRightP" id="nextslideHome"></a>
-					</div><!-- end.slideHome -->
-					</div><!-- end.col-* -->
-				</div><!-- end.row -->
+				<div class="container mt-5">
+					<div class="row">
+						<div class="col-12">
+						<div class="slideHome">
+							<div class="icons-conts">
+					
+							<div>
+								<div class="cards-fou">
+								<img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/grupoAbierto/image-1.png" alt="" srcset="">
+								</div><!-- end.cards-fou -->
+							</div>
+							<div>
+								<div class="cards-fou">
+								<img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/grupoAbierto/image-2.png" alt="" srcset="">
+								</div><!-- end.cards-fou -->
+							</div>
+							<div>
+								<div class="cards-fou">
+								<img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/grupoAbierto/image-3.png" alt="" srcset="">
+								</div><!-- end.cards-fou -->
+							</div>
+							
+							</div><!-- end.icons-conts -->
+							<a href="#" class="btnSlideProd bLeftP" id="prevslideHome"></a>
+							<a href="#" class="btnSlideProd nRightP" id="nextslideHome"></a>
+						</div><!-- end.slideHome -->
+						</div><!-- end.col-* -->
+					</div><!-- end.row -->
+					</div><!-- end.container -->
+					<div class="row">
+					<!-- <div class="col-1 d-flex align-items-center">
+						<img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/right-arrow.png">
+					</div> -->
+					
+					<!-- <div class="col-1 d-flex align-items-center"><img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/left-arrow.png"></div> -->
+					</div>
 
 
 				<div class="row text-center  d-flex justify-content-center mt-5">

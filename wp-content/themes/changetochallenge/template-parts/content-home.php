@@ -12,7 +12,7 @@
  get_header();
 ?>  
 <!-- Banner -->
-<section id="banner" class="major">
+  <section id="banner" class="major">
 		<div class="inner">
 			<header class="major">
 				<h1>Be a challenger</h1>
@@ -23,113 +23,154 @@
 		</div>
 	</section>
 	<!-- Main -->
-  <div id="main">
+<div id="main"><!-- One -->
 
-
-
-<!-- One -->
-
-<div class="container-fluid section-unete">
-    <!-- Control the column width, and how they should appear on different devices -->
-    <div class="row text-center  d-flex justify-content-center mt-5 pt-5">
-      <div class="col-sm-9" >
-      <p class="first-child">¡Únete a nosotros en estas aventuras y juntos dejaremos <span class="text-orange">nuestro mundo como un lugar mejor!</span></p>
+<section class="section-unete">
+    <div class="container-fluid text-center mb-4">
+      <div class="row justify-content-center">
+        <div class="col-sm-9" >
+        <p class="first-child">¡Únete a nosotros en estas aventuras y juntos dejaremos <span class="text-orange">nuestro mundo como un lugar mejor!</span></p>
+        </div>
+      </div>
+      <div class="row text-center mt-3">
+        <div class="col-sm-12">
+          <p class="question">¿Por qué viajar con <br/>Chance to Challenge?</p>
+        </div>
       </div>
     </div>
-    <div class="row text-center mt-5">
-      <div class="col-sm-12" >
-        <p class="question">¿Por qué viajar con <br/>Chance to Challenge?</p>
+    <div class="container">
+      <div class="row justify-content-center content-icon3">
+        <div class="col-12">
+          <div class="ctSlideItems">
+            <div class="slideItemsPoints">
+  
+              <div>
+                <div class="ctSlideItems--img">
+                  <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/icon-map.png" alt="">
+                  <p class="pcorrect"><span>250+ </span>Aventuras<br /> completadas</p>
+                </div>
+              </div>
+              <div>
+                <div class="ctSlideItems--img">
+                  <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/icon-bot.png" alt="" srcset="">
+                  <p class="pcorrect"><span>3,000+ <br /></span>Challengers</p>
+                </div>
+              </div>
+              <div>
+                <div class="ctSlideItems--img">
+                  <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/icon-plan.png" alt="" srcset="">
+                  <p class="pcorrect"><span>20+ <br> </span>Destinos</p>
+                </div>
+              </div>
+  
+            </div><!-- end.slideItemsPoints -->
+          </div><!-- end.ctSlideItems -->
+        </div><!-- end.col-12 -->
       </div>
     </div>
-    <br>
-    
-    <div class="row d-flex justify-content-center text-center content-icon3">
-      <div class="col-sm-4 col-12" >
-      <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/icon-map.png" alt="" srcset="">
-      <p class="pcorrect"><span>250+ </span>Aventuras<br /> completadas</p>
-      </div>
-      <div class="col-sm-4 col-12" >
-      <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/icon-bot.png" alt="" srcset="">
-          <p class="pcorrect"><span>3,000+ <br /></span>Challengers</p>
-      </div>
-      <div class="col-sm-4 col-12" >
-      <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/icon-plan.png" alt="" srcset="">
-          <p class="pcorrect"><span>20+ <br> </span>Destinos</p>
-      </div>
-    </div>
-    <br>
-</div>
+</section>
    
+<section class="section-pilares">
+    <div class="container pt-5 pb-5">    
+      <div class="row text-center">
+        <div class="col-sm-12" >
+          <p class="question">Nuestros Pilares</p>
+        </div>
+      </div>
+      <div class="row justify-content-center text-center content-icon3">
+        <div class="col-12">
+          <div class="ctItemslidePil">
+            <div class="slideItemsPils">
+              <div>
+                <div class="contPilares">
+                  <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/icon-pino.png" alt="" srcset="">
+                  <p>Empower</p>
+                  <span>Desafía tus límites</span>
+                  <p class="desc">Ofrecemos una variedad de destinos y aventuras organizadas para que disfrutes de actividades al aire libre y conozcas destinos increíbles.</p>
+                </div>
+              </div>
+              <div>
+                <div class="contPilares">
+                  <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/icon-trans.png" alt="" srcset="">
+                  <p>Transform</p>
+                  <span>Viaja por una causa</span>
+                  <p class="desc">Viajando colaboras con una causa específica destinada a la ecología o impacto social en la comunidad del destino que visitarás.</p>
+                </div>
+              </div>
+              <div>
+                <div class="contPilares">
+                  <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/icon-heal.png" alt="" srcset="">
+                  <p>Heal</p>
+                  <span>Conecta contigo</span>
+                  <p class="desc">Viaja a destinos increíbles y libera tu espíritu salvaje. En tu aventura conocerás amigos nuevos y estarás siempre acompañado por una guía.</p>
+                </div>
+              </div>
+            </div><!-- end.slideItemsPils -->
+            <a href="#" class="btnSlideProd bLeftP" id="prevslidePils"></a>
+            <a href="#" class="btnSlideProd nRightP" id="nextslidePils"></a>
+          </div><!-- end.ctItemslidePil -->
+        </div><!-- end.col-* -->
+      </div><!-- end.row -->
+    </div><!-- end.container -->
+</section><!-- end.section-pilares -->
 
-<div class="container-fluid section-pilares pt-5 pb-5">    
-    <div class="row text-center">
-      <div class="col-sm-12" >
-        <p class="question">Nuestros Pilares</p>
+<section class="section-unete buscando">
+    <div class="container-fluid pt-5 pb-5">    
+      <div class="row text-center">
+        <div class="col-sm-12" >
+          <p class="question quesMobi">Porque viajar sin sentido... <br><span class="text-orange">No tiene sentido </span></p>
+        </div>
       </div>
-    </div>
-    <div class="row d-flex justify-content-center text-center content-icon3">
-      <div class="col-12 col-md-4 contPilares" >
-        <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/icon-pino.png" alt="" srcset="">
-          <p>Empower</p>
-          <span>Desafía tus límites</span>
-          <p class="desc">Ofrecemos una variedad de destinos y aventuras organizadas para que disfrutes de actividades al aire libre y conozcas destinos increíbles.</p>
-      </div>
-      <div class="col-12 col-md-4 contPilares" >
-      <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/icon-trans.png" alt="" srcset="">
-        <p>Transform</p>
-        <span>Viaja por una causa</span>
-        <p class="desc">Viajando colaboras con una causa específica destinada a la ecología o impacto social en la comunidad del destino que visitarás.</p>
-      </div>
-      <div class="col-12 col-md-4 contPilares" >
-      <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/icon-heal.png" alt="" srcset="">
-        <p>Heal</p>
-        <span>Conecta contigo</span>
-        <p class="desc">Viaja a destinos increíbles y libera tu espíritu salvaje. En tu aventura conocerás amigos nuevos y estarás siempre acompañado por una guía.</p>
-      </div>
-    </div>
-    <br>
-</div>
-
-<div class="container-fluid section-unete  buscando pt-5 pb-5">    
-    <div class="row text-center">
-      <div class="col-sm-12" >
-        <p class="question quesMobi">Porque viajar sin sentido... <br><span class="text-orange">No tiene sentido </span></p>
-      </div>
-    </div>
-    <div class="row text-center d-flex justify-content-center">
-      <div class="col-sm-6" >
-        <p class="question2">¿Qué tipo de aventura <br/> estás buscando?</span></p>
+      <div class="row text-center d-flex justify-content-center">
+        <div class="col-sm-6" >
+          <p class="question2">¿Qué tipo de aventura <br/> estás buscando?</span></p>
+        </div>
       </div>
     </div>
     
-    <div class="row d-flex justify-content-center text-center content-icon3">
-      <div class="col-12 col-md-4 contPorQue" >
-        <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/fot-1.png" alt="" srcset="">
-        <div class="text-thr">
-          <p>Aventura con Challengers como tú</p>
-          <p class="des">Elige una de nuestras próximas fechas y súmate a la aventura</p>
-        </div>
-        <a href="<?php echo esc_url( "/grupo-abierto" ); ?>">Conocer más</a>
+    <div class="container"> 
+      <div class="row justify-content-center text-center content-icon3">
+        <div class="col-12">
+          <div class="ctSlideAven">
+            <div class="slideItemsAdven">
+              <div>
+                <div class="contPorQue">
+                  <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/fot-1.png" alt="" srcset="">
+                  <div class="text-thr">
+                    <p>Aventura con Challengers como tú</p>
+                    <p class="des">Elige una de nuestras próximas fechas y súmate a la aventura</p>
+                  </div>
+                  <a href="<?php echo esc_url( "/grupo-abierto" ); ?>">Conocer más</a>
+                </div>
+              </div>
+              <div>
+                <div class="contPorQue">
+                  <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/fot-2.png" alt="" srcset="">
+                  <div class="text-thr">
+                    <p>Aventura organizada especialmente para tu grupo</p>
+                    <p class="des">Personalizada e ideal para grupos a partir de 8 personas</p>
+                  </div>
+                  <a href="<?php echo esc_url( "/grupo-cerrado" ); ?>">Conocer más</a>
+                </div>
+              </div>
+              <div>
+                <div class="contPorQue">
+                  <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/fot-3.png" alt="" srcset="">
+                  <div class="text-thr">
+                    <p>Aventuras enfocadas en team building empresarial</p>
+                    <p class="des"> Conecta con la naturaleza y crea lazos inquebrantables</p>
+                  </div>
+                  <a href="<?php echo esc_url( "/empresarial" ); ?>">Conocer más</a>
+                </div>
+              </div>
+            </div><!-- end.slideItemsAdven -->
+            <a href="#" class="btnSlideProd bLeftP" id="prevslideAdven"></a>
+            <a href="#" class="btnSlideProd nRightP" id="nextslideAdven"></a>
+          </div><!-- end.ctSlideAven -->
+        </div><!-- end.row -->
       </div>
-      <div class="col-12 col-md-4 contPorQue" >
-        <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/fot-2.png" alt="" srcset="">
-        <div class="text-thr">
-          <p>Aventura organizada especialmente para tu grupo</p>
-          <p class="des">Personalizada e ideal para grupos a partir de 8 personas</p>
-        </div>
-        <a href="<?php echo esc_url( "/grupo-cerrado" ); ?>">Conocer más</a>
-      </div>
-      <div class="col-12 col-md-4 contPorQue" >
-      <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/fot-3.png" alt="" srcset="">
-        <div class="text-thr">
-          <p>Aventuras enfocadas en team building empresarial</p>
-          <p class="des"> Conecta con la naturaleza y crea lazos inquebrantables</p>
-        </div>
-        <a href="<?php echo esc_url( "/empresarial" ); ?>">Conocer más</a>
-      </div>
-    </div>
-    <br>
-</div>
+  </div>
+</section>
  
 
 <section id="sub-two" class="info2 info">
@@ -194,41 +235,50 @@
 </section>
 
 
-<div class="container">
-<div class="row d-flex justify-content-center pt-5 pb-5">
-  <div class="col-sm-4 w-30">
-    <div class="card one">
-      <div class="card-body">
-        <h5 class="card-title">Bosques sustentables</h5>
-        <div class="text-hover">
-          <p class="card-text">Un uso sostenible de los bosques implica utilizarlos y cuidarlos de manera que se puedan satisfacer las necesidades y al mismo tiempo protegerlos para el futuro. Los métodos sostenibles no son los mismos en todos los lugares. Cada comunidad debe averiguar el más adecuado para sí misma y para la preservación del bosque. Apoyamos organizaciones que trabajan bajo este principio.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-4 w-30">
-    <div class="card two">
-      <div class="card-body">
-        <h5 class="card-title">Desarrollo de <br/>comunidades sustentables</h5>
-        <div class="text-hover">
-          <p class="card-text">Consideramos que un desarrollo económico ambientalmente sostenible es garantía de que, esforzándose por satisfacer la demanda actual, se dejará en patrimonio un ambiente sano y recursos naturales suficientes para hacer frente a las necesidades de generaciones futuras.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-4 w-30">
-    <div class="card three">
-      <div class="card-body">
-        <h5 class="card-title">Proyectos hidrológicos</h5>
-        <div class="text-hover">
-          <p class="card-text">Consideramos que un desarrollo económico ambientalmente sostenible es garantía de que, esforzándose por satisfacer la demanda actual, se dejará en patrimonio un ambiente sano y recursos naturales suficientes para hacer frente a las necesidades de generaciones futuras.
-</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
+<section class="secServicios">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12">
+        <div class="ctServs">
+          <div class="slideServiciosHome">
+            <div>
+              <div class="card one">
+                <div class="card-body">
+                  <h5 class="card-title">Bosques sustentables</h5>
+                  <div class="text-hover">
+                    <p class="card-text">Un uso sostenible de los bosques implica utilizarlos y cuidarlos de manera que se puedan satisfacer las necesidades y al mismo tiempo protegerlos para el futuro. Los métodos sostenibles no son los mismos en todos los lugares. Cada comunidad debe averiguar el más adecuado para sí misma y para la preservación del bosque. Apoyamos organizaciones que trabajan bajo este principio.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="card two">
+                <div class="card-body">
+                  <h5 class="card-title">Desarrollo de <br/>comunidades sustentables</h5>
+                  <div class="text-hover">
+                    <p class="card-text">Consideramos que un desarrollo económico ambientalmente sostenible es garantía de que, esforzándose por satisfacer la demanda actual, se dejará en patrimonio un ambiente sano y recursos naturales suficientes para hacer frente a las necesidades de generaciones futuras.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="card three">
+                <div class="card-body">
+                  <h5 class="card-title">Proyectos hidrológicos</h5>
+                  <div class="text-hover">
+                    <p class="card-text">Consideramos que un desarrollo económico ambientalmente sostenible es garantía de que, esforzándose por satisfacer la demanda actual, se dejará en patrimonio un ambiente sano y recursos naturales suficientes para hacer frente a las necesidades de generaciones futuras.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- end.slideServiciosHome -->
+          <a href="#" class="btnSlideProd bLeftP" id="prevslideServ"></a>
+          <a href="#" class="btnSlideProd nRightP" id="nextslideServ"></a>
+        </div><!-- end.ctServs -->
+      </div><!-- end.col-12 -->
+    </div><!-- end.secServicios -->
+  </div><!-- end.container -->
+</section><!-- end.secServicios -->
 
 <div class="container-fluid content-form pt-5 pb-5">
 	<div class="container">
