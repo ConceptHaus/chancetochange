@@ -24,6 +24,7 @@
 	</section>
 	<!-- Main -->
 <div id="main"><!-- One -->
+
 <section class="section-unete">
     <div class="container-fluid text-center mb-4">
       <div class="row justify-content-center">
@@ -175,7 +176,7 @@
 <section id="sub-two" class="info2 info">
   <div class="cont-section2  py-3 back">
     <div class="cont-cent">
-      <p class="text-bold py-3 my3">Nuestro impacto</p>
+      <p class="text-bold py-3 my3 titleImpacto">Nuestro impacto</p>
     </div>
 
     <div class="container">
