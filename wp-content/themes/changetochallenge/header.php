@@ -86,7 +86,7 @@
 						</ol>
 					</div>
 				</li>
-				<li><a href="#">Tienda</a></li>
+				<li><a href="<?php echo esc_url( "/tienda" ); ?>">Tienda</a></li>
 				<li><a href="#">ES/EN</a></li>
 			</ul>
 			
@@ -111,7 +111,7 @@
 					<li><a href="<?php echo esc_url( "/empresarial" ); ?>">Building empresarial</a></li>
 				</ul>
 			</li>
-			<li><a class="links-mob" href="#">Tienda</a></li>
+			<li><a class="links-mob" href="<?php echo esc_url( "/tienda" ); ?>">Tienda</a></li>
 			</ul>
 			<ul class="contact">
 				<li>Escríbenos en:</li>
