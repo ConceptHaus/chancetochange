@@ -20,7 +20,7 @@
 				$loop = new WP_Query( $args );
 				$aux=1;
 				while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
-					<div class="col-sm-6 mb-3 mb-sm-0">
+					<div class="col-sm-4 mb-3 mb-sm-0">
 						<div class="col-12">
 							<ul>
 								<li><img src="<?php echo the_field('foto_horizontal'); ?>" alt="" srcset="" class="border-rad" style="height:350px; width:350px; "></li>
