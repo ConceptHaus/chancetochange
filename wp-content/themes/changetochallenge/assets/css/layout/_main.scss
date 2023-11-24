@@ -1983,3 +1983,18 @@ width: 80%;
 	  }
 	}
 }
+
+.titleImpacto{
+	font-size: 2em;
+  	font-weight: bold;
+	color: $blueC2C;
+	font-family: 'AkzidenzGrotesk BQ', sans-serif;
+
+}
+
+
+@media only screen and (max-width : 900px) {
+	.first-child{
+		font: 1rem;
+	}
+}

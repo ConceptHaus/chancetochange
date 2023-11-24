@@ -44,15 +44,15 @@
     <br>
     
     <div class="row d-flex justify-content-center text-center content-icon3">
-      <div class="col-sm-4" >
+      <div class="col-sm-4 col-12" >
       <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/icon-map.png" alt="" srcset="">
       <p class="pcorrect"><span>250+ </span>Aventuras<br /> completadas</p>
       </div>
-      <div class="col-sm-4" >
+      <div class="col-sm-4 col-12" >
       <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/icon-bot.png" alt="" srcset="">
           <p class="pcorrect"><span>3,000+ <br /></span>Challengers</p>
       </div>
-      <div class="col-sm-4" >
+      <div class="col-sm-4 col-12" >
       <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/icon-plan.png" alt="" srcset="">
           <p class="pcorrect"><span>20+ <br> </span>Destinos</p>
       </div>
@@ -135,7 +135,7 @@
 <section id="sub-two" class="info2 info">
   <div class="cont-section2  py-3 back">
     <div class="cont-cent">
-      <p class="text-bold py-3 my3">Nuestro impacto</p>
+      <p class="text-bold py-3 my3 titleImpacto">Nuestro impacto</p>
     </div>
 
     <div class="container">

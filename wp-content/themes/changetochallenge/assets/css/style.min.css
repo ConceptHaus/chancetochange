@@ -3105,6 +3105,18 @@ body.is-preload #banner > .inner {
   background-image: url("../img/images/right-arrow.svg") !important;
 }
 
+.titleImpacto {
+  font-size: 2em;
+  font-weight: bold;
+  color: #1D3A6B;
+  font-family: "AkzidenzGrotesk BQ", sans-serif;
+}
+
+@media only screen and (max-width: 900px) {
+  .first-child {
+    font: 1rem;
+  }
+}
 /* ==|====================
    Layout/Footer
    ======================= */
