@@ -3281,6 +3281,9 @@ body.is-preload #banner > .inner {
   .first-child {
     font: 1rem;
   }
+  #sub-one {
+    text-align: center;
+  }
 }
 /* ==|====================
    Layout/Footer
