@@ -447,22 +447,24 @@ input, select, textarea {
 		border-bottom: 0 !important;
 		cursor: default;
 		height: 60vh;
-		margin-bottom: -3.25rem;
+		margin-bottom: 0;
 		max-height: 42rem;
 		min-height: 22rem;
 		background-image: url("../img/slider/banner-empresarial.png");
 
 		p{
-			color: white;
+			color: white; line-height: 1.2;
 			font-family: 'Akzidenz-Grotesk BQ', sans-serif; 
-			font-weight: bold;
+			font-weight: bold; text-align: left; margin: 0 0 20px;
 			&:nth-child(1){
-				font-size: 54px;
+				@include fluid-type(30px, 54px, 320px, 1200px);
 			}
 			&:nth-child(2){
-				font-size: 70px;
+				@include fluid-type(40px, 70px, 320px, 1200px); margin: 0;
 			}
-
+			@media all and (min-width: 640px) {
+				text-align: center;
+			}
 		}
 	}
 	
@@ -769,7 +771,7 @@ input, select, textarea {
 		align-items: center;
 	}
 	.info2 {
-		width: 100%;
+		width: 100%; height: auto; padding: 30px 0; margin: 0; box-sizing: border-box; position: relative;
 		background: #F6F6F6;
 	}
 	.cont-section2{
@@ -869,6 +871,12 @@ input, select, textarea {
 	}
 	.slideHome {
 		width: 100%; height: auto; padding: 0; margin: 0; position: relative; box-sizing: border-box;
+		& .slick-slide {
+			padding: 20px; box-sizing: border-box;
+		}
+		& .imgTipoAdven {
+			width: 100%; height: auto; padding: 0; margin: 0; border-radius: 30px;
+		}
 	}
 	.cards-fou{
 		width: 100%;
@@ -1407,15 +1415,30 @@ width: 80%;
 
 
 .botoneraTiposAventuras{
-	
-	a{
-		font-size: 20px;
+	width: 100%; height: auto; padding: 0; margin: 0; position: relative; display: flex; flex-direction: column; justify-content: center;
+	@media all and (min-width: 640px) {
+		flex-direction: row;
+	}
+	& .bxAdven {
+		flex: 0 0 auto; width: 100%; padding: 0; margin: 0 0 15px; box-sizing: border-box;
+		@media all and (min-width: 640px) {
+			width: 33.33333333%; margin: 0;
+		}
+		&:last-child {
+			margin: 0;
+		}
+	}
+	a {
+		@include fluid-type(13px, 20px, 320px, 1200px); padding: 0; box-sizing: border-box; margin: 0 auto;
 		font-weight: 200;
 		font-family: 'Akzidenz-Grotesk BQ', sans-serif;
-		text-decoration: none;
+		text-decoration: none; display: block; text-align: center; width: 180px; height: 35px; line-height: 35px;
 		&:visited{
 			color: white !important;
 		}
+		@media all and (min-width: 640px) { width: 160px; }
+		@media all and (min-width: 768px) { width: 200px; }
+		@media all and (min-width: 1200px) { width: 250px; }
 	}
 	hr{
 		height: 3% !important;
