@@ -1,0 +1,8 @@
+2023-11-22T15:17:15+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp2\htdocs\chancetochange\wp-includes\Requests\src\Transport\Curl.php on line 205
+
+2023-11-22T17:02:28+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp2\htdocs\chancetochange\wp-includes\class-wpdb.php on line 2459
+
+2023-11-22T17:06:11+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp2\htdocs\chancetochange\wp-includes\class-wpdb.php on line 2459
+
+2023-11-22T17:14:02+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp2\htdocs\chancetochange\wp-includes\class-wpdb.php on line 2459
+
