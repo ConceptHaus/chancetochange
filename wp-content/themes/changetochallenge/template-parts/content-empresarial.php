@@ -115,7 +115,7 @@
 					<div class="row text-center  d-flex justify-content-center mt-5">
 						<div class="col-sm-12" >
 							<p class="first-child carouselAventuras">Aventuras enfocadas en <br /><span class="text-orange">team building empresarial y activaciones de marca</span></p>
-							<div class="row text-center  d-flex justify-content-center">
+							<div class="row text-center d-flex justify-content-center mt-2">
 								<div class="col-sm-12 pt-2 mt-0 contentShowMenu">
 									<a class="gen-btn showAllMonth">Ver todos los destinos</a>
 									<div class="contMenu">
