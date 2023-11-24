@@ -28,13 +28,13 @@
 				$aux=1;
 				while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
 					<div class="col-sm-4 mb-3 mb-sm-0">
-						<div class="card">
-						<div class="card-body">
-							<img src="<?php echo the_field('foto_horizontal'); ?>" alt="" srcset="" class="border-rad" style="height:350px; width:350px; ">
-							<h5 class="card-title"><?php the_title(); ?></h5>
-							<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-							<a href="#" class="btn btn-primary">Ver más</a>
-						</div>
+						<div class="col-12">
+							<ul>
+								<li><img src="<?php echo the_field('foto_horizontal'); ?>" alt="" srcset="" class="border-rad" style="height:350px; width:350px; "></li>
+								<li><h5 class="card-title"><?php the_title(); ?></h5></li>
+								<li><?php echo $product->get_price_html(); ?> MXN</li>
+								<li><a href="<?php echo get_permalink( $loop->post->ID ) ?>" class="btnReservar">Ver más</a></li>
+							</ul>
 						</div>
 					</div>
 				<?php endwhile; ?>
