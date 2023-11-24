@@ -14,7 +14,7 @@
  
  
 		<div class="container">
-			<div class="row">			
+			<div class="row text-center d-flex justify-content-center">			
 			<?php
 				$args = array( 'post_type' => 'product', 'posts_per_page' => 15, 'product_cat' => 'tienda', 'orderby' => 'rand' );
 				$loop = new WP_Query( $args );
