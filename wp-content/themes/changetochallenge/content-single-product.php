@@ -291,9 +291,9 @@ print_r($terms); exit;
 	<section id="sub-one" class="info2 info mt-3 pt-5 ">
 		<div class="cont-section2  py-3 gen-cont botoneraTiposAventuras container">
 		
-			<div class="col-3"><a href="<?php echo esc_url( "/grupo-abierto" ); ?>" class="gen-btn active">Aventura abierta</a></div>
-			<div class="col-3"><a href="<?php echo esc_url( "/grupo-cerrado" ); ?>" class="gen-btn">Aventura privada</a></div>
-			<div class="col-3"><a href="<?php echo esc_url( "/empresarial" ); ?>" class="gen-btn">Aventura empresarial</a></div>
+			<div class="col-3"><a href="#" class="gen-btn active">Chosen appointment</a></div>
+			<div class="col-3"><a href="#" class="gen-btn">Your info</a></div>
+			<div class="col-3"><a href="#" class="gen-btn">Confirmation</a></div>
 
 		</div>
 	</section>
