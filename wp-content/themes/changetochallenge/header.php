@@ -86,7 +86,7 @@
 						</ol>
 					</div>
 				</li>
-				<li><a href="<?php echo esc_url( "/tienda" ); ?>">Tienda</a></li>
+				<li><a href="<?php echo esc_url( "/shop" ); ?>">Tienda</a></li>
 				<li><a href="#">ES/EN</a></li>
 			</ul>
 			
@@ -97,21 +97,19 @@
 	</header>
 	<nav id="menu">
 		<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo"><img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/C2C-blue-RGB.png" class="logo-mob" alt=""></a>
-		<ul class="links">
-			<li class="links-mob">
-				
-					Tipos de aventura
-				
+			<ul class="links">
+				<li class="links-mob">				
+					Tipos de aventura				
 				</li>
-			<li>
-				<a href="#submenu" class="arrow no-cerrar-menu" data-toggle="submenu"><img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/right-arrow-icon-27 3.png" alt=""></a>
-				<ul id="submenu">
-					<li><a href="<?php echo esc_url( "/grupo-abierto" ); ?>">Grupo abierto</a></li>
-					<li><a href="<?php echo esc_url( "/grupo-cerrado" ); ?>">Grupo cerrado</a></li>
-					<li><a href="<?php echo esc_url( "/empresarial" ); ?>">Building empresarial</a></li>
-				</ul>
-			</li>
-			<li><a class="links-mob" href="<?php echo esc_url( "/tienda" ); ?>">Tienda</a></li>
+				<li>
+					<a href="#submenu" class="arrow no-cerrar-menu" data-toggle="submenu"><img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/right-arrow-icon-27 3.png" alt=""></a>
+					<ul id="submenu">
+						<li><a href="<?php echo esc_url( "/grupo-abierto" ); ?>">Grupo abierto</a></li>
+						<li><a href="<?php echo esc_url( "/grupo-cerrado" ); ?>">Grupo cerrado</a></li>
+						<li><a href="<?php echo esc_url( "/empresarial" ); ?>">Building empresarial</a></li>
+					</ul>
+				</li>
+				<li><a class="links-mob" href="<?php echo esc_url( "/shop" ); ?>">Tienda</a></li>
 			</ul>
 			<ul class="contact">
 				<li>Escríbenos en:</li>

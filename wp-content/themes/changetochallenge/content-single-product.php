@@ -121,6 +121,7 @@ print_r($terms); exit;
 				</div>
 				<div class="col-sm-6" >
 					<div class="col-sm-12 detail-product" >
+						<a class="historyBack mb-5" href="javascript:history.back()">< Volver</a>
 						<p class="descriptionProduct">Conoce más sobre <br/> este challenge</p>
 						<hr class="hr-orange singleprod mb-5"/>
 						<?php if(get_field('challenge')) { ?>							
@@ -245,21 +246,15 @@ print_r($terms); exit;
 						<hr class="hr-orange singleprod mt-5 mb-5"/>
 						<?php if(get_field('incluye')) { ?>							
 							<div class="row">
-								<div class="col-sm-6">
-									<p class="etiqueta">Incluye: </p>
-								</div>
-								<div class="col-sm-6">
-									<p class="valor"><?php echo the_field('incluye'); ?></p>
+								<div class="col-sm-12">
+									<p class="etiqueta">Incluye: <?php echo the_field('incluye'); ?></p>
 								</div>
 							</div>
 						<?php } ?>
 						<?php if(get_field('se_recomienda_llevar')) { ?>							
 							<div class="row">
-								<div class="col-sm-6">
-									<p class="etiqueta">Se recomienda llevar: </p>
-								</div>
-								<div class="col-sm-6">
-									<p class="valor"><?php echo the_field('se_recomienda_llevar'); ?></p>
+								<div class="col-sm-12">
+									<p class="etiqueta">Se recomienda llevar: <?php echo the_field('se_recomienda_llevar'); ?></p>
 								</div>
 							</div>
 						<?php } ?>
@@ -267,7 +262,7 @@ print_r($terms); exit;
 												
 						<div class="row">
 							<div class="col-sm-12">
-								<h3>Costo: <span>$ <?php echo $product->get_price(); ?> mxn</span></h3>
+								<h3 class="costo-single">Costo: <span>$ <?php echo $product->get_price(); ?> mxn</span></h3>
 								<?php if(get_field('se_recomienda_llevar')) { ?>	
 									<p class="valor"><?php echo the_field("nota_costo"); ?></p>
 								<?php } ?>
@@ -296,9 +291,9 @@ print_r($terms); exit;
 	<section id="sub-one" class="info2 info mt-3 pt-5 ">
 		<div class="cont-section2  py-3 gen-cont botoneraTiposAventuras container">
 		
-			<div><a href="<?php echo esc_url( "/grupo-abierto" ); ?>" class="gen-btn active">Aventura abierta</a></div>
-			<div><a href="<?php echo esc_url( "/grupo-cerrado" ); ?>" class="gen-btn">Aventura privada</a></div>
-			<div><a href="<?php echo esc_url( "/empresarial" ); ?>" class="gen-btn">Aventura empresarial</a></div>
+			<div class="col-3"><a href="#" class="gen-btn active">Chosen appointment</a></div>
+			<div class="col-3"><a href="#" class="gen-btn">Your info</a></div>
+			<div class="col-3"><a href="#" class="gen-btn">Confirmation</a></div>
 
 		</div>
 	</section>

@@ -20,13 +20,13 @@
 				$loop = new WP_Query( $args );
 				$aux=1;
 				while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
-					<div class="col-sm-4 mb-3 mb-sm-0">
+					<div class="col-sm-4 mb-3 mt-3 mb-sm-0">
 						<div class="col-12">
 							<ul>
 								<li><img src="<?php echo the_field('foto_horizontal'); ?>" alt="" srcset="" class="border-rad" style="height:350px; width:350px; "></li>
-								<li><h5 class="card-title"><?php the_title(); ?></h5></li>
+								<li><a href="<?php echo get_permalink( $loop->post->ID ) ?>"><h5 class="card-title"><?php the_title(); ?></h5></a></li>
 								<li><?php echo $product->get_price_html(); ?> MXN</li>
-								<li><a href="<?php echo get_permalink( $loop->post->ID ) ?>" class="btnReservar">Ver más</a></li>
+								<li><a href="<?php echo esc_url( "/shop/?add-to-cart=".$loop->post->ID ); ?>" class="btnReservar">Agregar a carrito</a></li>
 							</ul>
 						</div>
 					</div>

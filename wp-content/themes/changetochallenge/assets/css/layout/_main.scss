@@ -1837,7 +1837,7 @@ width: 80%;
 	.contName{
 		background: $blueC2C;
 		position: absolute;
-		width: 90%;
+		width: 70%;
 		top: 15% !important;
 		text-align: center;
 		padding: 2% 0%;
@@ -1861,8 +1861,19 @@ width: 80%;
 		padding: 2% 5%;
 		margin-top: 5%;
 	}
+	
 }
 
+a.historyBack{
+	background-color: inherit;
+	color: $grayLetter;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1rem;
+	font-weight: 600;
+}
+h3.costo-single{
+	font-size: 1.75em;
+}
 
 .hr-orange.singleprod{
 	border-bottom: 0.8px solid $orangeC2C !important;
@@ -2077,4 +2088,11 @@ width: 80%;
 	#sub-one{
 		text-align: center;
 	}
+}
+
+.btnReservar{
+	background-color: $blueC2C;
+	border-radius: 5px;
+	color: white;
+	width: 200px;
 }
