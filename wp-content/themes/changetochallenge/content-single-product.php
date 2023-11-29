@@ -9,6 +9,7 @@
 
  
  global $product;
+ print_r($product);
 $id = $product->get_id();
 // Obtener el ID del producto.
 $product->get_id();
