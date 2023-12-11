@@ -332,18 +332,22 @@
 							<div class="col-sm-10 d-flex justify-content-start">
 								<span class="datecustomField">Selecciona una fecha*:</span>
 							</div >
-							<div class="row contentInputsCustom">
-								<div class="col-4">
-									<input type="tel" class="form-control required w-50 mb-1" id="mes" />
-									<span class="datecustomField">DD</span>
-								</div>
-								<div class="col-4">
-									<input type="tel" class="form-control required w-50 mb-1" id="dia"/>
-									<span class="datecustomField">MM</span>
-								</div>
-								<div class="col-4">	
-									<input type="tel" class="form-control required w-35 ultimo mb-1" id="anio"/>
-									<span class="datecustomField">YYYY</span>
+							<div class="row">
+								<div class="col-12">
+									<div class="contentInputsCustom">
+										<div class="inputDateForm">
+											<input type="tel" class="form-control required mb-1" id="mes" />
+											<label id="mes" class="datecustomField">DD</label>
+										</div>
+										<div class="inputDateForm">
+											<input type="tel" class="form-control required mb-1" id="dia"/>
+											<label id="dia" class="datecustomField">MM</label>
+										</div>
+										<div class="inputDateForm">	
+											<input type="tel" class="form-control required ultimo mb-1" id="anio"/>
+											<label id="anio" class="datecustomField">YYYY</label>
+										</div>
+									</div><!-- end.contentInputsCustom --> 
 								</div>
 							</div>
 						</div>

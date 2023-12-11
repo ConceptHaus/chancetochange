@@ -9,7 +9,7 @@
 
  
  global $product;
- print_r($product);
+//  print_r($product);
 $id = $product->get_id();
 // Obtener el ID del producto.
 $product->get_id();
@@ -127,80 +127,80 @@ print_r($terms); exit;
 						<hr class="hr-orange singleprod mb-5"/>
 						<?php if(get_field('challenge')) { ?>							
 							<div class="row mt-4">
-								<div class="col-sm-6">
+								<div class="col-6 col-sm-6">
 									<p class="etiqueta">Challenge</p>
 								</div>
-								<div class="col-sm-6">
+								<div class="col-6 col-sm-6">
 									<p class="valor"><?php echo the_field('challenge'); ?></p>
 								</div>
 							</div>
 						<?php } ?>
 						<?php if(get_field('tipo_de_causa')) { ?>							
 							<div class="row">
-								<div class="col-sm-6">
+								<div class="col-6 col-sm-6">
 									<p class="etiqueta">Tipo de causa</p>
 								</div>
-								<div class="col-sm-6">
+								<div class="col-6 col-sm-6">
 									<p class="valor"><?php echo the_field('tipo_de_causa'); ?></p>
 								</div>
 							</div>
 						<?php } ?>
 						<?php if(get_field('duracion')) { ?>							
 							<div class="row">
-								<div class="col-sm-6">
+								<div class="col-6 col-sm-6">
 									<p class="etiqueta">Duración</p>
 								</div>
-								<div class="col-sm-6">
+								<div class="col-6 col-sm-6">
 									<p class="valor"><?php echo the_field('duracion'); ?></p>
 								</div>
 							</div>
 						<?php } ?>
 						<?php if(get_field('nivel_fisico')) { ?>							
 							<div class="row">
-								<div class="col-sm-6">
+								<div class="col-6 col-sm-6">
 									<p class="etiqueta">Nivel físico</p>
 								</div>
-								<div class="col-sm-6">
+								<div class="col-6 col-sm-6">
 									<p class="valor"><?php echo the_field('nivel_fisico'); ?></p>
 								</div>
 							</div>
 						<?php } ?>
 						<?php if(get_field('nivel_tecnico')) { ?>							
 							<div class="row">
-								<div class="col-sm-6">
+								<div class="col-6 col-sm-6">
 									<p class="etiqueta">Nivel técnico</p>
 								</div>
-								<div class="col-sm-6">
+								<div class="col-6 col-sm-6">
 									<p class="valor"><?php echo the_field('nivel_tecnico'); ?></p>
 								</div>
 							</div>
 						<?php } ?>
 						<?php if(get_field('punto_de_encuentro')) { ?>							
 							<div class="row">
-								<div class="col-sm-6">
+								<div class="col-6 col-sm-6">
 									<p class="etiqueta">Punto de encuentro</p>
 								</div>
-								<div class="col-sm-6">
+								<div class="col-6 col-sm-6">
 									<p class="valor"><?php echo the_field('punto_de_encuentro'); ?></p>
 								</div>
 							</div>
 						<?php } ?>
 						<?php if(get_field('inicia_en')) { ?>							
 							<div class="row">
-								<div class="col-sm-6">
+								<div class="col-6 col-sm-6">
 									<p class="etiqueta">Inicia en</p>
 								</div>
-								<div class="col-sm-6">
+								<div class="col-6 col-sm-6">
 									<p class="valor"><?php echo the_field('inicia_en'); ?></p>
 								</div>
 							</div>
 						<?php } ?>
 						<?php if(get_field('termina_en')) { ?>							
 							<div class="row">
-								<div class="col-sm-6">
+								<div class="col-6 col-sm-6">
 									<p class="etiqueta">Termina en</p>
 								</div>
-								<div class="col-sm-6">
+								<div class="col-6 col-sm-6">
 									<p class="valor"><?php echo the_field('termina_en'); ?></p>
 								</div>
 							</div>
@@ -248,14 +248,14 @@ print_r($terms); exit;
 						<?php if(get_field('incluye')) { ?>							
 							<div class="row">
 								<div class="col-sm-12">
-									<p class="etiqueta">Incluye: <?php echo the_field('incluye'); ?></p>
+									<p class="etiqueta">Incluye: <span><?php echo the_field('incluye'); ?></span></p>
 								</div>
 							</div>
 						<?php } ?>
 						<?php if(get_field('se_recomienda_llevar')) { ?>							
 							<div class="row">
 								<div class="col-sm-12">
-									<p class="etiqueta">Se recomienda llevar: <?php echo the_field('se_recomienda_llevar'); ?></p>
+									<p class="etiqueta">Se recomienda llevar: <span><?php echo the_field('se_recomienda_llevar'); ?></span></p>
 								</div>
 							</div>
 						<?php } ?>
