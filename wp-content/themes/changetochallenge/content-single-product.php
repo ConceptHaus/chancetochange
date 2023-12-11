@@ -345,12 +345,14 @@ print_r($terms); exit;
 		<div class="container">
 			<div class="row">
 				<div class="col-12 div col-md-6">
-					<figure>
-						<img src="<?php echo get_template_directory_uri(''); ?>assets/img/" alt="">
+					<figure class="formSingle formSingle__img">
+						<img src="<?php echo get_template_directory_uri(''); ?>/assets/img/img_product.jpg" alt="">
 					</figure>
 				</div>
 				<div class="col-12 div col-md-6">
 					<div class="formSingleCt">
+						<h2 class="formSingle formSingle__title">¿Esta aventura es ideal para tu empresa?</h2>
+						<p class="formSingle formSingle__desc">¡Escríbenos y pronto nos pondremos en contacto contigo!</p>
 						<form action="" method="POST">
 							<!-- Campo para Nombre Completo -->
 							<div class="mb-3 sty-form">
@@ -360,6 +362,11 @@ print_r($terms); exit;
 							<!-- Campo para Correo Electrónico -->
 							<div class="mb-3 sty-form">
 								<input type="email" class="form-control required" id="email" placeholder="Correo*:">
+							</div>
+
+							<!-- Campo para número -->
+							<div class="mb-3 sty-form">
+								<input type="tel" class="form-control required" id="numero" placeholder="Número de challengers*:">
 							</div>
 
 							<div class="mb-3 sty-form">
