@@ -264,9 +264,9 @@ print_r($terms); exit;
 						<div class="row">
 							<div class="col-sm-12">
 								<h3 class="costo-single">Costo: <span>$ <?php echo $product->get_price(); ?> mxn</span></h3>
-								<?php if(get_field('se_recomienda_llevar')) { ?>	
+								<!-- <?php if(get_field('se_recomienda_llevar')) { ?>	
 									<p class="valor"><?php echo the_field("nota_costo"); ?></p>
-								<?php } ?>
+								<?php } ?> -->
 							</div>
 						</div>
 						
@@ -286,7 +286,6 @@ print_r($terms); exit;
 				<p class="first-child">Unirme a grupo abierto</p>
 			</div>
 		</div>
-		<br>
 	</div>
 
 	<section id="sub-one" class="info2 info mt-3 pt-5 ">
@@ -341,7 +340,70 @@ print_r($terms); exit;
 		</div><!-- end.row -->
 		<br>
 	</div>
- 
+
+	<section class="formSingle">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 div col-md-6">
+					<figure>
+						<img src="<?php echo get_template_directory_uri(''); ?>assets/img/" alt="">
+					</figure>
+				</div>
+				<div class="col-12 div col-md-6">
+					<div class="formSingleCt">
+						<form action="" method="POST">
+							<!-- Campo para Nombre Completo -->
+							<div class="mb-3 sty-form">
+								<input type="text" class="form-control required" id="name" placeholder="Nombre Completo*:">
+							</div>
+
+							<!-- Campo para Correo Electrónico -->
+							<div class="mb-3 sty-form">
+								<input type="email" class="form-control required" id="email" placeholder="Correo*:">
+							</div>
+
+							<div class="mb-3 sty-form">
+								<select class="form-control custom-select" name="" id="">
+									<option value="">Selecciona un destino *</option>
+									<option value="">Destino 1</option>
+									<option value="">Destino 2</option>
+									<option value="">Destino 3</option>
+								</select>
+							</div>
+
+							<!-- Campo para Fecha -->
+							<div class="mb-3 sty-form d-flex justiy-content-start">
+								<div class="row">
+									<div class="col-sm-10 d-flex justify-content-start">
+										<span class="datecustomField">Selecciona una fecha*:</span>
+									</div >
+									<div class="row">
+										<div class="col-12">
+											<div class="contentInputsCustom">
+												<div class="inputDateForm">
+													<input type="tel" class="form-control required mb-1" id="mes" />
+													<label id="mes" class="datecustomField">DD</label>
+												</div>
+												<div class="inputDateForm">
+													<input type="tel" class="form-control required mb-1" id="dia"/>
+													<label id="dia" class="datecustomField">MM</label>
+												</div>
+												<div class="inputDateForm">	
+													<input type="tel" class="form-control required ultimo mb-1" id="anio"/>
+													<label id="anio" class="datecustomField">YYYY</label>
+												</div>
+											</div><!-- end.contentInputsCustom --> 
+										</div>
+									</div>
+								</div>
+							</div>
+							<input type="submit" class="btn-env btnSubmit mt-4" value="Enviar">
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
 	
 

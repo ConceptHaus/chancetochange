@@ -134,7 +134,7 @@ $(function(){
   $('.icons-contsSngle').slick({
     infinite: true,
     slidesToShow: 3,
-    slidesToScroll: 1,
+    slidesToScroll: 3,
     autoplay: true,
     dots: false,
     speed: 300,
@@ -142,14 +142,14 @@ $(function(){
     nextArrow: $('#nextslideSingle'),
     responsive: [
       {
-        breakpoint: 400,
+        breakpoint: 992,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
         }
       },
       {
-        breakpoint: 200,
+        breakpoint: 768,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1
