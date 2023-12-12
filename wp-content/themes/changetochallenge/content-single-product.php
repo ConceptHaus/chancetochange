@@ -94,7 +94,6 @@ $terms = get_terms( 'product_cat', $args );
 print_r($terms); exit;
 */
 
-
  
 
 
