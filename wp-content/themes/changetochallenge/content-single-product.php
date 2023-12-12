@@ -9,12 +9,8 @@
 
  
  global $product;
-<<<<<<< HEAD
 //  print_r($product);
-=======
- print_r($product);
->>>>>>> 4ae6ba6c9bd543fc97981b061b54f67e724a4651
-$id = $product->get_id();
+
 // Obtener el ID del producto.
 $product->get_id();
 define("IDCURRENT", $product->get_id());
