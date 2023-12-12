@@ -10,9 +10,32 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-	</header><!-- .entry-header -->
+	<!-- <header class="entry-header">
+		<?php //the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+	</header> -->
+	<section class="headShop">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+				<!-- <?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
+					<h1 class="woocommerce-products-header__title page-title">Tienda!!!</h1>
+				<?php endif; ?> -->
+
+				<h1 class="headShop headShop__title">The Challenger's corner<br><span>Merch con causa</span></h1>
+
+				<?php
+				/**
+				 * Hook: woocommerce_archive_description.
+				 *
+				 * @hooked woocommerce_taxonomy_archive_description - 10
+				 * @hooked woocommerce_product_archive_description - 10
+				 */
+				// do_action( 'woocommerce_archive_description' );
+				?>
+				</div>
+			</div>
+		</div>
+	</section>
 
 	<?php changetochallenge_post_thumbnail(); ?>
 
