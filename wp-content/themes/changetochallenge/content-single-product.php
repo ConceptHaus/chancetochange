@@ -9,7 +9,11 @@
 
  
  global $product;
+<<<<<<< HEAD
 //  print_r($product);
+=======
+ print_r($product);
+>>>>>>> 4ae6ba6c9bd543fc97981b061b54f67e724a4651
 $id = $product->get_id();
 // Obtener el ID del producto.
 $product->get_id();
@@ -94,6 +98,10 @@ $terms = get_terms( 'product_cat', $args );
 print_r($terms); exit;
 */
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4ae6ba6c9bd543fc97981b061b54f67e724a4651
  
 
 
@@ -127,80 +135,136 @@ print_r($terms); exit;
 						<hr class="hr-orange singleprod mb-5"/>
 						<?php if(get_field('challenge')) { ?>							
 							<div class="row mt-4">
+<<<<<<< HEAD
 								<div class="col-6 col-sm-6">
 									<p class="etiqueta">Challenge</p>
 								</div>
 								<div class="col-6 col-sm-6">
+=======
+								<div class="col-sm-6">
+									<p class="etiqueta">Challenge</p>
+								</div>
+								<div class="col-sm-6">
+>>>>>>> 4ae6ba6c9bd543fc97981b061b54f67e724a4651
 									<p class="valor"><?php echo the_field('challenge'); ?></p>
 								</div>
 							</div>
 						<?php } ?>
 						<?php if(get_field('tipo_de_causa')) { ?>							
 							<div class="row">
+<<<<<<< HEAD
 								<div class="col-6 col-sm-6">
 									<p class="etiqueta">Tipo de causa</p>
 								</div>
 								<div class="col-6 col-sm-6">
+=======
+								<div class="col-sm-6">
+									<p class="etiqueta">Tipo de causa</p>
+								</div>
+								<div class="col-sm-6">
+>>>>>>> 4ae6ba6c9bd543fc97981b061b54f67e724a4651
 									<p class="valor"><?php echo the_field('tipo_de_causa'); ?></p>
 								</div>
 							</div>
 						<?php } ?>
 						<?php if(get_field('duracion')) { ?>							
 							<div class="row">
+<<<<<<< HEAD
 								<div class="col-6 col-sm-6">
 									<p class="etiqueta">Duración</p>
 								</div>
 								<div class="col-6 col-sm-6">
+=======
+								<div class="col-sm-6">
+									<p class="etiqueta">Duración</p>
+								</div>
+								<div class="col-sm-6">
+>>>>>>> 4ae6ba6c9bd543fc97981b061b54f67e724a4651
 									<p class="valor"><?php echo the_field('duracion'); ?></p>
 								</div>
 							</div>
 						<?php } ?>
 						<?php if(get_field('nivel_fisico')) { ?>							
 							<div class="row">
+<<<<<<< HEAD
 								<div class="col-6 col-sm-6">
 									<p class="etiqueta">Nivel físico</p>
 								</div>
 								<div class="col-6 col-sm-6">
+=======
+								<div class="col-sm-6">
+									<p class="etiqueta">Nivel físico</p>
+								</div>
+								<div class="col-sm-6">
+>>>>>>> 4ae6ba6c9bd543fc97981b061b54f67e724a4651
 									<p class="valor"><?php echo the_field('nivel_fisico'); ?></p>
 								</div>
 							</div>
 						<?php } ?>
 						<?php if(get_field('nivel_tecnico')) { ?>							
 							<div class="row">
+<<<<<<< HEAD
 								<div class="col-6 col-sm-6">
 									<p class="etiqueta">Nivel técnico</p>
 								</div>
 								<div class="col-6 col-sm-6">
+=======
+								<div class="col-sm-6">
+									<p class="etiqueta">Nivel técnico</p>
+								</div>
+								<div class="col-sm-6">
+>>>>>>> 4ae6ba6c9bd543fc97981b061b54f67e724a4651
 									<p class="valor"><?php echo the_field('nivel_tecnico'); ?></p>
 								</div>
 							</div>
 						<?php } ?>
 						<?php if(get_field('punto_de_encuentro')) { ?>							
 							<div class="row">
+<<<<<<< HEAD
 								<div class="col-6 col-sm-6">
 									<p class="etiqueta">Punto de encuentro</p>
 								</div>
 								<div class="col-6 col-sm-6">
+=======
+								<div class="col-sm-6">
+									<p class="etiqueta">Punto de encuentro</p>
+								</div>
+								<div class="col-sm-6">
+>>>>>>> 4ae6ba6c9bd543fc97981b061b54f67e724a4651
 									<p class="valor"><?php echo the_field('punto_de_encuentro'); ?></p>
 								</div>
 							</div>
 						<?php } ?>
 						<?php if(get_field('inicia_en')) { ?>							
 							<div class="row">
+<<<<<<< HEAD
 								<div class="col-6 col-sm-6">
 									<p class="etiqueta">Inicia en</p>
 								</div>
 								<div class="col-6 col-sm-6">
+=======
+								<div class="col-sm-6">
+									<p class="etiqueta">Inicia en</p>
+								</div>
+								<div class="col-sm-6">
+>>>>>>> 4ae6ba6c9bd543fc97981b061b54f67e724a4651
 									<p class="valor"><?php echo the_field('inicia_en'); ?></p>
 								</div>
 							</div>
 						<?php } ?>
 						<?php if(get_field('termina_en')) { ?>							
 							<div class="row">
+<<<<<<< HEAD
 								<div class="col-6 col-sm-6">
 									<p class="etiqueta">Termina en</p>
 								</div>
 								<div class="col-6 col-sm-6">
+=======
+								<div class="col-sm-6">
+									<p class="etiqueta">Termina en</p>
+								</div>
+								<div class="col-sm-6">
+>>>>>>> 4ae6ba6c9bd543fc97981b061b54f67e724a4651
 									<p class="valor"><?php echo the_field('termina_en'); ?></p>
 								</div>
 							</div>
@@ -211,6 +275,7 @@ print_r($terms); exit;
 									<?php
 									switch(get_field('nivel_fisico')){
 										case 'Principiante':
+<<<<<<< HEAD
 											echo '<p class="valorAste"><strong>* </strong>Entrenamiento físco básico</p>';
 											break;
 										case 'Intermedio*':
@@ -218,6 +283,15 @@ print_r($terms); exit;
 											break;
 										case 'Avanzado*':
 											echo '<p class="valorAste"><strong>* </strong>Se requiere entrenamiento físco avanzado</p>';
+=======
+											echo '<p class="valorAste"><strong>* </strong> Ejercicio por lo menos 2 veces a la semana</p>';
+											break;
+										case 'Intermedio*':
+											echo '<p class="valorAste"><strong>* </strong> Ejercicio por lo menos 3 veces a la semana.</p>';
+											break;
+										case 'Avanzado*':
+											echo '<p class="valorAste"><strong>* </strong> Ejercicio por lo menos 5 veces a la semana</p>';
+>>>>>>> 4ae6ba6c9bd543fc97981b061b54f67e724a4651
 											break;
 									}
 									?>
@@ -234,7 +308,11 @@ print_r($terms); exit;
 											echo '<p class="valorAste"><strong>** </strong>Entrenamiento técnico básico</p>';
 											break;
 										case 'Intermedio*':
+<<<<<<< HEAD
 											echo '<p class="valorAste"><strong>** </strong>Entrenamiento técnico previo</p>';
+=======
+											echo '<p class="valorAste"><strong>** </strong> Entrenamiento técnico intermedio</p>';
+>>>>>>> 4ae6ba6c9bd543fc97981b061b54f67e724a4651
 											break;
 										case 'Avanzado*':
 											echo '<p class="valorAste"><strong>** </strong>Se requiere entrenamiento técnico avanzado</p>';
@@ -248,14 +326,22 @@ print_r($terms); exit;
 						<?php if(get_field('incluye')) { ?>							
 							<div class="row">
 								<div class="col-sm-12">
+<<<<<<< HEAD
 									<p class="etiqueta">Incluye: <span><?php echo the_field('incluye'); ?></span></p>
+=======
+									<p class="etiqueta">Incluye: <?php echo the_field('incluye'); ?></p>
+>>>>>>> 4ae6ba6c9bd543fc97981b061b54f67e724a4651
 								</div>
 							</div>
 						<?php } ?>
 						<?php if(get_field('se_recomienda_llevar')) { ?>							
 							<div class="row">
 								<div class="col-sm-12">
+<<<<<<< HEAD
 									<p class="etiqueta">Se recomienda llevar: <span><?php echo the_field('se_recomienda_llevar'); ?></span></p>
+=======
+									<p class="etiqueta">Se recomienda llevar: <?php echo the_field('se_recomienda_llevar'); ?></p>
+>>>>>>> 4ae6ba6c9bd543fc97981b061b54f67e724a4651
 								</div>
 							</div>
 						<?php } ?>
@@ -264,9 +350,15 @@ print_r($terms); exit;
 						<div class="row">
 							<div class="col-sm-12">
 								<h3 class="costo-single">Costo: <span>$ <?php echo $product->get_price(); ?> mxn</span></h3>
+<<<<<<< HEAD
 								<!-- <?php if(get_field('se_recomienda_llevar')) { ?>	
 									<p class="valor"><?php echo the_field("nota_costo"); ?></p>
 								<?php } ?> -->
+=======
+								<?php if(get_field('se_recomienda_llevar')) { ?>	
+									<p class="valor"><?php echo the_field("nota_costo"); ?></p>
+								<?php } ?>
+>>>>>>> 4ae6ba6c9bd543fc97981b061b54f67e724a4651
 							</div>
 						</div>
 						
@@ -286,6 +378,10 @@ print_r($terms); exit;
 				<p class="first-child">Unirme a grupo abierto</p>
 			</div>
 		</div>
+<<<<<<< HEAD
+=======
+		<br>
+>>>>>>> 4ae6ba6c9bd543fc97981b061b54f67e724a4651
 	</div>
 
 	<section id="sub-one" class="info2 info mt-3 pt-5 ">
@@ -340,6 +436,7 @@ print_r($terms); exit;
 		</div><!-- end.row -->
 		<br>
 	</div>
+<<<<<<< HEAD
 
 	<section class="formSingle">
 		<div class="container">
@@ -411,6 +508,9 @@ print_r($terms); exit;
 			</div>
 		</div>
 	</section>
+=======
+ 
+>>>>>>> 4ae6ba6c9bd543fc97981b061b54f67e724a4651
 
 	
 
