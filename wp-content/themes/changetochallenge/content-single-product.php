@@ -9,7 +9,7 @@
 
  
  global $product;
- print_r($product);
+//  print_r($product);
 $id = $product->get_id();
 // Obtener el ID del producto.
 $product->get_id();
@@ -128,80 +128,80 @@ print_r($terms); exit;
 						<hr class="hr-orange singleprod mb-5"/>
 						<?php if(get_field('challenge')) { ?>							
 							<div class="row mt-4">
-								<div class="col-sm-6">
+								<div class="col-6 col-sm-6">
 									<p class="etiqueta">Challenge</p>
 								</div>
-								<div class="col-sm-6">
+								<div class="col-6 col-sm-6">
 									<p class="valor"><?php echo the_field('challenge'); ?></p>
 								</div>
 							</div>
 						<?php } ?>
 						<?php if(get_field('tipo_de_causa')) { ?>							
 							<div class="row">
-								<div class="col-sm-6">
+								<div class="col-6 col-sm-6">
 									<p class="etiqueta">Tipo de causa</p>
 								</div>
-								<div class="col-sm-6">
+								<div class="col-6 col-sm-6">
 									<p class="valor"><?php echo the_field('tipo_de_causa'); ?></p>
 								</div>
 							</div>
 						<?php } ?>
 						<?php if(get_field('duracion')) { ?>							
 							<div class="row">
-								<div class="col-sm-6">
+								<div class="col-6 col-sm-6">
 									<p class="etiqueta">Duración</p>
 								</div>
-								<div class="col-sm-6">
+								<div class="col-6 col-sm-6">
 									<p class="valor"><?php echo the_field('duracion'); ?></p>
 								</div>
 							</div>
 						<?php } ?>
 						<?php if(get_field('nivel_fisico')) { ?>							
 							<div class="row">
-								<div class="col-sm-6">
+								<div class="col-6 col-sm-6">
 									<p class="etiqueta">Nivel físico</p>
 								</div>
-								<div class="col-sm-6">
+								<div class="col-6 col-sm-6">
 									<p class="valor"><?php echo the_field('nivel_fisico'); ?></p>
 								</div>
 							</div>
 						<?php } ?>
 						<?php if(get_field('nivel_tecnico')) { ?>							
 							<div class="row">
-								<div class="col-sm-6">
+								<div class="col-6 col-sm-6">
 									<p class="etiqueta">Nivel técnico</p>
 								</div>
-								<div class="col-sm-6">
+								<div class="col-6 col-sm-6">
 									<p class="valor"><?php echo the_field('nivel_tecnico'); ?></p>
 								</div>
 							</div>
 						<?php } ?>
 						<?php if(get_field('punto_de_encuentro')) { ?>							
 							<div class="row">
-								<div class="col-sm-6">
+								<div class="col-6 col-sm-6">
 									<p class="etiqueta">Punto de encuentro</p>
 								</div>
-								<div class="col-sm-6">
+								<div class="col-6 col-sm-6">
 									<p class="valor"><?php echo the_field('punto_de_encuentro'); ?></p>
 								</div>
 							</div>
 						<?php } ?>
 						<?php if(get_field('inicia_en')) { ?>							
 							<div class="row">
-								<div class="col-sm-6">
+								<div class="col-6 col-sm-6">
 									<p class="etiqueta">Inicia en</p>
 								</div>
-								<div class="col-sm-6">
+								<div class="col-6 col-sm-6">
 									<p class="valor"><?php echo the_field('inicia_en'); ?></p>
 								</div>
 							</div>
 						<?php } ?>
 						<?php if(get_field('termina_en')) { ?>							
 							<div class="row">
-								<div class="col-sm-6">
+								<div class="col-6 col-sm-6">
 									<p class="etiqueta">Termina en</p>
 								</div>
-								<div class="col-sm-6">
+								<div class="col-6 col-sm-6">
 									<p class="valor"><?php echo the_field('termina_en'); ?></p>
 								</div>
 							</div>
@@ -249,14 +249,14 @@ print_r($terms); exit;
 						<?php if(get_field('incluye')) { ?>							
 							<div class="row">
 								<div class="col-sm-12">
-									<p class="etiqueta">Incluye: <?php echo the_field('incluye'); ?></p>
+									<p class="etiqueta">Incluye: <span><?php echo the_field('incluye'); ?></span></p>
 								</div>
 							</div>
 						<?php } ?>
 						<?php if(get_field('se_recomienda_llevar')) { ?>							
 							<div class="row">
 								<div class="col-sm-12">
-									<p class="etiqueta">Se recomienda llevar: <?php echo the_field('se_recomienda_llevar'); ?></p>
+									<p class="etiqueta">Se recomienda llevar: <span><?php echo the_field('se_recomienda_llevar'); ?></span></p>
 								</div>
 							</div>
 						<?php } ?>
@@ -265,9 +265,9 @@ print_r($terms); exit;
 						<div class="row">
 							<div class="col-sm-12">
 								<h3 class="costo-single">Costo: <span>$ <?php echo $product->get_price(); ?> mxn</span></h3>
-								<?php if(get_field('se_recomienda_llevar')) { ?>	
+								<!-- <?php if(get_field('se_recomienda_llevar')) { ?>	
 									<p class="valor"><?php echo the_field("nota_costo"); ?></p>
-								<?php } ?>
+								<?php } ?> -->
 							</div>
 						</div>
 						
@@ -287,7 +287,6 @@ print_r($terms); exit;
 				<p class="first-child">Unirme a grupo abierto</p>
 			</div>
 		</div>
-		<br>
 	</div>
 
 	<section id="sub-one" class="info2 info mt-3 pt-5 ">
@@ -342,7 +341,77 @@ print_r($terms); exit;
 		</div><!-- end.row -->
 		<br>
 	</div>
- 
+
+	<section class="formSingle">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 div col-md-6">
+					<figure class="formSingle formSingle__img">
+						<img src="<?php echo get_template_directory_uri(''); ?>/assets/img/img_product.jpg" alt="">
+					</figure>
+				</div>
+				<div class="col-12 div col-md-6">
+					<div class="formSingleCt">
+						<h2 class="formSingle formSingle__title">¿Esta aventura es ideal para tu empresa?</h2>
+						<p class="formSingle formSingle__desc">¡Escríbenos y pronto nos pondremos en contacto contigo!</p>
+						<form action="" method="POST">
+							<!-- Campo para Nombre Completo -->
+							<div class="mb-3 sty-form">
+								<input type="text" class="form-control required" id="name" placeholder="Nombre Completo*:">
+							</div>
+
+							<!-- Campo para Correo Electrónico -->
+							<div class="mb-3 sty-form">
+								<input type="email" class="form-control required" id="email" placeholder="Correo*:">
+							</div>
+
+							<!-- Campo para número -->
+							<div class="mb-3 sty-form">
+								<input type="tel" class="form-control required" id="numero" placeholder="Número de challengers*:">
+							</div>
+
+							<div class="mb-3 sty-form">
+								<select class="form-control custom-select" name="" id="">
+									<option value="">Selecciona un destino *</option>
+									<option value="">Destino 1</option>
+									<option value="">Destino 2</option>
+									<option value="">Destino 3</option>
+								</select>
+							</div>
+
+							<!-- Campo para Fecha -->
+							<div class="mb-3 sty-form d-flex justiy-content-start">
+								<div class="row">
+									<div class="col-sm-10 d-flex justify-content-start">
+										<span class="datecustomField">Selecciona una fecha*:</span>
+									</div >
+									<div class="row">
+										<div class="col-12">
+											<div class="contentInputsCustom">
+												<div class="inputDateForm">
+													<input type="tel" class="form-control required mb-1" id="mes" />
+													<label id="mes" class="datecustomField">DD</label>
+												</div>
+												<div class="inputDateForm">
+													<input type="tel" class="form-control required mb-1" id="dia"/>
+													<label id="dia" class="datecustomField">MM</label>
+												</div>
+												<div class="inputDateForm">	
+													<input type="tel" class="form-control required ultimo mb-1" id="anio"/>
+													<label id="anio" class="datecustomField">YYYY</label>
+												</div>
+											</div><!-- end.contentInputsCustom --> 
+										</div>
+									</div>
+								</div>
+							</div>
+							<input type="submit" class="btn-env btnSubmit mt-4" value="Enviar">
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
 	
 

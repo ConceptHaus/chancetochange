@@ -90,9 +90,9 @@
 				<li><a href="#">ES/EN</a></li>
 			</ul>
 			
-			<nav class="menu-min">
-				<a href="#menu"><img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/menu.png" alt="menu"></a>
-			</nav>
+			<div class="menu-min">
+				<a href="#menu" class="menuBtnMob"><img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/menu.png" alt="menu"></a>
+			</div>
 		</nav>
 	</header>
 	<nav id="menu">

@@ -19,4 +19,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 ?>
-</ul>
+<!-- </ul> -->
+	</div><!-- end.row -->
+</div><!-- end.container -->
