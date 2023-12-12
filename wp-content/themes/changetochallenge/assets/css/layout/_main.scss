@@ -2134,12 +2134,15 @@ h3.costo-single{
 	width: 200px;
 }
 .headShop {
-	position: relative; width: 100%; height: auto; padding: 5px 20px; margin: 0; border: none; box-sizing: border-box;
+	position: relative; width: 100%; height: auto; padding: 20px 0; margin: 0; border: none; box-sizing: border-box;
 	&__title {
-		text-align: left; color: #1D3A6B; @include fluid-type(18px, 64px, 320px, 1200px); margin: 0 0 20px; padding: 0; font-family: "AkzidenzGrotesk-BQ",sans-serif; font-weight: bold; line-height: 1.2;
+		text-align: center; color: #1D3A6B; @include fluid-type(18px, 64px, 320px, 1200px); margin: 0 0 20px; padding: 0; font-family: "AkzidenzGrotesk-BQ",sans-serif; font-weight: bold; line-height: 1.2;
 		& span {
 			color: #FF6900; @include fluid-type(22px, 80px, 320px, 1200px);
 		}
+	}
+	@media all and (min-width: 768px) {
+		padding: 35px 0;
 	}
 }
 .woocommerce-breadcrumb {
@@ -2182,4 +2185,27 @@ h3.costo-single{
 }
 .widget-area {
 	display: none;
+}
+// Producto listdo
+.product {
+	width: 100%; height: auto; padding: 0; margin: 0 0 20px!important; position: relative; box-sizing: border-box;
+	& .woocommerce-LoopProduct-link {
+		width: 100%; height: auto; padding: 10px; margin: 0 0 10px; position: relative; box-sizing: border-box; display: block; text-decoration: none; border-bottom: 1px solid #FF6900;
+	}
+	& .attachment-woocommerce_thumbnail,
+	& .woocommerce-placeholder {
+		width: 100%; max-width: 400px; height: auto; display: block; margin: 0 auto 20px; padding: 0;
+	}
+	& .woocommerce-loop-product__title {
+		text-align: center; color: #1D3A6B; @include fluid-type(16px, 36px, 320px, 1200px); margin: 0 0 10px; padding: 0; font-family: "AkzidenzGrotesk-BQ",sans-serif; font-weight: bold; line-height: 1.2;
+	}
+	& .price {
+		text-align: center; color: #7B7B7B!important; @include fluid-type(15px, 24px, 320px, 1200px); margin: 0; padding: 0; font-family: "AkzidenzGrotesk-BQ",sans-serif; font-weight: bold; line-height: 1; display: block;
+	}
+	& .add_to_cart_button  {
+		background-color: #1D3A6B!important; width: 200px; padding: 0!important; height: 34px; line-height: 34px!important; border: none!important; border-radius: 17px!important; font-size: 17px!important; text-align: center; margin: 0 auto!important; display: block!important; color: #ffffff!important;
+	}
+	& .product_type_simple  {
+		background-color: #1D3A6B!important; width: 200px; padding: 0!important; height: 34px; line-height: 34px!important; border: none!important; border-radius: 17px!important; font-size: 17px!important; text-align: center; margin: 0 auto!important; display: block!important; color: #ffffff!important;
+	}
 }
