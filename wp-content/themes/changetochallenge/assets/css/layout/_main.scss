@@ -397,13 +397,31 @@ input, select, textarea {
 		background-attachment: fixed;
 		background-position: top;
 		background-repeat: no-repeat;
-		background-size: contain;
+		background-size: cover;
 		border-bottom: 0 !important;
 		cursor: default;
 		height: 60vh;
 		margin-bottom: -3.25rem;
 		max-height: 32rem;
 		min-height: 22rem;
+		& p {
+			color: white; line-height: 1.2;
+			font-family: 'Akzidenz-Grotesk BQ', sans-serif; 
+			font-weight: bold; text-align: center; margin: 0 0 20px;
+			@include fluid-type(16px, 22px, 320px, 1200px);
+			@media all and (min-width: 640px) {
+				text-align: left;
+			}
+		}
+		& h1 {
+			color: white; line-height: 1.2;
+			font-family: 'Akzidenz-Grotesk BQ', sans-serif; 
+			font-weight: bold; text-align: center; margin: 0 0 20px;
+			@include fluid-type(22px, 54px, 320px, 1200px);
+			@media all and (min-width: 640px) {
+				text-align: left;
+			}
+		}
 	}
 
 	#bannerTiposAventurasCerrado{

@@ -344,7 +344,7 @@
 											<label id="dia" class="datecustomField">MM</label>
 										</div>
 										<div class="inputDateForm">	
-											<input type="tel" class="form-control required ultimo mb-1" id="anio"/>
+											<input type="tel" class="form-control required w-35 ultimo mb-1" id="anio"/>
 											<label id="anio" class="datecustomField">YYYY</label>
 										</div>
 									</div><!-- end.contentInputsCustom --> 

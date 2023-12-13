@@ -12,72 +12,71 @@
  get_header();
 ?>  
 
-				<!-- Banner -->
-        <section id="bannerTiposAventuras" class="major">
-			<div class="container-fluid d-flex justify-content-end">
-				<div class="row d-flex justify-content-end mt-5 ">
+		<!-- Banner -->
+		<section id="bannerTiposAventuras" class="major">
+			<div class="container-fluid d-flex justify-content-center">
+				<div class="row d-flex justify-content-center text-center">
 					<h1>Be a challenger</h1>
 					<hr/>
 					<p>Explora el mundo con causa. <br />Despierta tu potencial.<br />Acepta el desafío.</p>
-				</div>
+			  </div>
 			</div>
 		</section>
 
 				<!-- Main -->
 					<div id="main">
-						<section id="sub-one" class="info2 info mt-3 pt-5 pb-3">
-							<div class="container  py-3 gen-cont botoneraTiposAventuras">
-								<div><a href="<?php echo esc_url( "/grupo-abierto" ); ?>" class="gen-btn active">Aventura abierta</a></div>
-								<div><a href="<?php echo esc_url( "/grupo-cerrado" ); ?>" class="gen-btn">Aventura privada</a></div>
-								<div><a href="<?php echo esc_url( "/empresarial" ); ?>" class="gen-btn">Aventura empresarial</a></div>
+						<section id="sub-one" class="info2 info">
+							<div class="container">
+								<div class="row">
+									<div class="col-12">
+										<div class="botoneraTiposAventuras">
+											<div class="bxAdven"><a href="<?php echo esc_url( "/grupo-abierto" ); ?>" class="gen-btn ">Aventura abierta</a></div>
+											<div class="bxAdven"><a href="<?php echo esc_url( "/grupo-cerrado" ); ?>" class="gen-btn ">Aventura privada</a></div>
+											<div class="bxAdven"><a href="<?php echo esc_url( "/empresarial" ); ?>" class="gen-btn active">Aventura empresarial</a></div>
+										</div>
+									</div>
+								</div>
 							</div>
 						</section>
 						<!-- One -->
 
-            <div class="container-fluid section-unete ">
-                <!-- Control the column width, and how they should appear on different devices -->
-                <div class="row text-center  d-flex justify-content-center mt-5">
-                  <div class="col-sm-6" >
-                  <p class="first-child">¿Cómo reservar con Chance to Challenge?</p>
-                  </div>
-                </div>
-                <br>
-
-				<div class="container">
-					<div class="row justify-content-center content-icon3">
-						<div class="col-12">
-						<div class="ctSlideItems">
-							<div class="slideItemsPoints">
-				
-							<div>
-								<div class="ctSlideItems--img">
-								<img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/grupoAbierto/icon-reserva.png" alt="">
-								<p class="pcorrect">Revisa las fechas que tenemos disponibles</p>
+						<section class="section-unete">
+						<div class="container-fluid">
+							<div class="row text-center  d-flex justify-content-center mt-5">
+								<div class="col-sm-6" >
+									<p class="first-child">¿Cómo reservar con <br/> Chance to Challenge?</p>
 								</div>
 							</div>
-							<div>
-								<div class="ctSlideItems--img">
-								<img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/grupoAbierto/icon-elige.png" alt="" srcset="">
-								<p class="pcorrect">Elige tu aventura</p>
-								</div>
-							</div>
-							<div>
-								<div class="ctSlideItems--img">
-								<img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/grupoAbierto/icon-inscribete.png" alt="" srcset="">
-								<p class="pcorrect">Inscríbete</p>
-								</div>
-							</div>
-						
-							</div><!-- end.slideItemsPoints -->
-						</div><!-- end.ctSlideItems -->
-						</div><!-- end.col-12 -->
-					</div>
-					</div>
-                
-                
-                <br>
-            </div>
-
+						</div>
+						<div class="container text-center">
+							<div class="row justify-content-center content-icon3">
+								<div class="col-12">
+									<div class="ctSlideItems">
+										<div class="slideItemsPoints">
+											<div>
+												<div class="ctSlideItems--img">
+													<img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/grupoAbierto/icon-reserva.png" alt="">
+													<p class="tipoaventura">Revisa las fechas que tenemos disponibles</p>
+												</div>
+											</div>
+											<div>
+												<div class="ctSlideItems--img">
+													<img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/grupoAbierto/icon-elige.png" alt="" srcset="">
+													<p class="tipoaventura">Elige tu aventura</p>
+												</div>
+											</div>
+											<div>
+												<div class="ctSlideItems--img">
+													<img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/grupoAbierto/icon-inscribete.png" alt="" srcset="">
+													<p class="tipoaventura">Inscríbete</p>
+												</div>
+											</div>
+										</div><!-- end.slideItemsPoints -->
+									</div><!-- end.ctSlideItems -->
+								</div><!-- end.col-* -->
+							</div><!-- end.row -->
+						</div><!-- end.container -->
+					</section><!-- end.section-unete -->
 
 
 			<div class="container-fluid section-unete ">
