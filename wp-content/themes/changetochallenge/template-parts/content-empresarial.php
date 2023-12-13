@@ -152,11 +152,12 @@
 		?>
 
            
-		  <!-- Control the column width, and how they should appear on different devices -->	
-		  <div class="container mt-5">
+		   <div class="container-fluid section-unete loopProductos pt-5">
+				<!-- Control the column width, and how they should appear on different devices -->	
+				<div class="container">
 					<div class="row d-flex justify-content-center  content-icon3">
 						<div class="col-sm-6 content-img" >
-						<img src="<?php echo the_field('foto_horizontal'); ?>" alt="" srcset="" class="border-rad">
+						<img src="<?php echo the_field('foto_vertical'); ?>" alt="" srcset="" class="border-rad">
 						</div>
 						<div class="col-sm-6" >
 							<h3><?php the_title(); ?></h3>
@@ -164,67 +165,75 @@
 								<?php echo $product->get_short_description(); ?>
 							</p>
 							<ul class="listProduct mt-3">
-								<li>Duración:<?php echo get_post_meta($loop->post->ID , 'duracion', true); ?></li>
-								<li>Nivel técnico: <?php echo get_post_meta($loop->post->ID , 'nivel_tecnico', true); ?></li>
+								<!--<li>3 de febrero</li>-->
+								<li><?php echo get_post_meta($loop->post->ID , 'duracion', true); ?></li>
+								<!--<li>Costo: $ <?php echo $product->get_price_html(); ?> MXN</li>-->
+								<li><?php echo get_post_meta($loop->post->ID , 'nivel_tecnico', true); ?></li>
 							</ul>
 							<div class="col-sm-6 text-left d-flex justify-start" >
-								<a href="<?php echo get_permalink( $loop->post->ID ) ?>" class="btnReservar">Reservar</a>
+								<a href="<?php echo get_permalink( $loop->post->ID ) ?>" class="btnReservar">Ver más</a>
 							</div>
 						</div>
 					</div>
 				</div>
-	   			<br>
+				<br>
+			</div>
 			<?php } ?>
 			<?php if($aux==2){ ?>
-				<div class="container-fluid section-unete loopProductos Bgswhite pt-5">
+				<div class="container-fluid section-unete loopProductos pt-5">
 					<!-- Control the column width, and how they should appear on different devices -->	
 					<div class="container">
 						<div class="row d-flex justify-content-center  content-icon3">
-							
 							<div class="col-sm-6" >
-									<h3><?php the_title(); ?></h3>
-									<p class="descriptionProduct mt-5">
-										<?php echo $product->get_short_description(); ?>
-									</p>
-									<ul class="listProduct mt-3">
-										<li>Duración:<?php echo get_post_meta($loop->post->ID , 'duracion', true); ?></li>
-										<li>Nivel técnico: <?php echo get_post_meta($loop->post->ID , 'nivel_tecnico', true); ?></li>
-									</ul>
-									<div class="col-sm-6 text-left d-flex justify-start" >
-										<a href="<?php echo get_permalink( $loop->post->ID ) ?>" class="btnReservar">Reservar</a>
-									</div>
+								<h3><?php the_title(); ?></h3>
+								<p class="descriptionProduct mt-5">
+									<?php echo $product->get_short_description(); ?>
+								</p>
+								<ul class="listProduct mt-3">
+									<!--<li>3 de febrero</li>-->
+									<li><?php echo get_post_meta($loop->post->ID , 'duracion', true); ?></li>
+									<!--<li>Costo: $ <?php echo $product->get_price_html(); ?> MXN</li>-->
+									<li><?php echo get_post_meta($loop->post->ID , 'nivel_tecnico', true); ?></li>
+								</ul>
+								<div class="col-sm-6 text-left d-flex justify-start" >
+									<a href="<?php echo get_permalink( $loop->post->ID ) ?>" class="btnReservar">Ver más</a>
+								</div>
 							</div>
-							<div class="col-sm-6 content-img second" >
+							<div class="col-sm-6 content-img" >
 								<img src="<?php echo the_field('foto_horizontal'); ?>" alt="" srcset="" class="border-rad">
 							</div>
 						</div>
+
 					</div>
 					<br>
 				</div>
 			<?php } ?>
 			<?php if($aux==3){ ?>
-				<div class="container-fluid section-unete loopProductos Bgswhite pt-5">
+				<div class="container-fluid section-unete loopProductos pt-5">
 					<!-- Control the column width, and how they should appear on different devices -->	
 					<div class="container">
 						<div class="row d-flex justify-content-center  content-icon3">
-							<div class="col-sm-6 content-img " >
+							<div class="col-sm-6 content-img" >
 								<img src="<?php echo the_field('foto_horizontal'); ?>" alt="" srcset="" class="border-rad">
 							</div>
 							<div class="col-sm-6" >
-									<h3><?php the_title();  ?></h3>
-									<p class="descriptionProduct mt-5">
-										<?php echo $product->get_short_description(); ?>
-									</p>
-									<ul class="listProduct mt-3">
-										<li>Duración:<?php echo get_post_meta($loop->post->ID , 'duracion', true); ?></li>
-										<li>Nivel técnico: <?php echo get_post_meta($loop->post->ID , 'nivel_tecnico', true); ?></li>
-									</ul>
-									<div class="col-sm-6 text-left d-flex justify-start" >
-										<a href="<?php echo get_permalink( $loop->post->ID ) ?>" class="btnReservar">Reservar</a>
-									</div>
+								<h3><?php the_title(); ?></h3>
+								<p class="descriptionProduct mt-5">
+									<?php echo $product->get_short_description(); ?>
+								</p>
+								<ul class="listProduct mt-3">
+									<!--<li>3 de febrero</li>-->
+									<li><?php echo get_post_meta($loop->post->ID , 'duracion', true); ?></li>
+									<!--<li>Costo: $ <?php echo $product->get_price_html(); ?> MXN</li>-->
+									<li><?php echo get_post_meta($loop->post->ID , 'nivel_tecnico', true); ?></li>
+								</ul>
+								<div class="col-sm-6 text-left d-flex justify-start" >
+									<a href="<?php echo get_permalink( $loop->post->ID ) ?>" class="btnReservar w-100">Ver más</a>
+								</div>
 							</div>
 							
 						</div>
+
 					</div>
 					<br>
 				</div>
