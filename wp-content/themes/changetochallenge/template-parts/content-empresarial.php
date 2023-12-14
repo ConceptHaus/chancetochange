@@ -171,7 +171,7 @@
 								<li><?php echo get_post_meta($loop->post->ID , 'nivel_tecnico', true); ?></li>
 							</ul>
 							<div class="col-sm-6 text-left d-flex justify-start" >
-								<a href="<?php echo get_permalink( $loop->post->ID ) ?>" class="btnReservar">Ver más</a>
+								<a href="<?php echo get_permalink( $loop->post->ID ) ?>" class="btnReservar w-100">Ver más</a>
 							</div>
 						</div>
 					</div>
@@ -196,7 +196,7 @@
 									<li><?php echo get_post_meta($loop->post->ID , 'nivel_tecnico', true); ?></li>
 								</ul>
 								<div class="col-sm-6 text-left d-flex justify-start" >
-									<a href="<?php echo get_permalink( $loop->post->ID ) ?>" class="btnReservar">Ver más</a>
+									<a href="<?php echo get_permalink( $loop->post->ID ) ?>" class="btnReservar w-100">Ver más</a>
 								</div>
 							</div>
 							<div class="col-sm-6 content-img" >
@@ -228,7 +228,7 @@
 									<li><?php echo get_post_meta($loop->post->ID , 'nivel_tecnico', true); ?></li>
 								</ul>
 								<div class="col-sm-6 text-left d-flex justify-start" >
-									<a href="<?php echo get_permalink( $loop->post->ID ) ?>" class="btnReservar">Ver más</a>
+									<a href="<?php echo get_permalink( $loop->post->ID ) ?>" class="btnReservar w-100">Ver más</a>
 								</div>
 							</div>
 							

@@ -24,13 +24,19 @@ get_header();
 
 		<!-- Main -->
 			<div id="main">
-				<section id="sub-one" class="info2 info mt-3 pt-5 pb-3">
-					<div class="container  py-3 gen-cont botoneraTiposAventuras">
-						<div><a href="<?php echo esc_url( "/grupo-abierto" ); ?>" class="gen-btn ">Aventura abierta</a></div>
-						<div><a href="<?php echo esc_url( "/grupo-cerrado" ); ?>" class="gen-btn active">Aventura privada</a></div>
-						<div><a href="<?php echo esc_url( "/empresarial" ); ?>" class="gen-btn">Aventura empresarial</a></div>
-					</div>
-				</section>
+			<section id="sub-one" class="info2 info">
+							<div class="container">
+								<div class="row">
+									<div class="col-12">
+										<div class="botoneraTiposAventuras">
+											<div class="bxAdven"><a href="<?php echo esc_url( "/grupo-abierto" ); ?>" class="gen-btn ">Aventura abierta</a></div>
+											<div class="bxAdven"><a href="<?php echo esc_url( "/grupo-cerrado" ); ?>" class="gen-btn ">Aventura privada</a></div>
+											<div class="bxAdven"><a href="<?php echo esc_url( "/empresarial" ); ?>" class="gen-btn active">Aventura empresarial</a></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
 				<!-- One -->
 
 		   <div class="container-fluid section-unete ">

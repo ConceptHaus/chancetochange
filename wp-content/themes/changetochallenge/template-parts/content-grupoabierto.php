@@ -25,7 +25,11 @@
 
 				<!-- Main -->
 					<div id="main">
+<<<<<<< HEAD
 						<section id="sub-one" class="info2 info">
+=======
+					<section id="sub-one" class="info2 info">
+>>>>>>> 238c505fcc0122206b18d9da3cf2647c3e739a89
 							<div class="container">
 								<div class="row">
 									<div class="col-12">
@@ -38,7 +42,7 @@
 								</div>
 							</div>
 						</section>
-						<!-- One -->
+				<!-- One -->
 
 						<section class="section-unete">
 						<div class="container-fluid">
