@@ -30,8 +30,8 @@ get_header();
 									<div class="col-12">
 										<div class="botoneraTiposAventuras">
 											<div class="bxAdven"><a href="<?php echo esc_url( "/grupo-abierto" ); ?>" class="gen-btn ">Aventura abierta</a></div>
-											<div class="bxAdven"><a href="<?php echo esc_url( "/grupo-cerrado" ); ?>" class="gen-btn ">Aventura privada</a></div>
-											<div class="bxAdven"><a href="<?php echo esc_url( "/empresarial" ); ?>" class="gen-btn active">Aventura empresarial</a></div>
+											<div class="bxAdven"><a href="<?php echo esc_url( "/grupo-cerrado" ); ?>" class="gen-btn active">Aventura privada</a></div>
+											<div class="bxAdven"><a href="<?php echo esc_url( "/empresarial" ); ?>" class="gen-btn ">Aventura empresarial</a></div>
 										</div>
 									</div>
 								</div>
@@ -161,8 +161,8 @@ get_header();
 							</p>
 							<ul class="listProduct mt-3">
 								<li>3 de febrero</li>
-								<li>Duración:<?php echo get_post_meta($loop->post->ID , 'duracion', true); ?></li>
-								<li>Costo:<?php echo $product->get_price_html(); ?> MXN</li>
+								<li>Duración: <?php echo get_post_meta($loop->post->ID , 'duracion', true); ?></li>
+								<li>Costo: <?php echo $product->get_price_html(); ?> MXN</li>
 								<li>Nivel técnico: <?php echo get_post_meta($loop->post->ID , 'nivel_tecnico', true); ?></li>
 							</ul>
 							<div class="col-sm-6 text-left d-flex justify-start" >

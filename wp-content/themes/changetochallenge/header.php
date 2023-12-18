@@ -87,7 +87,7 @@
 					</div>
 				</li>
 				<li><a href="<?php echo esc_url( "/shop" ); ?>">Tienda</a></li>
-				<li><a href="#">ES/EN</a></li>
+				<li><a href="#"><span class="active-menu">ESP</span>/EN</a></li>
 			</ul>
 			
 			<div class="menu-min">

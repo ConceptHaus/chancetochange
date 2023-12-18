@@ -137,7 +137,7 @@
                 <div class="contPorQue">
                   <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/fot-1.png" alt="" srcset="">
                   <div class="text-thr">
-                    <p>Aventura con Challengers como tú</p>
+                    <p class="tit">Aventura con Challengers como tú</p>
                     <p class="des">Elige una de nuestras próximas fechas y súmate a la aventura</p>
                   </div>
                   <a href="<?php echo esc_url( "/grupo-abierto" ); ?>">Conocer más</a>
@@ -147,7 +147,7 @@
                 <div class="contPorQue">
                   <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/fot-2.png" alt="" srcset="">
                   <div class="text-thr">
-                    <p>Aventura organizada especialmente para tu grupo</p>
+                    <p class="tit">Aventura organizada especialmente para tu grupo</p>
                     <p class="des">Personalizada e ideal para grupos a partir de 8 personas</p>
                   </div>
                   <a href="<?php echo esc_url( "/grupo-cerrado" ); ?>">Conocer más</a>
@@ -157,7 +157,7 @@
                 <div class="contPorQue">
                   <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/images/fot-3.png" alt="" srcset="">
                   <div class="text-thr">
-                    <p>Aventuras enfocadas en team building empresarial</p>
+                    <p class="tit">Aventuras enfocadas en team building empresarial</p>
                     <p class="des"> Conecta con la naturaleza y crea lazos inquebrantables</p>
                   </div>
                   <a href="<?php echo esc_url( "/empresarial" ); ?>">Conocer más</a>

@@ -609,8 +609,8 @@ input, select, textarea {
 			max-width: 20%;
 		}
 		span{ 
-			color: $orangeC2C !important;
-			font-family: 'AkzidenzGroteskBQ-Italic', sans-serif;
+			//color: $orangeC2C !important;
+			font-family: 'AkzidenzGroteskBQ', sans-serif;
 		}
 		p.tipoaventura{
 			font-size: 20px;
@@ -640,8 +640,8 @@ input, select, textarea {
 				max-width: 30% !important;
 			 }
 			 			
-			max-height: 500px;
-			height: 500px;
+			max-height: 450px;
+			height: 450px;
   			position: relative;	
 			
 			.text-thr{
@@ -649,12 +649,21 @@ input, select, textarea {
 					font-family: 'Roboto', sans-serif;
 					font-weight: lighter;
 					font-size: 1.2rem;
-					font-weight: bold;
+					font-weight: 500;
 					color: $grayC2C;
+				}
+				p.des{
+					font-size: 1rem;
+					font-weight: normal;
+					padding-top: 5%;
+				}
+				p.tit{
+					padding-top: 5%;
 				}
 				&:nth-child(1){
 					font-size: 24px;
 					font-weight: bold !important;
+					margin-top: 5%;
 				}
 				&:nth-child(2){
 					font-size: 20px;
@@ -695,6 +704,9 @@ input, select, textarea {
 				.text-thr{
 					p{
 						color: white !important;
+					}
+					p.tit{
+						padding-top: 10%;
 					}
 				}
 			}
@@ -2127,7 +2139,7 @@ h3.costo-single{
 }
 
 .titleImpacto{
-	font-size: 2em;
+	font-size: 3em;
   	font-weight: bold;
 	color: $blueC2C;
 	font-family: 'AkzidenzGrotesk BQ', sans-serif;
